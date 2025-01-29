@@ -10,6 +10,18 @@
         url('../fonts/6500595b785e358dcc2a2f3a_AeonikMedium.svg#6500595b785e358dcc2a2f3a_AeonikMedium') format('svg');
     font-weight: 500;
 }
+@font-face {
+    font-family: 'IKOB';
+    src: url('../fonts/ikob.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'IKOB Italic';
+    src: url('../fonts/ikob-italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
 
 
 * {
@@ -105,6 +117,13 @@ h6,
     font-family: 'Aeonik', sans-serif;
     line-height: 1.4074;
     color: var(--color-heading-1);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'IKOB';
 }
 
 h1,

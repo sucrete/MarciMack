@@ -46,7 +46,7 @@
 @import url("https://db.onlinewebfonts.com/c/d95bf2f30035a050142565e03d44da71?family=Aeonik");
 :root {
   --color-primary: #0b2e16;
-  --color-offset: #00531a;
+  --color-offset: #004716;
   --color-secondary: #1F1F25;
   --color-body: #262626;
   --color-heading-1: #262626;
@@ -105,6 +105,18 @@
   src: url("../fonts/6500595b785e358dcc2a2f3a_AeonikMedium.eot");
   src: url("../fonts/6500595b785e358dcc2a2f3a_AeonikMedium.eot") format("embedded-opentype"), url("../fonts/6500595b785e358dcc2a2f3a_AeonikMedium.woff2") format("woff2"), url("../fonts/6500595b785e358dcc2a2f3a_AeonikMedium.woff") format("woff"), url("../fonts/6500595b785e358dcc2a2f3a_AeonikMedium.ttf") format("truetype"), url("../fonts/6500595b785e358dcc2a2f3a_AeonikMedium.svg#6500595b785e358dcc2a2f3a_AeonikMedium") format("svg");
   font-weight: 500;
+}
+@font-face {
+  font-family: "IKOB";
+  src: url("../fonts/ikob.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IKOB Italic";
+  src: url("../fonts/ikob-italic.otf") format("opentype");
+  font-weight: normal;
+  font-style: italic;
 }
 * {
   box-sizing: border-box;
@@ -198,6 +210,13 @@ h6,
   font-family: "Aeonik", sans-serif;
   line-height: 1.4074;
   color: var(--color-heading-1);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "IKOB";
 }
 
 h1,
@@ -12037,31 +12056,6 @@ Copyright (c) 2015 Daniel Eden
   animation: toTopRight 1.5s linear;
 }
 
-.my-btn {
-  color: white !important;
-  font-family: "Aeonik", sans-serif !important;
-  font-weight: 300 !important;
-  height: 42px !important;
-  gap: 19px !important;
-  line-height: 100%;
-  display: flex !important;
-  align-items: center;
-  padding-right: 11px !important;
-}
-.my-btn svg {
-  margin-bottom: -2px;
-}
-.my-btn svg path {
-  transition: all 0.3s ease;
-  stroke: white !important;
-}
-.my-btn:hover {
-  color: var(--color-offset) !important;
-}
-.my-btn:hover svg path {
-  stroke: green !important;
-}
-
 /* Elements  */
 .container {
   max-width: 1290px;
@@ -12338,7 +12332,7 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .header-style-one.style-two {
-  border-bottom: 1px solid #D1D1D1;
+  border-bottom: 1px solid #d1d1d1;
 }
 
 @-webkit-keyframes stickyanimations {
@@ -12376,8 +12370,8 @@ Copyright (c) 2015 Daniel Eden
   top: 0;
   left: 0;
   right: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0px 7px 18px rgba(24, 16, 16, 0.0509803922);
+  border-bottom: 1px solid var(--color-offset);
+  box-shadow: 0px 7px 22px rgba(24, 16, 16, 0.3019607843);
   background: #fff;
 }
 
@@ -12398,7 +12392,7 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .header-style-one.style-two {
-  border-bottom: 1px solid #D1D1D1;
+  border-bottom: 1px solid #d1d1d1;
   position: relative;
   z-index: 99;
 }
@@ -12431,7 +12425,7 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .header-area-four.style-five .header-four-wrapper .nav-area ul li > a.nav-link {
-  color: #0B0A33;
+  color: #0b0a33;
 }
 
 .header-area-four.style-five.sticky {
@@ -12465,7 +12459,7 @@ Copyright (c) 2015 Daniel Eden
 .pagination-navigation-wrapper .navigation .swiper-button-prev {
   height: 48px;
   width: 48px;
-  background: #EBEBFF;
+  background: #ebebff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12548,11 +12542,11 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .header-area-four.style-five .menu-btn-toggle svg rect {
-  fill: #0B0A33;
+  fill: #0b0a33;
 }
 
 .menu-item-open > a {
-  color: #5956FF !important;
+  color: #5956ff !important;
 }
 .menu-item-open > a i::before {
   content: "\f077";
@@ -12598,10 +12592,12 @@ Copyright (c) 2015 Daniel Eden
 .has-dropdown a i::before {
   top: -11px;
   font-size: 11px;
-  right: -17px;
+  right: -12px;
+  transition: 0.25s ease;
+  transform-origin: center;
 }
 .has-dropdown:hover > a i::before {
-  content: "\f077";
+  transform: rotate(180deg);
 }
 
 li.has-dropdown {
@@ -12618,7 +12614,7 @@ li.has-dropdown .submenu {
   visibility: hidden;
   text-align: left;
   transition: 0.3s;
-  border-radius: 0 0 6px 6px;
+  border-radius: 0 0 0px 0px;
   background-color: #fff;
   border-left: 0;
   border-bottom: 0;
@@ -12637,12 +12633,14 @@ li.has-dropdown .submenu li a {
   padding: 9px 16px !important;
   font-weight: 400;
   font-size: 16px;
-  transition: all 0.3s;
+  transition: opacity 0.1s ease-out, gap 0.15s ease;
+  transition-delay: 0s;
   border-radius: 0;
   display: block;
   display: flex;
   align-items: center;
   gap: 10px;
+  opacity: 0;
 }
 li.has-dropdown .submenu li a i {
   font-size: 11px;
@@ -12659,6 +12657,11 @@ li.has-dropdown:hover .submenu {
   top: 100%;
   transform: translateY(0);
   transform: scaleY(1);
+}
+li.has-dropdown:hover .submenu li a {
+  transition: opacity 0.2s ease-in;
+  transition-delay: 0.05s;
+  opacity: 1;
 }
 
 .rts-btn.btn-primary.border.bg-transparent {
@@ -12702,7 +12705,7 @@ li.has-dropdown:hover .submenu {
 }
 .rts-mega-menu.with-add .menu-add-top-area {
   padding: 30px 0 25px 0;
-  border-bottom: 1px solid #E1E1FF;
+  border-bottom: 1px solid #e1e1ff;
   margin-left: 50px;
 }
 .rts-mega-menu.with-add .menu-add-top-area .title {
@@ -12775,7 +12778,7 @@ li.has-dropdown:hover .submenu {
   width: 100%;
 }
 .mega-menu-item li:hover a {
-  border: 1px solid #E6E5FF;
+  border: 1px solid #e6e5ff;
   border-radius: 4px;
 }
 .mega-menu-item li a {
@@ -12789,7 +12792,7 @@ li.has-dropdown:hover .submenu {
   margin-right: 16px;
   padding: 10px;
   max-width: max-content;
-  background: #F0F0FF;
+  background: #f0f0ff;
   border-radius: 4px;
 }
 .mega-menu-item li a .info p {
@@ -12797,7 +12800,7 @@ li.has-dropdown:hover .submenu {
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
-  color: #083A5E;
+  color: #083a5e;
 }
 .mega-menu-item li a .info span {
   font-weight: 400;
@@ -12838,8 +12841,8 @@ li.has-dropdown:hover .submenu {
 
 .appoinment-area-main.contact-page {
   border-radius: 10px;
-  background: #F9F8FF;
-  border: 1px solid #DDD8F9;
+  background: #f9f8ff;
+  border: 1px solid #ddd8f9;
   background-image: none;
 }
 .appoinment-area-main.contact-page input,
@@ -13368,7 +13371,7 @@ li.has-dropdown:hover .submenu {
 }
 
 .banner-four-bg {
-  background-image: url(../images/banner/04.webp);
+  background-image: url(../images/golf/aerial-view-of-green-forest.jpg);
   height: 853px !important;
   background-repeat: no-repeat;
   background-position: center;
@@ -16716,7 +16719,7 @@ li.has-dropdown:hover .submenu {
   left: 0;
   bottom: -5px;
   width: 100%;
-  background: #D1D1D1;
+  background: rgba(0, 0, 0, 0.0784313725);
   height: 1px;
   content: "";
   transition: 0.3s;
@@ -16764,12 +16767,11 @@ li.has-dropdown:hover .submenu {
 }
 
 .rts-copyright-area-one .copyright-wrapper {
-  border-top: 1px solid #D1D1D1;
+  border-top: 1px solid rgba(0, 0, 0, 0.0784313725);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 27px 0;
-  padding-bottom: 70px;
+  padding: 45px 0 70px 0;
 }
 @media only screen and (max-width: 575px) {
   .rts-copyright-area-one .copyright-wrapper {
@@ -16804,11 +16806,11 @@ li.has-dropdown:hover .submenu {
 }
 
 .gradient-footer-wrapper {
-  background: linear-gradient(180deg, #FFFFFF 0%, #F5F5FF 100%);
+  background: linear-gradient(180deg, #ffffff 50%, #e4ffe3 100%);
 }
 
 .bg_color-dark-5 {
-  background: #0B0A33;
+  background: #0b0a33;
 }
 
 .title-center-footer-5 {
@@ -16858,7 +16860,7 @@ li.has-dropdown:hover .submenu {
   right: -80px;
   height: 100%;
   width: 1px;
-  background: #FFFFFF;
+  background: #ffffff;
   opacity: 0.25;
 }
 @media only screen and (max-width: 1199px) {
@@ -16883,7 +16885,7 @@ li.has-dropdown:hover .submenu {
   display: block;
   transition: 0.3s;
   font-size: 20px;
-  color: #D1D1D1;
+  color: #d1d1d1;
   margin: 2px 0;
 }
 .map-location-area .location-single a:hover {
@@ -19626,7 +19628,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   color: var(--color-body);
 }
 .with-megamenu .submenu .single-menu li .industries svg path {
-  stroke: #6D6D6D;
+  stroke: #6d6d6d;
 }
 .with-megamenu .submenu .single-menu li .industries:hover {
   background: none;
@@ -19660,7 +19662,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 }
 
 .has-dropdown .submenu.with-border {
-  padding: 6px 0 12px 0;
+  padding: 3px 0 4px 0;
 }
 .has-dropdown .submenu.with-border li a {
   border-bottom: 1px solid #f7f7f7;
@@ -20165,4 +20167,60 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   [dir=rtl] .rts-blog-area .shape-bottom {
     display: none;
   }
+}
+
+.my-btn {
+  color: white !important;
+  font-family: "Aeonik", sans-serif !important;
+  font-weight: 300 !important;
+  height: 42px !important;
+  gap: 19px !important;
+  line-height: 99%;
+  display: flex !important;
+  align-items: center;
+  padding-right: 10px !important;
+  padding-left: 15px !important;
+  border: none !important;
+  margin-left: 10px;
+}
+.my-btn svg {
+  margin-bottom: -2px;
+}
+.my-btn svg path {
+  transition: all 0.3s ease;
+  stroke: white !important;
+}
+.my-btn:hover {
+  color: var(--color-offset) !important;
+}
+.my-btn:hover svg path {
+  stroke: green !important;
+}
+
+.MM-logo {
+  width: 140px;
+  margin-top: 10px;
+}
+
+.MM-logo-small {
+  width: 170px;
+}
+
+header.header--sticky .MM-logo-small {
+  display: none;
+}
+header.header--sticky.sticky .MM-logo {
+  display: none;
+}
+header.header--sticky.sticky .MM-logo-small {
+  display: unset;
+}
+
+.with-chevron {
+  padding-right: 11px !important;
+}
+
+.footer-logo {
+  width: 140px;
+  height: auto;
 }/*# sourceMappingURL=style.css.map */

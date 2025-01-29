@@ -4,10 +4,13 @@
   font-weight: 300 !important;
   height: 42px !important;
   gap: 19px !important;
-  line-height: 100%;
+  line-height: 99%;
   display: flex !important;
   align-items: center;
-  padding-right: 11px !important;
+  padding-right: 10px !important;
+  padding-left: 15px !important;
+  border: none !important;
+  margin-left: 10px;
   svg {
     margin-bottom: -2px;
     path {
@@ -18,9 +21,41 @@
   &:hover {
     color: var(--color-offset) !important;
     svg {
-      path {
+      path { 
         stroke: green !important; 
       }
     }
   }
+}
+
+.MM-logo {
+  width: 140px;
+  margin-top: 10px;
+}
+.MM-logo-small {
+  width: 170px;
+}
+header {
+  &.header--sticky {
+    .MM-logo-small {
+      display: none;
+    }
+    &.sticky {
+      .MM-logo {
+        display: none;
+      }
+      .MM-logo-small {
+        display: unset;
+      }
+    }
+  }
+}
+
+.with-chevron {
+  padding-right: 11px !important;
+}
+
+.footer-logo {
+  width: 140px;
+  height: auto;
 }

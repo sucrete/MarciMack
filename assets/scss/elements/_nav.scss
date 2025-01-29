@@ -40,7 +40,9 @@
       &::before {
         top: -11px;
         font-size: 11px;
-        right: -17px;
+        right: -12px;
+        transition: 0.25s ease;
+        transform-origin: center;
       }
     }
   }
@@ -49,7 +51,7 @@
     & > a {
       i {
         &::before {
-          content: "\f077";
+          transform: rotate(180deg);
         }
       }
     }

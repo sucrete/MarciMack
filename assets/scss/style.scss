@@ -54,7 +54,7 @@
 @import "default/shortcode";
 @import "default/animations";
 @import "default/text-animation";
-@import "default/custom";
+
 
 /* Elements  */
 @import "elements/common-helper";
@@ -92,3 +92,7 @@
 @import "elements/terms-of-condition";
 @import "elements/counterup";
 @import "elements/rtl";
+
+// Custom
+
+@import "default/custom";
