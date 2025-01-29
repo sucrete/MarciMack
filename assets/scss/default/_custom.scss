@@ -1,0 +1,26 @@
+.my-btn {
+  color: white !important;
+  font-family: "Aeonik", sans-serif !important;
+  font-weight: 300 !important;
+  height: 42px !important;
+  gap: 19px !important;
+  line-height: 100%;
+  display: flex !important;
+  align-items: center;
+  padding-right: 11px !important;
+  svg {
+    margin-bottom: -2px;
+    path {
+      transition: all .3s ease;
+      stroke: white !important;
+    }
+  }
+  &:hover {
+    color: var(--color-offset) !important;
+    svg {
+      path {
+        stroke: green !important; 
+      }
+    }
+  }
+}
