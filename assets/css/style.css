@@ -16759,16 +16759,15 @@ li.has-dropdown:hover .submenu li a {
 .rts-footer-area .container {
   background-color: #ecf2ee !important;
   padding: 6rem;
-  padding-bottom: 5.25rem;
+  padding-bottom: 6rem;
   padding-top: 6.45rem;
 }
 .rts-footer-area > .container > .row {
-  padding-bottom: 4.5rem;
+  padding-bottom: 3.5rem;
   justify-content: space-between;
 }
 .rts-footer-area .logo {
   display: block;
-  margin-bottom: 20px;
 }
 .rts-footer-area .logo-area {
   max-width: 322px;
@@ -16789,7 +16788,7 @@ li.has-dropdown:hover .submenu li a {
 }
 
 .rts-copyright-area-one .row {
-  border-top: 1px solid rgba(0, 0, 0, 0.0784313725);
+  border-top: 1px solid rgba(0, 0, 0, 0.1333333333);
 }
 .rts-copyright-area-one .copyright-wrapper {
   display: flex;
@@ -20240,38 +20239,108 @@ header.header--sticky.sticky .MM-logo-small {
   padding-right: 15px !important;
 }
 
-.footer-logo {
-  width: 140px;
-  height: auto;
-}
-
 .fa-gears {
   display: inline-block;
   margin-top: -15px;
   width: 20px;
 }
 
+.logo-brick {
+  display: flex;
+  padding-bottom: 4rem;
+}
+.logo-brick .logo-col {
+  flex-basis: auto;
+  padding-right: 4rem;
+}
+.logo-brick .logo-col .footer-logo {
+  width: 140px;
+  height: auto;
+}
+.logo-brick .facebook-col {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+}
+
+.new-row {
+  display: flex;
+  flex-direction: row;
+}
+.new-row p {
+  padding-right: 1.25rem;
+}
+.new-row .teequest-link {
+  padding-left: 1.25rem;
+  border-left: 1px solid rgba(0, 0, 0, 0.2156862745);
+  transition: all 0.25s ease;
+}
+.new-row .teequest-link:hover {
+  color: rgb(98, 98, 98);
+}
+
+.facebook-link {
+  position: relative;
+  top: -2px;
+}
 .facebook-link .facebook-logo {
-  width: 100px;
+  width: 85px;
+  height: auto;
+  overflow: visible;
 }
 .facebook-link .facebook-logo path {
   fill: var(--color-accent);
+  transition: all 0.25s ease;
+}
+.facebook-link:hover .facebook-logo path {
+  fill: #0766ff;
 }
 
-.footer-hr {
-  background-color: var(--grey-screen);
-  opacity: 1;
-  margin-top: 4rem;
+.hr-group {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2.5rem;
+}
+.hr-group .footer-hr {
+  min-height: 1px;
+  display: flex;
+  flex: 1 1 auto;
+}
+.hr-group i {
+  flex: 1 0 auto;
+  padding-right: 1rem;
+  font-size: 19px;
+  color: var(--color-accent);
 }
 
-.footer-form input {
+.footer-form .that-group {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.footer-form .that-group input {
   border-radius: 0;
-  height: 44px;
+  height: 40px;
   font-size: 16px;
   padding: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.26);
+}
+.footer-form .that-group input::placeholder {
+  color: rgba(0, 0, 0, 0.435);
+}
+.footer-form .that-group input:active, .footer-form .that-group input:focus {
+  border: 1px solid var(--color-body);
+}
+.footer-form .that-group button {
+  height: 40px;
+}
+.footer-form .that-group button:after {
+  transform: translate(-20%, -70px) scale(0.1);
 }
 
 .weather-card {
+  position: relative;
+  top: -5px;
   width: 350px;
 }
 .weather-card .weather-heading {
@@ -20280,7 +20349,7 @@ header.header--sticky.sticky .MM-logo-small {
   font-size: 3rem;
   text-align: center;
   justify-content: center;
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
 }
 .weather-card .weather-heading .grey-text {
   color: var(--color-body);
@@ -20313,7 +20382,7 @@ header.header--sticky.sticky .MM-logo-small {
   width: 17px;
 }
 .weather-card .row.today-row {
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 .weather-card .row.today-row .today-icon {
   display: flex;
@@ -20322,11 +20391,13 @@ header.header--sticky.sticky .MM-logo-small {
 }
 .weather-card .row.today-row .today-icon .icon-img {
   margin-top: -1px;
-  width: 60px;
+  margin-left: -9px;
+  width: 45px;
 }
 .weather-card .row.today-row .today-temp {
-  font-size: 5rem;
+  font-size: 4.5rem;
   padding: 0rem;
+  margin-left: -5px;
   color: var(--color-body);
 }
 .weather-card .row.today-row .today-temp .the-temp {
@@ -20338,7 +20409,7 @@ header.header--sticky.sticky .MM-logo-small {
   color: #6d6d6d;
   position: absolute;
   right: -16px;
-  top: 7px;
+  top: 3px;
 }
 .weather-card .row.today-row .today-weather {
   display: flex;
@@ -20350,7 +20421,7 @@ header.header--sticky.sticky .MM-logo-small {
   padding-top: 0rem;
   padding-left: 0rem;
   padding-right: 0rem;
-  line-height: 136%;
+  line-height: 116%;
   color: #262626;
 }
 .weather-card .row.today-row .today-weather .today-weather-wrapper .what-weather {

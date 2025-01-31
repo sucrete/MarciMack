@@ -55,44 +55,125 @@ header {
   padding-right: 15px !important;
 }
 
-.footer-logo {
-  width: 140px;
-  height: auto;
-}
-
 .fa-gears {
   display: inline-block;
   margin-top: -15px;
   width: 20px;
   // opacity: 0.35;
 }
-.facebook-link {
-  .facebook-logo {
-    width: 100px;
-    path {
-      fill: var(--color-accent);
-     
+.logo-brick {
+  display: flex;
+  padding-bottom: 4rem;
+  .logo-col {
+    flex-basis: auto;
+    padding-right: 4rem;
+    .footer-logo {
+      width: 140px;
+      height: auto;
+    }
+  }
+  .facebook-col {
+    // border-left: 1px solid var(--grey-screen);
+    flex: 1;
+    display: flex;
+    // padding-left: 3rem;
+    // justify-content: flex-end;
+    align-items: flex-end;
+  }
+}
+
+.new-row {
+  display: flex;
+  flex-direction: row;
+  p {
+    padding-right: 1.25rem;
+  }
+  .teequest-link {
+    padding-left: 1.25rem;
+    border-left: 1px solid #00000037;
+    transition: all .25s ease;
+    &:hover {
+      color: rgb(98, 98, 98);
     }
   }
 }
 
-.footer-hr {
-  background-color: var(--grey-screen);
-  opacity: 1;
-  margin-top: 4rem;
+.facebook-link {
+  position: relative;
+  top: -2px;
+  .facebook-logo {
+    width: 85px;
+    height: auto;
+    overflow: visible;
+    // padding-bottom: 1rem;
+    path {
+      fill: var(--color-accent);
+      transition: all 0.25s ease;
+    }
+  }
+  &:hover {
+    .facebook-logo {
+      path {
+        fill: #0766ff;
+      }
+    }
+  }
+}
+
+.hr-group {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2.5rem;
+  .footer-hr {
+    // background-color: blue;
+    // border-top: 1px solid var(--grey-screen);
+    // opacity: 1;
+    // margin-top: 2rem;
+    // margin-bottom: 2rem;
+    min-height: 1px;
+    display: flex;
+    flex: 1 1 auto;
+  }
+  i {
+    flex: 1 0 auto;
+    padding-right: 1rem;
+    font-size: 19px;
+    color: var(--color-accent);
+  }
 }
 
 .footer-form {
-  input {
-    border-radius: 0;
-    height: 44px;
-    font-size: 16px;
-    padding: 12px;
+  .that-group {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    input {
+      border-radius: 0;
+      height: 40px;
+      font-size: 16px;
+      padding: 12px;
+      border: 1px solid rgba(0,0,0,.26);
+      &::placeholder {
+        color: rgba(0, 0, 0, 0.435);
+      }
+      &:active, &:focus {
+        border: 1px solid var(--color-body)
+      }
+    }
+    button {
+      height: 40px;
+      &:after {
+        transform: translate(-20%, -70px) scale(0.1);
+      }
+    }
   }
 }
 
 //* weather widget styling
 .weather-card {
+  // padding-top: 0.5rem;
+  position: relative;
+  top: -5px;
   width: 350px;
   .weather-heading {
     color: var(--color-offset);
@@ -100,7 +181,7 @@ header {
     font-size: 3rem;
     text-align: center;
     justify-content: center;
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
     .grey-text {
       color: var(--color-body);
       .hyphen {
@@ -138,20 +219,21 @@ header {
 
     //~ Today's weather
     &.today-row {
-      padding-bottom: 15px;
+      padding-bottom: 10px;
       .today-icon {
         display: flex;
         flex-direction: row;
         justify-content: center;
         .icon-img {
           margin-top: -1px;
-          width: 60px;
+          margin-left: -9px;
+          width: 45px;
         }
       }
       .today-temp {
-        font-size: 5rem;
+        font-size: 4.5rem;
         padding: 0rem;
-        // margin-left: -5px;
+        margin-left: -5px;
         color: var(--color-body);
 
         .the-temp {
@@ -162,7 +244,7 @@ header {
             color: #6d6d6d;
             position: absolute;
             right: -16px;
-            top: 7px;
+            top: 3px;
           }
         }
         // .degree {
@@ -184,12 +266,13 @@ header {
           padding-top: 0rem;
           padding-left: 0rem;
           padding-right: 0rem;
-          line-height: 136%;
+          line-height: 116%;
 
           color: #262626;
           .what-weather {
             color: #262626;
             display: block;
+            // text-wrap: nowrap;
           }
           .light-white {
             display: block;

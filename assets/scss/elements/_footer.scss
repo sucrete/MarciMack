@@ -64,19 +64,19 @@
   .container {
     background-color: #ecf2ee !important;
     padding: 6rem;
-    padding-bottom: 5.25rem;
+    padding-bottom: 6rem;
     padding-top: 6.45rem;
     
   }
   & > .container {
     & > .row {
-      padding-bottom: 4.5rem;
+      padding-bottom: 3.5rem;
       justify-content: space-between;
     }
   }
   .logo {
     display: block;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
   }
 
   .logo-area {
@@ -102,7 +102,7 @@
     // color: rgba(46, 46, 46, 0.787)
   }
   .row {
-    border-top: 1px solid #00000014;
+    border-top: 1px solid #00000022;
   }
   .copyright-wrapper {
     // border-top: 1px solid #00000014;
