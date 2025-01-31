@@ -133,7 +133,7 @@ export class Header extends LitElement {
                         <li>
                           <a href="blog-masonry.html"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
-                            >Hole-in-Ones!</a
+                            >Holes-in-One!</a
                           >
                         </li>
                       </ul>
@@ -141,7 +141,7 @@ export class Header extends LitElement {
                     <li>
                       <a
                         href="contact.html"
-                        class="rts-btn btn-primary wow my-btn"
+                        class="rts-btn btn-primary my-btn"
                       >
                         Book tee time
                         <img

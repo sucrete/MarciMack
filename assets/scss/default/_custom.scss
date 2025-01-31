@@ -10,19 +10,19 @@
   padding-right: 10px !important;
   padding-left: 15px !important;
   border: none !important;
-  margin-left: 10px;
+  margin-left: 14px;
   svg {
     margin-bottom: -2px;
     path {
-      transition: all .3s ease;
+      transition: all 0.3s ease;
       stroke: white !important;
     }
   }
   &:hover {
     color: var(--color-offset) !important;
     svg {
-      path { 
-        stroke: green !important; 
+      path {
+        stroke: green !important;
       }
     }
   }
@@ -52,10 +52,196 @@ header {
 }
 
 .with-chevron {
-  padding-right: 11px !important;
+  padding-right: 15px !important;
 }
 
 .footer-logo {
   width: 140px;
   height: auto;
+}
+
+.fa-gears {
+  display: inline-block;
+  margin-top: -15px;
+  width: 20px;
+  // opacity: 0.35;
+}
+.facebook-link {
+  .facebook-logo {
+    width: 100px;
+    path {
+      fill: var(--color-accent);
+     
+    }
+  }
+}
+
+.footer-hr {
+  background-color: var(--grey-screen);
+  opacity: 1;
+  margin-top: 4rem;
+}
+
+.footer-form {
+  input {
+    border-radius: 0;
+    height: 44px;
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+//* weather widget styling
+.weather-card {
+  width: 350px;
+  .weather-heading {
+    color: var(--color-offset);
+    font-family: "IKOB";
+    font-size: 3rem;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+    .grey-text {
+      color: var(--color-body);
+      .hyphen {
+        display: inline-block;
+      }
+      .break {
+        display: none;
+      }
+      display: inline-block;
+      font-family: var(--font-primary);
+    }
+  }
+  .card-body {
+    padding: 0;
+    // padding-bottom: 2.8rem;
+  }
+  // future weather rows
+  .row {
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: var(--font-medium);
+    padding: 10px 0;
+    color: #6d6d6d;
+    justify-content: center;
+    align-items: center;
+    [class*="col"] {
+      .tomorrow-icon,
+      .day-after-tomorrow-icon,
+      .three-days-from-today-icon {
+        width: 17px;
+      }
+    }
+
+    //~ Today's weather
+    &.today-row {
+      padding-bottom: 15px;
+      .today-icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .icon-img {
+          margin-top: -1px;
+          width: 60px;
+        }
+      }
+      .today-temp {
+        font-size: 5rem;
+        padding: 0rem;
+        // margin-left: -5px;
+        color: var(--color-body);
+
+        .the-temp {
+          position: relative;
+          &:after {
+            content: "°F";
+            font-size: 14px;
+            color: #6d6d6d;
+            position: absolute;
+            right: -16px;
+            top: 7px;
+          }
+        }
+        // .degree {
+        //   font-size: 12px;
+        //   color: #6d6d6d;
+        //   align-items: start;
+        //   display: inline-flex;
+        //   flex-direction: column;
+        //   letter-spacing: 0.1em;
+        //   padding-left: 0rem;
+        // }
+      }
+      .today-weather {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .today-weather-wrapper {
+          width: fit-content;
+          padding-top: 0rem;
+          padding-left: 0rem;
+          padding-right: 0rem;
+          line-height: 136%;
+
+          color: #262626;
+          .what-weather {
+            color: #262626;
+            display: block;
+          }
+          .light-white {
+            display: block;
+            color: #6d6d6d;
+            .wind-icon {
+              width: 15px;
+              height: auto;
+              position: relative;
+              top: -0.5px;
+            }
+          }
+        }
+      }
+    }
+
+    //~ The 3 future weather summaries
+    &.future-row {
+      [class*="col"] {
+        flex: 1;
+      }
+      // .day {
+      //   text-align: center;
+      // }
+      .icon {
+        text-align: center;
+        font-size: 1.2rem;
+        opacity: 0.75;
+      }
+      // .temp {
+      //   text-align: center;
+      // }
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  .weather-card {
+    ._500 {
+      line-height: 130%;
+      margin-bottom: 1rem !important;
+      .hyphen {
+        display: none;
+      }
+    }
+    .card-body {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-bottom: 2.5rem;
+      padding-top: 1rem;
+
+      .today-icon {
+        padding-right: 0rem;
+      }
+    }
+  }
 }
