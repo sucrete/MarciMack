@@ -63,7 +63,7 @@ header {
 }
 .logo-brick {
   display: flex;
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
   .logo-col {
     flex-basis: auto;
     padding-right: 4rem;
@@ -79,22 +79,6 @@ header {
     // padding-left: 3rem;
     // justify-content: flex-end;
     align-items: flex-end;
-  }
-}
-
-.new-row {
-  display: flex;
-  flex-direction: row;
-  p {
-    padding-right: 1.25rem;
-  }
-  .teequest-link {
-    padding-left: 1.25rem;
-    border-left: 1px solid #00000037;
-    transition: all .25s ease;
-    &:hover {
-      color: rgb(98, 98, 98);
-    }
   }
 }
 
@@ -123,13 +107,9 @@ header {
 .hr-group {
   display: flex;
   align-items: center;
-  padding-bottom: 2.5rem;
+  padding-bottom: 2rem;
   .footer-hr {
-    // background-color: blue;
-    // border-top: 1px solid var(--grey-screen);
-    // opacity: 1;
-    // margin-top: 2rem;
-    // margin-bottom: 2rem;
+    
     min-height: 1px;
     display: flex;
     flex: 1 1 auto;
@@ -142,6 +122,11 @@ header {
   }
 }
 
+.indention {
+  display: inline-block;
+  width: 100px;
+  height: 2px;
+}
 .footer-form {
   .that-group {
     display: flex;
@@ -152,12 +137,14 @@ header {
       height: 40px;
       font-size: 16px;
       padding: 12px;
-      border: 1px solid rgba(0,0,0,.26);
+      border: 1px solid rgba(0, 0, 0, 0.26);
       &::placeholder {
         color: rgba(0, 0, 0, 0.435);
       }
-      &:active, &:focus {
-        border: 1px solid var(--color-body)
+      &:active,
+      &:focus,
+      &:hover {
+        border: 1px solid var(--color-body);
       }
     }
     button {
@@ -168,10 +155,143 @@ header {
     }
   }
 }
+.introduction-section {
+  padding-top: 16rem;
+  padding-bottom: 16rem;
+  .introduction-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0rem;
+    .definition-box {
+      padding: 40px;
+      margin-top: 30px;
+      position: relative;
+      background-image: url("./../images/golf/golfer-placing-ball.jpg");
+      background-position: 0 66%;
+      background-size: cover;
+      color: white;
+      .overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+        background-image: radial-gradient(
+          ellipse 80% 150% at 80% 15%,
+          hsla(139.41, 60.71%, 10.98%, 0.57) 0%,
+          hsla(139.41, 60.71%, 10.98%, 0.633) 8.5%,
+          hsla(139.41, 60.71%, 10.98%, 0.69) 15.9%,
+          hsla(139.41, 60.71%, 10.98%, 0.742) 22.2%,
+          hsla(139.41, 60.71%, 10.98%, 0.788) 27.8%,
+          hsla(139.41, 60.71%, 10.98%, 0.829) 32.8%,
+          hsla(139.41, 60.71%, 10.98%, 0.864) 37.5%,
+          hsla(139.41, 60.71%, 10.98%, 0.895) 42.1%,
+          hsla(139.41, 60.71%, 10.98%, 0.922) 46.7%,
+          hsla(139.41, 60.71%, 10.98%, 0.944) 51.7%,
+          hsla(139.41, 60.71%, 10.98%, 0.962) 57.2%,
+          hsla(139.41, 60.71%, 10.98%, 0.976) 63.4%,
+          hsla(139.41, 60.71%, 10.98%, 0.987) 70.6%,
+          hsla(139.41, 60.71%, 10.98%, 0.994) 78.9%,
+          hsla(139.41, 60.71%, 10.98%, 0.999) 88.7%,
+          hsl(139.41, 60.71%, 10.98%) 100%
+        );
+        z-index: 1;
+      }
+  
+      .word {
+        position: relative;
+        font-family: "IKOB";
+        font-size: 27px;
+        z-index: 7;
+        .noun {
+          opacity: 0.6;
+          font-family: var(--font-primary);
+        }
+      }
+      .pronunciation {
+        position: relative;
+        z-index: 8;
+        opacity: 0.6;
+      }
+      .definition {
+        z-index: 8;
+        position: relative;
+      }
+    }
+  }
+
+  .hours-of-operation {
+    margin-bottom: 30px;
+    .clock-icon {
+      margin-left: -2px;
+      width: 30px;
+      height: auto;
+    }
+    .title {
+      display: flex;
+      align-items: center;
+      font-size: 35px;
+      position: relative;
+      margin-top: 1rem;
+    }
+    hr {
+      margin-bottom: 27px;
+      &.hr-2 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+    }
+    .hours-title {
+      margin-bottom: 5px;
+    }
+    .hours-row {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      line-height: 200%;
+      .gap {
+        position: relative;
+        flex: 1 1 auto;
+        border-bottom: 1.25px dashed rgba(0, 0, 0, 0.136);
+        top: -10px;
+        margin: 0 10px;
+      }
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+    .pool-section {
+      position: relative;
+      .hours-title,.hours-row {
+        opacity: .4;
+      }
+      .closed {
+        z-index: 77;
+        opacity: 1;
+        width: 70px;
+        height: auto;
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.124));
+        transform: rotate(-3deg) translate(-50%,-50%)
+      }
+    }
+  }
+
+  
+}
+
+.br-10 {
+  border-radius: 10px;
+}
 
 //* weather widget styling
 .weather-card {
-  // padding-top: 0.5rem;
+  padding-top: 0.5rem;
+  padding-right: 0.25rem;
+  padding-bottom: 3rem;
   position: relative;
   top: -5px;
   width: 350px;
@@ -181,7 +301,7 @@ header {
     font-size: 3rem;
     text-align: center;
     justify-content: center;
-    padding-bottom: 1.5rem;
+    padding-bottom: 3rem;
     .grey-text {
       color: var(--color-body);
       .hyphen {
@@ -219,7 +339,7 @@ header {
 
     //~ Today's weather
     &.today-row {
-      padding-bottom: 10px;
+      padding-bottom: 1.75rem;
       .today-icon {
         display: flex;
         flex-direction: row;

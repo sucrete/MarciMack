@@ -60,13 +60,11 @@
 }
 
 .rts-footer-area {
-  padding-bottom: 10rem;
+  padding-top: 12rem;
+  // background-color: #f4f7f5;
   .container {
-    background-color: #ecf2ee !important;
-    padding: 6rem;
-    padding-bottom: 6rem;
-    padding-top: 6.45rem;
     
+    padding: 0 1rem 11rem 2rem;
   }
   & > .container {
     & > .row {
@@ -109,8 +107,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 4rem 0 0 0;
-
+    padding: 6rem 0 0 0; 
+    .teequest-link {
+      transition: all 0.25s ease;
+      &:hover {
+        color: rgba(0, 0, 0, 0.481);
+      }
+    }
     @media #{$large-mobile} {
       flex-direction: column;
       gap: 20px;
