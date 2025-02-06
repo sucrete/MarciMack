@@ -107,31 +107,31 @@ export class Header extends LitElement {
                       </a>
                       <ul class="submenu parent-nav with-border">
                         <li>
-                          <a href="blog-list.html"
+                          <a href="about.html"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Location</a
                           >
                         </li>
                         <li>
-                          <a href="blog-grid.html"
+                          <a href="about.html"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Contact</a
                           >
                         </li>
                         <li>
-                          <a href="blog-grid-two.html"
+                          <a href="about.html"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Clubhouse Rental</a
                           >
                         </li>
                         <li>
-                          <a href="blog-grid-four.html"
+                          <a href="scorecard.html"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Scorecard</a
                           >
                         </li>
                         <li>
-                          <a href="blog-masonry.html"
+                          <a href="holes-in-one.html"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Holes-in-One!</a
                           >
@@ -140,7 +140,7 @@ export class Header extends LitElement {
                     </li>
                     <li>
                       <a
-                        href="contact.html"
+                        href="book-tee-time.html"
                         class="rts-btn btn-primary my-btn"
                       >
                         Book tee time

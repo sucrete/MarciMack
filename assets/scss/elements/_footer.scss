@@ -60,7 +60,7 @@
 }
 
 .rts-footer-area {
-  padding-top: 12rem;
+  padding-top: 14rem;
   // background-color: #f4f7f5;
   .container {
     
@@ -68,7 +68,7 @@
   }
   & > .container {
     & > .row {
-      padding-bottom: 3.5rem;
+      padding-bottom: 7rem;
       justify-content: space-between;
     }
   }
@@ -100,7 +100,8 @@
     // color: rgba(46, 46, 46, 0.787)
   }
   .row {
-    border-top: 1px solid #00000022;
+    border-top: 1px solid #ffffff22;
+    border-top: 1px solid var(--color-offset);
   }
   .copyright-wrapper {
     // border-top: 1px solid #00000014;
@@ -109,9 +110,15 @@
     justify-content: space-between;
     padding: 6rem 0 0 0; 
     .teequest-link {
+      .fa-gears {
+        display: inline-block;
+        margin-top: -15px;
+        width: 20px;
+        opacity: 0.65;
+      }
       transition: all 0.25s ease;
       &:hover {
-        color: rgba(0, 0, 0, 0.481);
+        color: rgba(255, 255, 255, 0.65);
       }
     }
     @media #{$large-mobile} {

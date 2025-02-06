@@ -404,7 +404,26 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.143);
+    background-image: linear-gradient(
+      to top,
+      hsla(0, 0%, 0%, 0.29) 0%,
+      hsla(0, 0%, 0%, 0.288) 8.1%,
+      hsla(0, 0%, 0%, 0.283) 15.5%,
+      hsla(0, 0%, 0%, 0.274) 22.5%,
+      hsla(0, 0%, 0%, 0.264) 29%,
+      hsla(0, 0%, 0%, 0.251) 35.3%,
+      hsla(0, 0%, 0%, 0.237) 41.2%,
+      hsla(0, 0%, 0%, 0.222) 47.1%,
+      hsla(0, 0%, 0%, 0.208) 52.9%,
+      hsla(0, 0%, 0%, 0.193) 58.8%,
+      hsla(0, 0%, 0%, 0.179) 64.7%,
+      hsla(0, 0%, 0%, 0.166) 71%,
+      hsla(0, 0%, 0%, 0.156) 77.5%,
+      hsla(0, 0%, 0%, 0.147) 84.5%,
+      hsla(0, 0%, 0%, 0.142) 91.9%,
+      hsla(0, 0%, 0%, 0.14) 100%
+    );
+
     z-index: 1;
   }
   .banner-four-wrapper {
@@ -436,6 +455,51 @@
       @media #{$sm-layout} {
         font-size: 18px;
       }
+    }
+  }
+}
+
+$subpage-height: 550px;
+.banner-subpage {
+  &.book-tee-time-banner {
+    background-image: url(../images/golf/player-in-view.jpg);
+  }
+  &.about-banner {
+    background-image: url(../images/golf/player-in-view.jpg);
+  }
+  height: $subpage-height !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .overlay {
+    background-image: linear-gradient(
+      to bottom,
+      hsla(0, 0%, 0%, 0.29) 0%,
+      hsla(0, 0%, 0%, 0.288) 8.1%,
+      hsla(0, 0%, 0%, 0.283) 15.5%,
+      hsla(0, 0%, 0%, 0.274) 22.5%,
+      hsla(0, 0%, 0%, 0.264) 29%,
+      hsla(0, 0%, 0%, 0.251) 35.3%,
+      hsla(0, 0%, 0%, 0.237) 41.2%,
+      hsla(0, 0%, 0%, 0.222) 47.1%,
+      hsla(0, 0%, 0%, 0.208) 52.9%,
+      hsla(0, 0%, 0%, 0.193) 58.8%,
+      hsla(0, 0%, 0%, 0.179) 64.7%,
+      hsla(0, 0%, 0%, 0.166) 71%,
+      hsla(0, 0%, 0%, 0.156) 77.5%,
+      hsla(0, 0%, 0%, 0.147) 84.5%,
+      hsla(0, 0%, 0%, 0.142) 91.9%,
+      hsla(0, 0%, 0%, 0.14) 100%
+    );
+  }
+  @media #{$sm-layout} {
+    height: $subpage-height !important;
+  }
+  .banner-four-wrapper {
+    justify-content: center;
+    .title {
+      text-align: center;
+      font-size: 70px;
+      margin-bottom: 0;
     }
   }
 }
