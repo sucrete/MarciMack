@@ -12,6 +12,8 @@ export class CTA extends LitElement {
           <div class="row">
             <div class="col-gl-12">
               <div class="cta-one-wrapper">
+
+                <!-- decorative squares start -->
                 <div class="shape-area">
                   <img
                     loading="lazy"
@@ -20,6 +22,8 @@ export class CTA extends LitElement {
                     alt="cta-area"
                   />
                 </div>
+                <!-- decorative squares end -->
+
                 <div class="left-area">
                   <h3 class="title wow fadeInUp" data-wow-delay=".1s">
                     Have 2 or More Players?
@@ -30,7 +34,7 @@ export class CTA extends LitElement {
                   <a
                     href="contact.html"
                     class="rts-btn btn-primary wow fadeInUp"
-                    data-wow-delay=".5s"
+                    data-wow-delay=".3s"
                   >
                     Book tee time
                     <img
@@ -40,14 +44,8 @@ export class CTA extends LitElement {
                     />
                   </a>
                 </div>
-                <div class="right wow move-out" data-wow-offset="140">
-                  <img
-                    class="cta-tartan"
-                    loading="lazy"
-                    rel="preload"
-                    src="assets/images/golf/tartan-2.svg"
-                    alt=""
-                  />
+                <div class="right" >
+                 <div class="right-overlay"></div>
                 </div>
               </div>
             </div>

@@ -109,12 +109,6 @@ export class Header extends LitElement {
                         <li>
                           <a href="about.html"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
-                            >Location</a
-                          >
-                        </li>
-                        <li>
-                          <a href="about.html"
-                            ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Contact</a
                           >
                         </li>

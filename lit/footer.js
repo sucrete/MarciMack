@@ -72,7 +72,7 @@ export class Footer extends LitElement {
 
                     <a
                       class="facebook-link"
-                      href="https://www.facebook.com"
+                      href="https://www.facebook.com/ClubatMariMack"
                       target="_blank"
                     >
                       <svg

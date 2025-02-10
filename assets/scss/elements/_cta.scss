@@ -1,11 +1,11 @@
 // cta main one wrapper
 
 .cta-one-wrapper {
-  padding: 80px 97px;
   background: #e3f5e8;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 100%;
   .cta-tartan {
     width: 400px;
     height: auto;
@@ -25,8 +25,8 @@
   }
 
   .left-area {
-    max-width: 600px;
-
+    max-width: 700px;
+    padding: 85px 0px 90px 96px;
     .title {
       font-size: 48px;
       font-weight: 400;
@@ -54,6 +54,54 @@
   }
 
   .right {
+    display: flex;
+    flex: 1 1 auto;
+    align-items: stretch;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+   
+    .right-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 7;
+      background-image: linear-gradient(
+        to right,
+        hsl(137.65, 48.57%, 93.14%) 0%,
+        hsla(137.65, 48.57%, 93.14%, 0.988) 4.9%,
+        hsla(137.65, 48.57%, 93.14%, 0.953) 9.2%,
+        hsla(137.65, 48.57%, 93.14%, 0.899) 13.2%,
+        hsla(137.65, 48.57%, 93.14%, 0.83) 17%,
+        hsla(137.65, 48.57%, 93.14%, 0.749) 20.8%,
+        hsla(137.65, 48.57%, 93.14%, 0.659) 24.8%,
+        hsla(137.65, 48.57%, 93.14%, 0.563) 29.2%,
+        hsla(137.65, 48.57%, 93.14%, 0.467) 34.2%,
+        hsla(137.65, 48.57%, 93.14%, 0.371) 39.9%,
+        hsla(137.65, 48.57%, 93.14%, 0.281) 46.5%,
+        hsla(137.65, 48.57%, 93.14%, 0.2) 54.3%,
+        hsla(137.65, 48.57%, 93.14%, 0.131) 63.3%,
+        hsla(137.65, 48.57%, 93.14%, 0.077) 73.8%,
+        hsla(137.65, 48.57%, 93.14%, 0.042) 86%,
+        hsla(137.65, 48.57%, 93.14%, 0.03) 100%
+      );
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      width: 150%;
+      height: 200%;
+      top: -187%;
+      left: -50%;
+      z-index: 1;
+      background: url("../images/golf/grand-tartan.svg") 0 0 repeat;
+      background-size: 100%;
+      transform: rotate(30deg) translate(50%, 50%);
+      transform-origin: center center;
+    }
     @media #{$large-mobile} {
       display: none;
     }
