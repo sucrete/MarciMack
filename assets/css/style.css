@@ -13468,6 +13468,7 @@ li.has-dropdown:hover .submenu li a {
   text-align: center;
   font-size: 70px;
   margin-bottom: 0;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.455);
 }
 
 .solution-exparts-area-service-page .title-area-center-inner-with-sub span::after {
@@ -20483,7 +20484,7 @@ header.header--sticky.sticky .MM-logo-small {
 }
 
 .contact-section {
-  padding: 14rem 0;
+  padding: 14rem 0 16rem;
 }
 .contact-section .container > .row {
   --bs-gutter-x: 20px;
@@ -20596,8 +20597,12 @@ section.clubhouse-rental {
   padding-top: 14rem;
   padding-bottom: 14rem;
 }
+section.clubhouse-rental .container {
+  height: 100%;
+}
 section.clubhouse-rental .container .row {
   gap: 9rem;
+  height: 100%;
 }
 section.clubhouse-rental .container .row [class*=col] h2 {
   margin-bottom: 2.5rem;
@@ -20626,26 +20631,26 @@ section.clubhouse-rental .container .row [class*=col] .tag-wrapper .single-tag {
 }
 section.clubhouse-rental .container .row [class*=col] .tag-wrapper .single-tag:hover {
   color: rgba(255, 255, 255, 0.825);
+  transform: translateY(-2px);
 }
 section.clubhouse-rental .container .row [class*=col] a .single-solution-style-one {
   border: none;
-  border-top: 3px solid var(--color-accent);
+  border-top: 3px solid rgb(227, 227, 227);
+  border: 1px solid rgba(0, 0, 0, 0.109);
+  box-shadow: 0 3px 3px -1px rgba(0, 0, 0, 0.072);
   background: white;
   padding: 0;
-}
-section.clubhouse-rental .container .row [class*=col] a .single-solution-style-one .top {
-  padding: 14px;
-}
-section.clubhouse-rental .container .row [class*=col] a .single-solution-style-one .top img {
+  overflow: hidden;
   border-radius: 10px;
 }
 section.clubhouse-rental .container .row [class*=col] a .single-solution-style-one .bottom {
-  padding: 10px 48px 48px 48px;
+  padding: 0px 32px 32px 32px;
+  transition: all 0.25s ease;
 }
 section.clubhouse-rental .container .row [class*=col] a .single-solution-style-one .bottom .icon {
   position: relative;
   width: fit-content;
-  margin-top: -40px;
+  margin-top: -20px;
   z-index: 7;
 }
 section.clubhouse-rental .container .row [class*=col] a .single-solution-style-one .bottom .icon svg {
@@ -20653,9 +20658,10 @@ section.clubhouse-rental .container .row [class*=col] a .single-solution-style-o
   height: auto;
 }
 section.clubhouse-rental .container .row [class*=col] a .single-solution-style-one .bottom .icon svg path {
-  fill: #01a95b;
+  fill: #ffffff;
 }
 section.clubhouse-rental .container .row [class*=col] a .single-solution-style-one .bottom .icon:after {
+  transition: 0.3s all ease;
   position: absolute;
   content: "";
   z-index: -1;
@@ -20665,20 +20671,49 @@ section.clubhouse-rental .container .row [class*=col] a .single-solution-style-o
   left: 50%;
   transform: translate(-52%, -52%);
   border-radius: 999px;
-  background: white;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+  background: var(--color-accent);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.191);
 }
 section.clubhouse-rental .container .row [class*=col] a .single-solution-style-one .bottom h4 {
   color: var(--color-primary);
   font-family: var(--font-primary);
-  margin-top: 2.5rem;
+  margin-top: 1.75rem;
   margin-bottom: 1rem;
+  transition: all 0.3s ease;
 }
-section.clubhouse-rental .container .row [class*=col] a .single-solution-style-one .bottom .arrow {
+section.clubhouse-rental .container .row [class*=col] a .single-solution-style-one .bottom .card-subheading {
+  transition: 0.2s all ease;
+}
+section.clubhouse-rental .container .row [class*=col] a .single-solution-style-one .bottom .card-subheading .arrow {
   margin-top: -3px;
 }
-section.clubhouse-rental .container .row [class*=col] a .single-solution-style-one .bottom .arrow path {
-  stroke: rgb(175, 175, 175);
+section.clubhouse-rental .container .row [class*=col] a .single-solution-style-one .bottom .card-subheading .arrow path {
+  transition: 0.25s all ease;
+  stroke: rgba(0, 0, 0, 0.247);
+}
+section.clubhouse-rental .container .row [class*=col] a .single-solution-style-one:hover {
+  background: var(--color-offset);
+  transform: translateY(-5px);
+  box-shadow: 0px 9px 22px -5px rgba(24, 16, 16, 0.3019607843);
+}
+section.clubhouse-rental .container .row [class*=col] a .single-solution-style-one:hover .bottom h4 {
+  color: white;
+}
+section.clubhouse-rental .container .row [class*=col] a .single-solution-style-one:hover .bottom .card-subheading {
+  color: white;
+}
+section.clubhouse-rental .container .row [class*=col] a .single-solution-style-one:hover .bottom .card-subheading .arrow {
+  margin-top: -3px;
+}
+section.clubhouse-rental .container .row [class*=col] a .single-solution-style-one:hover .bottom .card-subheading .arrow path {
+  stroke: rgba(255, 255, 255, 0.247);
+}
+section.clubhouse-rental .container .row .left-column {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .rts-cts-area {

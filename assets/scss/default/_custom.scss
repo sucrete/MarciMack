@@ -236,7 +236,7 @@ header {
 
 //~ About
 .contact-section {
-  padding: 14rem 0;
+  padding: 14rem 0 16rem;
   .container {
     & > .row {
       --bs-gutter-x: 20px;
@@ -361,8 +361,10 @@ section.clubhouse-rental {
   padding-top: 14rem;
   padding-bottom: 14rem;
   .container {
+    height: 100%;
     .row {
       gap: 9rem;
+      height: 100%;
       [class*="col"] {
         h2 {
           margin-bottom: 2.5rem;
@@ -389,36 +391,45 @@ section.clubhouse-rental {
             cursor: pointer;
             &:hover {
               color: rgba(255, 255, 255, 0.825);
+              transform: translateY(-2px);
             }
           }
         }
         a {
           .single-solution-style-one {
             border: none;
-            border-top: 3px solid var(--color-accent);
+            border-top: 3px solid rgb(227, 227, 227);
+            border: 1px solid rgba(0, 0, 0, 0.109);
+            box-shadow: 0 3px 3px -1px rgba(0, 0, 0, 0.072);
             background: white;
             padding: 0;
+            overflow: hidden;
+            border-radius: 10px;
             .top {
-              padding: 14px;
+              // padding: 20px;
               img {
-                border-radius: 10px;
+                // border-radius: 10px;
+                // box-shadow: 0 0 0px 3px #00000016;
               }
             }
+            $bp: 32px;
             .bottom {
-              padding: 10px 48px 48px 48px;
+              padding: 0px $bp $bp $bp;
+              transition: all 0.25s ease;
               .icon {
                 position: relative;
                 width: fit-content;
-                margin-top: -40px;
+                margin-top: -20px;
                 z-index: 7;
                 svg {
                   width: 35px;
                   height: auto;
                   path {
-                    fill: #01a95b;
+                    fill: #ffffff;
                   }
                 }
                 &:after {
+                  transition: 0.3s all ease;
                   position: absolute;
                   content: "";
                   z-index: -1;
@@ -428,25 +439,57 @@ section.clubhouse-rental {
                   left: 50%;
                   transform: translate(-52%, -52%);
                   border-radius: 999px;
-                  background: white;
-                  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+                  background: var(--color-accent);
+                  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.191);
                 }
               }
               h4 {
                 color: var(--color-primary);
                 font-family: var(--font-primary);
-                margin-top: 2.5rem;
+                margin-top: 1.75rem;
                 margin-bottom: 1rem;
+                transition: all 0.3s ease;
               }
-              .arrow {
-                margin-top: -3px;
-                path {
-                  stroke: rgb(175, 175, 175);
+              .card-subheading {
+                transition: 0.2s all ease;
+                .arrow {
+                  margin-top: -3px;
+                  path {
+                    transition: 0.25s all ease;
+                    stroke: rgba(0, 0, 0, 0.247);
+                  }
+                }
+              }
+            }
+            &:hover {
+              background: var(--color-offset);
+              transform: translateY(-5px);
+              box-shadow: 0px 9px 22px -5px rgba(24, 16, 16, 0.3019607843);
+              // border-top: 3px solid transparent;
+              .bottom {
+                h4 {
+                  color: white;
+                }
+                .card-subheading {
+                  color: white;
+                  .arrow {
+                    margin-top: -3px;
+                    path {
+                      stroke: rgba(255, 255, 255, 0.247);
+                    }
+                  }
                 }
               }
             }
           }
         }
+      }
+      .left-column {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+        margin-bottom: auto;
       }
     }
   }
