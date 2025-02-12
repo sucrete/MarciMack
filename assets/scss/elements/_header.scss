@@ -370,3 +370,12 @@ header .rts-btn {
 .with-megamenu .submenu .single-menu li .industries.active {
   color: var(--color-primary);
 }
+
+.header-area-four:not(.sticky).subpage .header-four-wrapper .nav-area ul li {
+  & > a.nav-link {
+    color: var(--color-primary);
+  }
+  &.menu-item-open > a {
+    color: #0b2e16b3 !important;
+  }
+}

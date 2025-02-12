@@ -51,6 +51,7 @@
   --color-secondary: #1F1F25;
   --color-accent: #00a95b;
   --grey-screen: rgba(0, 0, 0, 0.108);
+  --light-grey: #f4f4f4;
   --color-body: #262626;
   --color-heading-1: #262626;
   --color-white: #fff;
@@ -12562,6 +12563,13 @@ Copyright (c) 2015 Daniel Eden
   color: var(--color-primary);
 }
 
+.header-area-four:not(.sticky).subpage .header-four-wrapper .nav-area ul li > a.nav-link {
+  color: var(--color-primary);
+}
+.header-area-four:not(.sticky).subpage .header-four-wrapper .nav-area ul li.menu-item-open > a {
+  color: rgba(11, 46, 22, 0.7019607843) !important;
+}
+
 .nav-area ul {
   padding: 0;
   margin: 0;
@@ -13469,6 +13477,17 @@ li.has-dropdown:hover .submenu li a {
   font-size: 70px;
   margin-bottom: 0;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.455);
+}
+.banner-subpage-subpage {
+  background-image: none;
+  background: #f4f4f4;
+}
+.banner-subpage-subpage .banner-four-wrapper .title {
+  text-shadow: none;
+  color: var(--color-primary);
+}
+.banner-subpage-subpage .overlay {
+  display: none;
 }
 
 .solution-exparts-area-service-page .title-area-center-inner-with-sub span::after {
@@ -20314,7 +20333,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .MM-logo {
   width: 140px;
+  height: auto;
   margin-top: 10px;
+}
+.MM-logo path {
+  fill: white;
 }
 
 .MM-logo-small {
@@ -20329,6 +20352,10 @@ header.header--sticky.sticky .MM-logo {
 }
 header.header--sticky.sticky .MM-logo-small {
   display: unset;
+}
+
+header.header-area-four.header--sticky:not(.sticky).subpage .container .row .header-four-wrapper .logo .MM-logo path {
+  fill: var(--color-primary);
 }
 
 .with-chevron {
@@ -20638,6 +20665,7 @@ section.clubhouse-rental .container .row [class*=col] a .single-solution-style-o
   border-top: 3px solid rgb(227, 227, 227);
   border: 1px solid rgba(0, 0, 0, 0.109);
   box-shadow: 0 3px 3px -1px rgba(0, 0, 0, 0.072);
+  box-shadow: transparent 0px 64px 64px -32px, transparent 0px 32px 32px -16px, transparent 0px 16px 16px -8px, rgba(0, 61, 61, 0.0392156863) 0px 12px 12px -6px, rgba(0, 61, 61, 0.0392156863) 0px 6px 6px -3px, rgba(0, 61, 61, 0.0392156863) 0px 3px 3px -1.5px, rgba(0, 31, 31, 0.0784313725) 0px 1px 1px -0.5px, rgba(0, 61, 61, 0.0392156863) 0px 0px 0px 1px;
   background: white;
   padding: 0;
   overflow: hidden;
@@ -20695,6 +20723,7 @@ section.clubhouse-rental .container .row [class*=col] a .single-solution-style-o
   background: var(--color-offset);
   transform: translateY(-5px);
   box-shadow: 0px 9px 22px -5px rgba(24, 16, 16, 0.3019607843);
+  box-shadow: rgba(0, 61, 61, 0.0392156863) 0px 64px 64px -32px, rgba(0, 61, 61, 0.0392156863) 0px 32px 32px -16px, rgba(0, 61, 61, 0.0392156863) 0px 16px 16px -8px, rgba(0, 61, 61, 0.0392156863) 0px 12px 12px -6px, rgba(0, 61, 61, 0.0392156863) 0px 6px 6px -3px, rgba(0, 61, 61, 0.0392156863) 0px 3px 3px -1.5px, rgba(0, 31, 31, 0.0784313725) 0px 1px 1px -0.5px, rgba(0, 61, 61, 0.0392156863) 0px 0px 0px 1px;
 }
 section.clubhouse-rental .container .row [class*=col] a .single-solution-style-one:hover .bottom h4 {
   color: white;
@@ -20714,6 +20743,13 @@ section.clubhouse-rental .container .row .left-column {
   flex-direction: column;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.scorecard-page-body {
+  padding: 14rem 0 5rem 0;
+}
+.scorecard-page-body a img {
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.04)) drop-shadow(0 2px 2px rgba(0, 0, 0, 0.05)) drop-shadow(0 4px 4px rgba(0, 0, 0, 0.06)) drop-shadow(0 8px 8px rgba(0, 0, 0, 0.07)) drop-shadow(0 16px 16px rgba(0, 0, 0, 0.08)) drop-shadow(0 32px 32px rgba(0, 0, 0, 0.09));
 }
 
 .rts-cts-area {

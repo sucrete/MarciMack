@@ -464,6 +464,7 @@ $subpage-height: 550px;
   height: $subpage-height !important;
   background-repeat: no-repeat;
   background-size: cover;
+  
   .overlay {
     background-image: linear-gradient(
       to bottom,
@@ -524,6 +525,19 @@ $subpage-height: 550px;
       font-size: 70px;
       margin-bottom: 0;
       text-shadow: 0 0 10px rgba(0, 0, 0, 0.455);
+    }
+  }
+  &-subpage {
+    background-image: none;
+    background: #f4f4f4;
+    .banner-four-wrapper {
+      .title {
+        text-shadow: none;
+        color: var(--color-primary)
+      }
+    }
+    .overlay {
+      display: none;
     }
   }
 }
