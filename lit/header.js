@@ -24,13 +24,13 @@ export class Header extends LitElement {
                       </a>
                       <ul class="submenu parent-nav with-border">
                         <li>
-                          <a href="blog-list.html"
+                          <a href="events.html"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Calendar</a
                           >
                         </li>
                         <li>
-                          <a href="blog-grid.html"
+                          <a href="host-your-event.html"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Host Your Event</a
                           >
@@ -203,7 +203,7 @@ export class Header extends LitElement {
                 <nav>
                   <ul>
                     <li>
-                      <a class="nav-link" href="case-studies.html"
+                      <a class="nav-link" href="online-store.html"
                         >Online Store</a
                       >
                     </li>
@@ -220,7 +220,7 @@ export class Header extends LitElement {
                           >
                         </li>
                         <li>
-                          <a href="about.html"
+                          <a href="about.html#clubhouse-rental"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Clubhouse Rental</a
                           >

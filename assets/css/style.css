@@ -13464,6 +13464,18 @@ li.has-dropdown:hover .submenu li a {
 .banner-subpage.about-banner .overlay {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.4) 0%, hsla(0, 0%, 0%, 0.397) 4.6%, hsla(0, 0%, 0%, 0.387) 8.4%, hsla(0, 0%, 0%, 0.373) 11.7%, hsla(0, 0%, 0%, 0.354) 14.8%, hsla(0, 0%, 0%, 0.333) 17.9%, hsla(0, 0%, 0%, 0.308) 21.2%, hsla(0, 0%, 0%, 0.283) 25%, hsla(0, 0%, 0%, 0.257) 29.5%, hsla(0, 0%, 0%, 0.232) 34.8%, hsla(0, 0%, 0%, 0.207) 41.4%, hsla(0, 0%, 0%, 0.186) 49.4%, hsla(0, 0%, 0%, 0.167) 59%, hsla(0, 0%, 0%, 0.153) 70.5%, hsla(0, 0%, 0%, 0.143) 84.1%, hsla(0, 0%, 0%, 0.14) 100%);
 }
+.banner-subpage.events-banner {
+  background-image: url(../images/golf/marimack-bunch-of-carts.jpg);
+}
+.banner-subpage.events-banner .overlay {
+  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
+}
+.banner-subpage.online-store-banner {
+  background-image: url(../images/golf/golfer-in-trap.jpg);
+}
+.banner-subpage.online-store-banner .overlay {
+  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
+}
 @media only screen and (max-width: 767px) {
   .banner-subpage {
     height: 550px !important;
@@ -20672,11 +20684,12 @@ section.clubhouse-rental .container .row [class*=col] a .single-solution-style-o
   border-radius: 10px;
 }
 section.clubhouse-rental .container .row [class*=col] a .single-solution-style-one .bottom {
-  padding: 0px 32px 32px 32px;
+  padding: 10px 32px 32px 32px;
   transition: all 0.25s ease;
 }
 section.clubhouse-rental .container .row [class*=col] a .single-solution-style-one .bottom .icon {
   position: relative;
+  display: none;
   width: fit-content;
   margin-top: -20px;
   z-index: 7;
@@ -20750,6 +20763,47 @@ section.clubhouse-rental .container .row .left-column {
 }
 .scorecard-page-body a img {
   filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.04)) drop-shadow(0 2px 2px rgba(0, 0, 0, 0.05)) drop-shadow(0 4px 4px rgba(0, 0, 0, 0.06)) drop-shadow(0 8px 8px rgba(0, 0, 0, 0.07)) drop-shadow(0 16px 16px rgba(0, 0, 0, 0.08)) drop-shadow(0 32px 32px rgba(0, 0, 0, 0.09));
+}
+
+.holes-in-one-page-body {
+  padding: 14rem 0;
+  text-align: center;
+}
+.holes-in-one-page-body h3 {
+  font-size: 72px;
+  color: rgb(178, 178, 178);
+}
+.holes-in-one-page-body .hr-group {
+  position: relative;
+  width: 300px;
+  margin: 5rem auto 6rem auto;
+}
+.holes-in-one-page-body .hr-group .image-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  z-index: 7;
+}
+.holes-in-one-page-body .hr-group .image-container:after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-53.5%, -50%);
+  background: #fff;
+  z-index: 6;
+}
+.holes-in-one-page-body .hr-group .image-container .hole-in-one-icon {
+  width: 30px;
+  height: auto;
+  position: relative;
+  z-index: 8;
+}
+.holes-in-one-page-body p {
+  font-size: 28px;
 }
 
 .rts-cts-area {

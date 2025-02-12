@@ -79,7 +79,6 @@ header {
           }
         }
       }
-     
     }
   }
 }
@@ -225,7 +224,9 @@ header {
   border-radius: 10px;
 }
 
-//* SUBPAGES
+//* ===================================================
+//* ================== SUBPAGES =======================
+//* ===================================================
 //~ Book Tee Time
 .booking-container {
   .row:first-child {
@@ -448,10 +449,11 @@ section.clubhouse-rental {
             }
             $bp: 32px;
             .bottom {
-              padding: 0px $bp $bp $bp;
+              padding: 10px $bp $bp $bp;
               transition: all 0.25s ease;
               .icon {
                 position: relative;
+                display: none;
                 width: fit-content;
                 margin-top: -20px;
                 z-index: 7;
@@ -549,13 +551,61 @@ section.clubhouse-rental {
   }
 }
 
-//* CTA
+//~ Holes-in-One
+.holes-in-one-page-body {
+  padding: 14rem 0;
+  text-align: center;
+  h3 {
+    font-size: 72px;
+    color: rgb(178, 178, 178);
+    // color: #949494
+    // color: var(--color-accent);
+  }
+  .hr-group {
+    position: relative;
+    width: 300px;
+    margin: 5rem auto 6rem auto;
+    
+    .image-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -60%);
+      z-index: 7;
+      &:after {
+        content: "";
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-53.5%, -50%);
+        background: #fff;
+        z-index: 6;
+      }
+      .hole-in-one-icon {
+        width: 30px;
+        height: auto;
+        position: relative;
+        z-index: 8;
+      }
+    }
+  }
+  p {
+    font-size: 28px;
+  }
+}
+
+//* ===================================================
+//* =================== LAYOUT ========================
+//* ===================================================
+//~ CTA
 .rts-cts-area {
   margin-top: 14rem;
   margin-bottom: 14rem;
 }
 
-//* FOOTER
+//~ FOOTER
 footer {
   background: var(--color-primary);
   color: white;
