@@ -212,7 +212,11 @@ export class Footer extends LitElement {
                         ${new Date().getFullYear()}
                       </p>
                     </div>
-                    <a class="teequest-link" href="">
+                    <a
+                      class="teequest-link"
+                      target="_blank"
+                      href="https://www.teequestsolutions.com"
+                    >
                       <svg
                         class="svg-inline--fa fa-gears"
                         aria-hidden="true"

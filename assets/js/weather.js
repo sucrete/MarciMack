@@ -26,7 +26,7 @@ async function getWeather() {
       return response.json();
     })
     .then((data) => {
-      console.log(JSON.stringify(data, null, 2));
+      // console.log(JSON.stringify(data, null, 2));
       // code below gets day of the week
       console.log(
         `%c${days[new Date(data.currently.time * 1000).getDay()]}`,

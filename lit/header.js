@@ -39,7 +39,7 @@ export class Header extends LitElement {
                     </li>
 
                     <li>
-                      <a class="nav-link" href="service.html">Membership</a>
+                      <a class="nav-link" href="membership.html">Membership</a>
                     </li>
 
                     <li class="has-dropdown">

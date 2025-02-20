@@ -13452,6 +13452,15 @@ li.has-dropdown:hover .submenu li a {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.banner-subpage .banner-four-wrapper {
+  justify-content: center;
+}
+.banner-subpage .banner-four-wrapper .title {
+  text-align: center;
+  font-size: 70px;
+  margin-bottom: 0;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.455);
+}
 .banner-subpage .overlay {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.29) 0%, hsla(0, 0%, 0%, 0.288) 8.1%, hsla(0, 0%, 0%, 0.283) 15.5%, hsla(0, 0%, 0%, 0.274) 22.5%, hsla(0, 0%, 0%, 0.264) 29%, hsla(0, 0%, 0%, 0.251) 35.3%, hsla(0, 0%, 0%, 0.237) 41.2%, hsla(0, 0%, 0%, 0.222) 47.1%, hsla(0, 0%, 0%, 0.208) 52.9%, hsla(0, 0%, 0%, 0.193) 58.8%, hsla(0, 0%, 0%, 0.179) 64.7%, hsla(0, 0%, 0%, 0.166) 71%, hsla(0, 0%, 0%, 0.156) 77.5%, hsla(0, 0%, 0%, 0.147) 84.5%, hsla(0, 0%, 0%, 0.142) 91.9%, hsla(0, 0%, 0%, 0.14) 100%);
 }
@@ -13468,7 +13477,7 @@ li.has-dropdown:hover .submenu li a {
   background-image: url(../images/golf/marimack-bunch-of-carts.jpg);
 }
 .banner-subpage.events-banner .overlay {
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
+  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.3) 0%, hsla(0, 0%, 0%, 0.251) 5.5%, hsla(0, 0%, 0%, 0.208) 10%, hsla(0, 0%, 0%, 0.17) 13.9%, hsla(0, 0%, 0%, 0.136) 17.3%, hsla(0, 0%, 0%, 0.108) 20.6%, hsla(0, 0%, 0%, 0.083) 24%, hsla(0, 0%, 0%, 0.062) 27.7%, hsla(0, 0%, 0%, 0.045) 32%, hsla(0, 0%, 0%, 0.031) 37.2%, hsla(0, 0%, 0%, 0.02) 43.4%, hsla(0, 0%, 0%, 0.012) 51%, hsla(0, 0%, 0%, 0.006) 60.2%, hsla(0, 0%, 0%, 0.003) 71.3%, hsla(0, 0%, 0%, 0.001) 84.5%, hsla(0, 0%, 0%, 0) 100%);
 }
 .banner-subpage.online-store-banner {
   background-image: url(../images/golf/golfer-in-trap.jpg);
@@ -13476,19 +13485,28 @@ li.has-dropdown:hover .submenu li a {
 .banner-subpage.online-store-banner .overlay {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
 }
+.banner-subpage.host-your-event-banner {
+  background-image: url(../images/golf/people-cheersing.jpg);
+}
+.banner-subpage.host-your-event-banner .overlay {
+  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
+}
+.banner-subpage.host-your-event-banner .title {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
+}
+.banner-subpage.membership-banner {
+  background-image: url(../images/golf/young-man-in-trap.jpg);
+}
+.banner-subpage.membership-banner .overlay {
+  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
+}
+.banner-subpage.membership-banner .title {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
+}
 @media only screen and (max-width: 767px) {
   .banner-subpage {
     height: 550px !important;
   }
-}
-.banner-subpage .banner-four-wrapper {
-  justify-content: center;
-}
-.banner-subpage .banner-four-wrapper .title {
-  text-align: center;
-  font-size: 70px;
-  margin-bottom: 0;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.455);
 }
 .banner-subpage-subpage {
   background-image: none;
@@ -16416,13 +16434,15 @@ li.has-dropdown:hover .submenu li a {
 }
 .cta-one-wrapper .left-area {
   max-width: 700px;
-  padding: 85px 0px 90px 96px;
+  padding: 103px 0px 118px 106px;
 }
 .cta-one-wrapper .left-area .title {
   font-size: 48px;
   font-weight: 400;
   line-height: 1.4;
+  left: -4px;
   margin-bottom: 0px;
+  position: relative;
 }
 @media only screen and (max-width: 575px) {
   .cta-one-wrapper .left-area .title {
@@ -16430,7 +16450,9 @@ li.has-dropdown:hover .submenu li a {
   }
 }
 .cta-one-wrapper .left-area p {
+  position: relative;
   font-size: 20px;
+  left: -2px;
 }
 @media only screen and (max-width: 575px) {
   .cta-one-wrapper .left-area p {
@@ -17518,11 +17540,18 @@ li.has-dropdown:hover .submenu li a {
   stroke: #fff;
 }
 
+.rts-btn.btn-primary.cta-button {
+  color: white;
+}
+.rts-btn.btn-primary.cta-button:hover {
+  color: var(--color-primary);
+}
 .rts-btn.btn-primary svg {
   max-width: 24px;
 }
 .rts-btn.btn-primary svg path {
   stroke: #fff;
+  transition: stroke 0.3s ease;
 }
 .rts-btn.btn-primary:hover svg path {
   stroke: var(--color-offset) !important;
@@ -20343,6 +20372,15 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   stroke: green !important;
 }
 
+.custom-tooltip {
+  --bs-tooltip-max-width: 500px;
+}
+.custom-tooltip .tooltip-inner {
+  padding-left: 7px;
+  padding-right: 7px;
+  font-size: 1.5rem;
+}
+
 .MM-logo {
   width: 140px;
   height: auto;
@@ -20631,35 +20669,35 @@ header.header-area-four.header--sticky:not(.sticky).subpage .container .row .hea
   flex-grow: 1;
 }
 
-section.clubhouse-rental {
+.rental-section {
   background-color: #f4f4f4;
   padding-top: 14rem;
   padding-bottom: 14rem;
 }
-section.clubhouse-rental .container {
+.rental-section .container {
   height: 100%;
 }
-section.clubhouse-rental .container .row {
+.rental-section .container .row {
   gap: 9rem;
   height: 100%;
 }
-section.clubhouse-rental .container .row [class*=col] h2 {
+.rental-section .container .row [class*=col] h2 {
   margin-bottom: 2.5rem;
 }
-section.clubhouse-rental .container .row [class*=col] .highlighted {
+.rental-section .container .row [class*=col] .highlighted {
   color: var(--body-text);
   background: lightyellow;
 }
-section.clubhouse-rental .container .row [class*=col] p {
+.rental-section .container .row [class*=col] p {
   font-size: 18px;
   margin-bottom: 20px;
 }
-section.clubhouse-rental .container .row [class*=col] .tag-wrapper {
+.rental-section .container .row [class*=col] .tag-wrapper {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-section.clubhouse-rental .container .row [class*=col] .tag-wrapper .single-tag {
+.rental-section .container .row [class*=col] .tag-wrapper .single-tag {
   display: block;
   padding: 8px 19px 10px 18px;
   color: white;
@@ -20668,14 +20706,12 @@ section.clubhouse-rental .container .row [class*=col] .tag-wrapper .single-tag {
   transition: all 0.3s ease;
   cursor: pointer;
 }
-section.clubhouse-rental .container .row [class*=col] .tag-wrapper .single-tag:hover {
+.rental-section .container .row [class*=col] .tag-wrapper .single-tag:hover {
   color: rgba(255, 255, 255, 0.825);
   transform: translateY(-2px);
 }
-section.clubhouse-rental .container .row [class*=col] a .single-solution-style-one {
+.rental-section .container .row [class*=col] a .single-solution-style-one {
   border: none;
-  border-top: 3px solid rgb(227, 227, 227);
-  border: 1px solid rgba(0, 0, 0, 0.109);
   box-shadow: 0 3px 3px -1px rgba(0, 0, 0, 0.072);
   box-shadow: transparent 0px 64px 64px -32px, transparent 0px 32px 32px -16px, transparent 0px 16px 16px -8px, rgba(0, 61, 61, 0.0392156863) 0px 12px 12px -6px, rgba(0, 61, 61, 0.0392156863) 0px 6px 6px -3px, rgba(0, 61, 61, 0.0392156863) 0px 3px 3px -1.5px, rgba(0, 31, 31, 0.0784313725) 0px 1px 1px -0.5px, rgba(0, 61, 61, 0.0392156863) 0px 0px 0px 1px;
   background: white;
@@ -20683,25 +20719,25 @@ section.clubhouse-rental .container .row [class*=col] a .single-solution-style-o
   overflow: hidden;
   border-radius: 10px;
 }
-section.clubhouse-rental .container .row [class*=col] a .single-solution-style-one .bottom {
+.rental-section .container .row [class*=col] a .single-solution-style-one .bottom {
   padding: 10px 32px 32px 32px;
   transition: all 0.25s ease;
 }
-section.clubhouse-rental .container .row [class*=col] a .single-solution-style-one .bottom .icon {
+.rental-section .container .row [class*=col] a .single-solution-style-one .bottom .icon {
   position: relative;
   display: none;
   width: fit-content;
   margin-top: -20px;
   z-index: 7;
 }
-section.clubhouse-rental .container .row [class*=col] a .single-solution-style-one .bottom .icon svg {
+.rental-section .container .row [class*=col] a .single-solution-style-one .bottom .icon svg {
   width: 35px;
   height: auto;
 }
-section.clubhouse-rental .container .row [class*=col] a .single-solution-style-one .bottom .icon svg path {
+.rental-section .container .row [class*=col] a .single-solution-style-one .bottom .icon svg path {
   fill: #ffffff;
 }
-section.clubhouse-rental .container .row [class*=col] a .single-solution-style-one .bottom .icon:after {
+.rental-section .container .row [class*=col] a .single-solution-style-one .bottom .icon:after {
   transition: 0.3s all ease;
   position: absolute;
   content: "";
@@ -20715,47 +20751,51 @@ section.clubhouse-rental .container .row [class*=col] a .single-solution-style-o
   background: var(--color-accent);
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.191);
 }
-section.clubhouse-rental .container .row [class*=col] a .single-solution-style-one .bottom h4 {
+.rental-section .container .row [class*=col] a .single-solution-style-one .bottom h4 {
   color: var(--color-primary);
   font-family: var(--font-primary);
   margin-top: 1.75rem;
   margin-bottom: 1rem;
   transition: all 0.3s ease;
 }
-section.clubhouse-rental .container .row [class*=col] a .single-solution-style-one .bottom .card-subheading {
+.rental-section .container .row [class*=col] a .single-solution-style-one .bottom .card-subheading {
   transition: 0.2s all ease;
 }
-section.clubhouse-rental .container .row [class*=col] a .single-solution-style-one .bottom .card-subheading .arrow {
+.rental-section .container .row [class*=col] a .single-solution-style-one .bottom .card-subheading .arrow {
   margin-top: -3px;
 }
-section.clubhouse-rental .container .row [class*=col] a .single-solution-style-one .bottom .card-subheading .arrow path {
+.rental-section .container .row [class*=col] a .single-solution-style-one .bottom .card-subheading .arrow path {
   transition: 0.25s all ease;
   stroke: rgba(0, 0, 0, 0.247);
 }
-section.clubhouse-rental .container .row [class*=col] a .single-solution-style-one:hover {
+.rental-section .container .row [class*=col] a .single-solution-style-one:hover {
   background: var(--color-offset);
   transform: translateY(-5px);
   box-shadow: 0px 9px 22px -5px rgba(24, 16, 16, 0.3019607843);
   box-shadow: rgba(0, 61, 61, 0.0392156863) 0px 64px 64px -32px, rgba(0, 61, 61, 0.0392156863) 0px 32px 32px -16px, rgba(0, 61, 61, 0.0392156863) 0px 16px 16px -8px, rgba(0, 61, 61, 0.0392156863) 0px 12px 12px -6px, rgba(0, 61, 61, 0.0392156863) 0px 6px 6px -3px, rgba(0, 61, 61, 0.0392156863) 0px 3px 3px -1.5px, rgba(0, 31, 31, 0.0784313725) 0px 1px 1px -0.5px, rgba(0, 61, 61, 0.0392156863) 0px 0px 0px 1px;
 }
-section.clubhouse-rental .container .row [class*=col] a .single-solution-style-one:hover .bottom h4 {
+.rental-section .container .row [class*=col] a .single-solution-style-one:hover .bottom h4 {
   color: white;
 }
-section.clubhouse-rental .container .row [class*=col] a .single-solution-style-one:hover .bottom .card-subheading {
+.rental-section .container .row [class*=col] a .single-solution-style-one:hover .bottom .card-subheading {
   color: white;
 }
-section.clubhouse-rental .container .row [class*=col] a .single-solution-style-one:hover .bottom .card-subheading .arrow {
+.rental-section .container .row [class*=col] a .single-solution-style-one:hover .bottom .card-subheading .arrow {
   margin-top: -3px;
 }
-section.clubhouse-rental .container .row [class*=col] a .single-solution-style-one:hover .bottom .card-subheading .arrow path {
+.rental-section .container .row [class*=col] a .single-solution-style-one:hover .bottom .card-subheading .arrow path {
   stroke: rgba(255, 255, 255, 0.247);
 }
-section.clubhouse-rental .container .row .left-column {
+.rental-section .container .row .left-column {
   height: 100%;
   display: flex;
   flex-direction: column;
   margin-top: auto;
   margin-bottom: auto;
+}
+.rental-section-host-your-event .container .row [class*=col] h2 {
+  position: relative;
+  left: -5px;
 }
 
 .scorecard-page-body {
@@ -20806,6 +20846,73 @@ section.clubhouse-rental .container .row .left-column {
   font-size: 28px;
 }
 
+.calendar-section .title-bar {
+  padding-top: 10rem;
+  padding-bottom: 3rem;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #d4d4d4;
+}
+.calendar-section .title-bar h2 {
+  display: inline-block;
+  width: fit-content;
+}
+.calendar-section .title-bar .single-tag {
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
+  padding: 8px 19px 10px 18px;
+  color: white;
+  background: var(--color-offset);
+  border-radius: 22px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.calendar-section .title-bar .single-tag:hover {
+  color: rgba(255, 255, 255, 0.825);
+  transform: translateY(-2px);
+}
+
+.membership-page-body .container .row .col ul.membership-nav {
+  display: inline-flex;
+  flex-direction: row;
+  margin: 0 auto;
+  position: relative;
+  background: white;
+  border-radius: 999px;
+  padding: 2rem;
+}
+.membership-page-body .container .row .col ul.membership-nav .highlight {
+  position: absolute;
+  display: block;
+  z-index: 5;
+  background: var(--color-offset);
+  border-radius: 999px;
+  height: 30px;
+  transition: all 0.25s ease;
+}
+.membership-page-body .container .row .col ul.membership-nav .nav-item {
+  position: relative;
+}
+.membership-page-body .container .row .col ul.membership-nav .nav-item .nav-link {
+  position: relative;
+  z-index: 7;
+}
+.membership-page-body .container .row .col ul.membership-nav .nav-item .nav-link.active {
+  color: white;
+}
+.membership-page-body .container .row .col .tab-content table .explainer-icon {
+  width: 14px;
+  height: auto;
+  margin-left: 5px;
+  margin-top: 1px;
+  cursor: pointer;
+}
+.membership-page-body .container .row .col .tab-content table tbody tr th {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 .rts-cts-area {
   margin-top: 14rem;
   margin-bottom: 14rem;

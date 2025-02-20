@@ -543,11 +543,18 @@
 }
 
 .rts-btn.btn-primary {
+  &.cta-button {
+    color:white;
+    &:hover {
+color: var(--color-primary)
+    }
+  }
   svg {
     max-width: 24px;
 
     path {
       stroke: #fff;
+      transition: stroke .3s ease;
     }
   }
 

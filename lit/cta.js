@@ -33,7 +33,7 @@ export class CTA extends LitElement {
                   </p>
                   <a
                     href="contact.html"
-                    class="rts-btn btn-primary wow fadeInUp"
+                    class="rts-btn btn-primary wow fadeInUp cta-button"
                     data-wow-delay=".3s"
                   >
                     Book tee time

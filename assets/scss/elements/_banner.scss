@@ -459,6 +459,26 @@
   }
 }
 
+$to-transparent-bg-gradient: linear-gradient(
+  to bottom,
+  hsla(0, 0%, 0%, 0.3) 0%,
+  hsla(0, 0%, 0%, 0.251) 5.5%,
+  hsla(0, 0%, 0%, 0.208) 10%,
+  hsla(0, 0%, 0%, 0.17) 13.9%,
+  hsla(0, 0%, 0%, 0.136) 17.3%,
+  hsla(0, 0%, 0%, 0.108) 20.6%,
+  hsla(0, 0%, 0%, 0.083) 24%,
+  hsla(0, 0%, 0%, 0.062) 27.7%,
+  hsla(0, 0%, 0%, 0.045) 32%,
+  hsla(0, 0%, 0%, 0.031) 37.2%,
+  hsla(0, 0%, 0%, 0.02) 43.4%,
+  hsla(0, 0%, 0%, 0.012) 51%,
+  hsla(0, 0%, 0%, 0.006) 60.2%,
+  hsla(0, 0%, 0%, 0.003) 71.3%,
+  hsla(0, 0%, 0%, 0.001) 84.5%,
+  hsla(0, 0%, 0%, 0) 100%
+);
+
 $dark-background-gradient: linear-gradient(
   to bottom,
   hsla(0, 0%, 0%, 0.4) 0%,
@@ -502,6 +522,15 @@ $subpage-height: 550px;
   height: $subpage-height !important;
   background-repeat: no-repeat;
   background-size: cover;
+  .banner-four-wrapper {
+    justify-content: center;
+    .title {
+      text-align: center;
+      font-size: 70px;
+      margin-bottom: 0;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.455);
+    }
+  }
   .overlay {
     background-image: linear-gradient(
       to bottom,
@@ -536,8 +565,9 @@ $subpage-height: 550px;
   &.events-banner {
     background-image: url(../images/golf/marimack-bunch-of-carts.jpg);
     .overlay {
-      background-image: $darker-background-gradient;
+      background-image: $to-transparent-bg-gradient;
     }
+   
   }
   &.online-store-banner {
     background-image: url(../images/golf/golfer-in-trap.jpg);
@@ -545,19 +575,29 @@ $subpage-height: 550px;
       background-image: $darker-background-gradient;
     }
   }
+  &.host-your-event-banner {
+    background-image: url(../images/golf/people-cheersing.jpg);
+    .overlay {
+      background-image: $darker-background-gradient;
+    }
+    .title {
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
+    }
+  }
+  &.membership-banner {
+    background-image: url(../images/golf/young-man-in-trap.jpg);
+    .overlay {
+      background-image: $darker-background-gradient;
+    }
+    .title {
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
+    }
+  }
 
   @media #{$sm-layout} {
     height: $subpage-height !important;
   }
-  .banner-four-wrapper {
-    justify-content: center;
-    .title {
-      text-align: center;
-      font-size: 70px;
-      margin-bottom: 0;
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.455);
-    }
-  }
+ 
   &-subpage {
     background-image: none;
     background: #f4f4f4;
