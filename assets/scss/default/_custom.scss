@@ -658,26 +658,38 @@ header {
           position: relative;
           background: white;
           border-radius: 999px;
-          padding: 2rem;
+          padding: 5px;
           .highlight {
             position: absolute;
-            // left: 0px;
-            // top: 0px;
-            display: block;
+            left: 5px;
+            top: 50%;
+            transform: translateY(-50%);
             z-index: 5;
             background: var(--color-offset);
             border-radius: 999px;
-            height: 30px;
-            // width: 70px;
-            transition: all 0.25s ease;
+            min-height: 20px;
+            width: 70px;
+            transition: all 0.3s ease;
           }
           .nav-item {
             position: relative;
+            margin-top: 0rem;
+            margin-bottom: 0rem;
             .nav-link {
               position: relative;
+              color: var(--body-text);
               z-index: 7;
+              padding: 10px 17px 11px 17px;
+              transition: 0.25s opacity ease;
+              
+              &:hover {
+                opacity: 0.7;
+              }
               &.active {
                 color: white;
+                &:hover {
+                  opacity: 1;
+                }
               }
             }
           }
