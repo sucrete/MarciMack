@@ -53,6 +53,9 @@
     <!-- header Lit component -->
     <script type="module" src="./lit/header.js"></script>
 
+    <!-- CTA Lit component -->
+    <script type="module" src="./lit/cta.js"></script>
+
     <!-- footer Lit component -->
     <script type="module" src="./lit/footer.js"></script>
   </head>
@@ -91,50 +94,61 @@
 
     <section class="rates-page-body">
       <div class="container">
-        <div class="notices">
-          <div class="row">
-            <div class="col-12 col-lg-3">
-              <div class="notice-icon">
-                <img src="assets/images/icons/home.svg" alt="" />
+        <div
+          class="notices-wrapper wow fadeInUp"
+          data-wow-offset="120"
+          data-wow-delay=".8s"
+        >
+          <div class="notices">
+            <div class="row">
+              <div class="col-12 col-lg-3">
+                <div class="notice-icon">
+                  <img src="assets/images/icons/home.svg" alt="" />
+                </div>
+                <p>
+                  Seniors, veterans, and Porter Communities residents always
+                  receive $2 discount on greens fees 7 days a week.
+                </p>
               </div>
-              <p>
-                Seniors, veterans, and Porter Communities residents always
-                receive $2 discount on greens fees 7 days a week.
-              </p>
-            </div>
-            <div class="col-12 col-lg-3">
-              <div class="notice-icon">
-                <img src="assets/images/icons/kid.svg" alt="" />
+              <div class="col-12 col-lg-3">
+                <div class="notice-icon">
+                  <img src="assets/images/icons/kid.svg" alt="" />
+                </div>
+                <p>
+                  Juniors under 10 play free with paid adult greens fee 7-days a
+                  week!
+                </p>
               </div>
-              <p>
-                Juniors under 10 play free with paid adult greens fee 7-days a
-                week!
-              </p>
-            </div>
-            <div class="col-12 col-lg-3">
-              <div class="notice-icon">
-                <img src="assets/images/icons/cart-1.svg" alt="" />
+              <div class="col-12 col-lg-3">
+                <div class="notice-icon">
+                  <img src="assets/images/icons/cart-1.svg" alt="" />
+                </div>
+                <p>Cart rentals are always seperate and a per rider fee.</p>
               </div>
-              <p>Cart rentals are always seperate and a per rider fee.</p>
-            </div>
-            <div class="col-12 col-lg-3">
-              <div class="notice-icon">
-                <img src="assets/images/icons/tax.svg" alt="" />
+              <div class="col-12 col-lg-3">
+                <div class="notice-icon">
+                  <img src="assets/images/icons/tax.svg" alt="" />
+                </div>
+                <p>All fees subject to sales tax.</p>
               </div>
-              <p>All fees subject to sales tax.</p>
             </div>
           </div>
         </div>
+
         <div class="row">
           <!-- weekday fees table -->
-          <div class="table-wrapper-basic-fees">
+          <div
+            class="table-wrapper-basic-fees wow fadeInUp"
+            data-wow-offset="120"
+            data-wow-delay=".9s"
+          >
             <hr />
             <div class="row table-preface justify-content-between">
               <div class="col-12 col-md-5">
                 <h3>Weekday Greens Fees</h3>
                 <p>
-                  Ages 10 - 17 receive FREE greens fee with paid adult greens fee
-                  Monday - Friday.
+                  Ages 10 - 17 receive FREE greens fee with paid adult greens
+                  fee Monday - Friday.
                 </p>
               </div>
               <div class="col-12 col-md-4"></div>
@@ -167,7 +181,11 @@
           </div>
 
           <!-- weekend fees table -->
-          <div class="table-wrapper-basic-fees">
+          <div
+            class="table-wrapper-basic-fees wow fadeInUp"
+            data-wow-offset="120"
+            data-wow-delay=".1s"
+          >
             <hr />
             <div class="row table-preface">
               <div class="col-12 col-md-6">
@@ -224,7 +242,11 @@
           </div>
 
           <!-- busy weekend / holiday solo rider fee table -->
-          <div class="table-wrapper-busy">
+          <div
+            class="table-wrapper-busy wow fadeInUp"
+            data-wow-offset="120"
+            data-wow-delay=".1s"
+          >
             <hr />
             <div class="row table-preface busy">
               <div class="col-12 col-md-6">
@@ -261,7 +283,11 @@
           </div>
 
           <!-- range table -->
-          <div class="table-wrapper-range">
+          <div
+            class="table-wrapper-range wow fadeInUp"
+            data-wow-offset="120"
+            data-wow-delay=".1s"
+          >
             <hr />
             <div class="row table-preface range justify-content-between">
               <div class="col-12 col-md-5">
@@ -287,9 +313,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-5">
-                
-              </div>
+              <div class="col-12 col-md-5"></div>
             </div>
             <table class="">
               <thead>
@@ -337,7 +361,11 @@
           </div>
 
           <!-- punch cards table -->
-          <div class="table-wrapper-punch-cards">
+          <div
+            class="table-wrapper-punch-cards wow fadeInUp"
+            data-wow-offset="120"
+            data-wow-delay=".1s"
+          >
             <hr />
             <div class="row table-preface">
               <div class="col-12 col-md-6">
@@ -375,6 +403,9 @@
         </div>
       </div>
     </section>
+
+    <my-cta></my-cta>
+
     <footer>
       <my-footer></my-footer>
     </footer>

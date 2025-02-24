@@ -14,14 +14,14 @@ export class CTA extends LitElement {
               <div class="cta-one-wrapper">
 
                 <!-- decorative squares start -->
-                <div class="shape-area">
+                <!-- <div class="shape-area">
                   <img
                     loading="lazy"
                     rel="preload"
                     src="assets/images/cta/01.svg"
                     alt="cta-area"
                   />
-                </div>
+                </div> -->
                 <!-- decorative squares end -->
 
                 <div class="left-area">
