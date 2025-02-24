@@ -15,7 +15,7 @@ export class Header extends LitElement {
                 <nav>
                   <ul>
                     <li>
-                      <a class="nav-link" href="#"> Rates </a>
+                      <a class="nav-link" href="rates.html"> Greens Fees </a>
                     </li>
                     <li class="has-dropdown">
                       <a class="nav-link with-chevron" href="#"
