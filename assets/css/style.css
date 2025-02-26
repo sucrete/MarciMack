@@ -12644,7 +12644,7 @@ li.has-dropdown .submenu li a {
   padding: 9px 16px !important;
   font-weight: 400;
   font-size: 16px;
-  transition: opacity 0.1s ease-out, gap 0.15s ease;
+  transition: opacity 0.1s ease-out;
   transition-delay: 0s;
   border-radius: 0;
   display: block;
@@ -12655,12 +12655,14 @@ li.has-dropdown .submenu li a {
 }
 li.has-dropdown .submenu li a i {
   font-size: 11px;
-  transition: 0.3s;
+  transition: all 0.15s ease-out;
 }
 li.has-dropdown .submenu li a:hover {
   background: transparent;
   color: var(--color-primary);
-  gap: 15px;
+}
+li.has-dropdown .submenu li a:hover i {
+  padding-right: 5px;
 }
 li.has-dropdown:hover .submenu {
   opacity: 1;
@@ -13510,6 +13512,15 @@ li.has-dropdown:hover .submenu li a {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
 }
 .banner-subpage.rates-banner .title {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
+}
+.banner-subpage.pool-banner {
+  background-image: url(../images/golf/water-surface.jpg);
+}
+.banner-subpage.pool-banner .overlay {
+  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
+}
+.banner-subpage.pool-banner .title {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
 }
 @media only screen and (max-width: 767px) {
@@ -20381,6 +20392,31 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   stroke: green !important;
 }
 
+.notices {
+  border-radius: 10px;
+  transform: translateY(-3rem);
+  margin-bottom: 5rem;
+  background: #ffffff;
+  position: relative;
+  z-index: 69;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.notices .row {
+  height: 100%;
+}
+.notices .row [class*=col] {
+  padding: 40px 45px;
+}
+.notices .row [class*=col]:not(:first-of-type) {
+  border-left: 1.5px solid rgba(0, 0, 0, 0.05);
+}
+.notices .row [class*=col] .notice-icon {
+  padding-bottom: 20px;
+}
+.notices .row [class*=col] .notice-icon img {
+  width: auto;
+  height: 25px;
+}
 a .single-solution-style-one {
   border: none;
   box-shadow: 0 3px 3px -1px rgba(0, 0, 0, 0.072);
@@ -20667,6 +20703,10 @@ table tbody tr td {
 
 .br-10 {
   border-radius: 10px;
+}
+
+.highlighted {
+  background: lightyellow;
 }
 
 .booking-container .row:first-child {
@@ -21105,31 +21145,6 @@ section.perks .container .row [class*=col] .single-solution-style-one:hover {
   background-color: #fafafa;
   position: relative;
 }
-.rates-page-body .notices {
-  border-radius: 10px;
-  transform: translateY(-3rem);
-  margin-bottom: 5rem;
-  background: #ffffff;
-  position: relative;
-  z-index: 69;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-}
-.rates-page-body .notices .row {
-  height: 100%;
-}
-.rates-page-body .notices .row [class*=col] {
-  padding: 40px 45px;
-}
-.rates-page-body .notices .row [class*=col]:not(:first-of-type) {
-  border-left: 1.5px solid rgba(0, 0, 0, 0.05);
-}
-.rates-page-body .notices .row [class*=col] .notice-icon {
-  padding-bottom: 20px;
-}
-.rates-page-body .notices .row [class*=col] .notice-icon img {
-  width: auto;
-  height: 25px;
-}
 .rates-page-body [class*=table-wrapper] {
   padding-bottom: 5rem;
 }
@@ -21222,6 +21237,173 @@ section.perks .container .row [class*=col] .single-solution-style-one:hover {
 }
 .rates-page-body .table-wrapper-busy .table-preface {
   margin-bottom: -1.75rem;
+}
+
+.pool-page-body {
+  padding-top: 14rem;
+  padding-bottom: 16rem;
+  background-color: #f4f4f4;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+.pool-page-body .container {
+  position: relative;
+  z-index: 8;
+}
+.pool-page-body h2 {
+  text-align: center;
+  color: #d3d3d3;
+  padding-bottom: 5rem;
+  font-size: 70px;
+}
+.pool-page-body .pool-note {
+  font-size: 19px;
+  padding-bottom: 3rem;
+  padding-left: 3px;
+  padding-right: 3px;
+  line-height: 150%;
+}
+.pool-page-body .fees-table {
+  background: white;
+  border-radius: 10px;
+  padding: 25px 30px;
+  font-size: 17px;
+  height: 100%;
+}
+.pool-page-body .fees-table .fees-title {
+  color: rgb(140, 140, 140);
+  padding-bottom: 15px;
+  font-size: 19px;
+}
+.pool-page-body .fees-table .fees-side {
+  flex-grow: 1;
+}
+.pool-page-body .fees-table .fees-side .fee-row {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10px;
+  width: 100%;
+}
+.pool-page-body .fees-table .fees-side .fee-row ._1st-col img {
+  position: relative;
+  width: 13px;
+  height: auto;
+  top: -1.5px;
+}
+.pool-page-body .fees-table .fees-side .fee-row .spanner {
+  position: relative;
+  top: -7px;
+  flex: 1;
+  border-bottom: 1.5px dotted rgba(0, 0, 0, 0.184);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.pool-page-body .fees-table.initiation-fees {
+  padding: 0px;
+}
+.pool-page-body .fees-table.initiation-fees .fees-title {
+  padding-bottom: 15px;
+  font-size: 21px;
+}
+.pool-page-body .fees-table.initiation-fees .fees-side .fee-row {
+  padding-bottom: 5px;
+}
+.pool-page-body .fees-table.initiation-fees hr {
+  height: 1.5px;
+  background-color: rgba(0, 0, 0, 0.123);
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.pool-page-body .fees-table.initiation-fees .first-bit {
+  padding: 33px 30px 27px 30px;
+}
+.pool-page-body .fees-table.initiation-fees .second-bit {
+  padding: 23px 30px 25px 30px;
+  border-top: 1.5px solid #f6f6f6;
+}
+.pool-page-body .fees-table.initiation-fees .third-bit {
+  padding: 25px 30px 35px 30px;
+  border-top: 1.5px solid #f6f6f6;
+}
+.pool-page-body .fees-table.pool-membership-fees {
+  padding: 35px 40px 30px 40px;
+  background: white;
+}
+.pool-page-body .fees-table.pool-membership-fees .fees-title {
+  padding-bottom: 0px;
+  padding-top: 5px;
+}
+.pool-page-body .notices {
+  box-shadow: none;
+  transform: none;
+}
+.pool-page-body .notices .row [class*=col]:not(:first-of-type) {
+  border-left: 1.5px solid #f6f6f6;
+}
+.pool-page-body .notices .row [class*=col] .notice-icon.golf-bag img {
+  height: 30px;
+}
+.pool-page-body .table-wrapper-pool {
+  margin-bottom: 1.5rem;
+}
+
+.pool-rules {
+  padding-top: 16rem;
+  padding-bottom: 5rem;
+}
+.pool-rules .container .row .rules-introduction {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+}
+.pool-rules .container .row .rules-introduction h2 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.pool-rules .container .row .rules-introduction h6 {
+  font-size: 20px;
+}
+.pool-rules .container .row .rules-introduction h6:not(:first-of-type) {
+  margin-top: 3rem;
+}
+.pool-rules .container .row .rules-introduction p {
+  margin-bottom: 20px;
+}
+.pool-rules .container .row [class*=col] .accordion-container-one {
+  width: 100%;
+  max-width: 900px;
+}
+.pool-rules .container .row [class*=col] .accordion-container-one .accordion .accordion-item {
+  border-radius: 10px;
+  overflow: hidden;
+  border: none;
+  border-top: none !important;
+}
+.pool-rules .container .row [class*=col] .accordion-container-one .accordion .accordion-item h3 {
+  font-family: var(--font-primary);
+  font-size: 19px;
+}
+.pool-rules .container .row [class*=col] .accordion-container-one .accordion .accordion-item h3 .accordion-button[aria-expanded=true]:after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.pool-rules .container .row [class*=col] .accordion-container-one .accordion .accordion-item .accordion-collapse .accordion-body {
+  padding-top: 0px;
+  padding-bottom: 3rem;
+}
+.pool-rules .container .row [class*=col] .accordion-container-one .accordion .accordion-item .accordion-collapse .accordion-body > ol {
+  margin-top: 0px;
+}
+.pool-rules .container .row [class*=col] .accordion-container-one .accordion .accordion-item .accordion-collapse .accordion-body > ol.exception {
+  margin-top: 16px;
+}
+.pool-rules .container .row [class*=col] .accordion-container-one .accordion .accordion-item .accordion-collapse .accordion-body > ol > li:first-of-type {
+  margin-top: 0px;
+}
+.pool-rules .container .row [class*=col] .accordion-container-one .accordion .accordion-item .accordion-collapse .accordion-body .sublist {
+  list-style-type: lower-alpha;
+  margin-bottom: 16px;
 }
 
 .rts-cts-area {

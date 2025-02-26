@@ -32,7 +32,7 @@ li.has-dropdown {
         padding: 9px 16px !important;
         font-weight: 400;
         font-size: 16px;
-        transition: opacity 0.1s ease-out, gap .15s ease;
+        transition: opacity 0.1s ease-out;
         transition-delay: 0s;
         border-radius: 0;
         display: block;
@@ -42,13 +42,15 @@ li.has-dropdown {
         opacity: 0;
         i {
           font-size: 11px;
-          transition: 0.3s;
+          transition: all 0.15s ease-out;
         }
 
         &:hover {
           background: transparent;
           color: var(--color-primary);
-          gap: 15px;
+          i {
+            padding-right: 5px
+          }
         }
       }
     }

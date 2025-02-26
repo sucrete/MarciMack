@@ -32,6 +32,38 @@
   }
 }
 
+.notices {
+  // border: 1.5px solid rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  transform: translateY(-3rem);
+  margin-bottom: 5rem;
+  background: #ffffff;
+  position: relative;
+  z-index: 69;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  .row {
+    height: 100%;
+    [class*="col"] {
+      padding: 40px 45px;
+
+      &:not(:first-of-type) {
+        border-left: 1.5px solid rgba(0, 0, 0, 0.05);
+      }
+
+      .notice-icon {
+        padding-bottom: 20px;
+        img {
+          width: auto;
+          height: 25px;
+        }
+      }
+      p {
+      }
+    }
+  }
+}
+
 //* pdf card
 a {
   .single-solution-style-one {
@@ -400,6 +432,10 @@ table {
   border-radius: 10px;
 }
 
+.highlighted {
+  background: lightyellow;
+}
+
 //* ===================================================
 //* ================== SUBPAGES =======================
 //* ===================================================
@@ -714,6 +750,7 @@ table {
     }
   }
 }
+
 //~ Membership
 section.perks {
   padding-top: 16rem;
@@ -898,37 +935,7 @@ section.perks {
   padding-bottom: 16rem;
   background-color: #fafafa;
   position: relative;
-  .notices {
-    // border: 1.5px solid rgba(0, 0, 0, 0.05);
-    border-radius: 10px;
-    transform: translateY(-3rem);
-    margin-bottom: 5rem;
-    background: #ffffff;
-    position: relative;
-    z-index: 69;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-    .row {
-      height: 100%;
-      [class*="col"] {
-        padding: 40px 45px;
 
-        &:not(:first-of-type) {
-          border-left: 1.5px solid rgba(0, 0, 0, 0.05);
-        }
-
-        .notice-icon {
-          padding-bottom: 20px;
-          img {
-            width: auto;
-            height: 25px;
-          }
-        }
-        p {
-        }
-      }
-    }
-  }
   [class*="table-wrapper"] {
     padding-bottom: 5rem;
     hr {
@@ -979,7 +986,6 @@ section.perks {
             flex-grow: 1;
             padding-left: 15px;
             .hours-row {
-              
               display: flex;
               flex-direction: row;
               padding-bottom: 5px;
@@ -1031,6 +1037,208 @@ section.perks {
   .table-wrapper-busy {
     .table-preface {
       margin-bottom: -1.75rem;
+    }
+  }
+}
+
+//~ Pool
+.pool-page-body {
+  padding-top: 14rem;
+  padding-bottom: 16rem;
+  background-color: #f4f4f4;
+  // background-image: url(../images/svgs/waves.svg);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  .container {
+    position: relative;
+    z-index: 8;
+  }
+  //   .masking-overlay {
+  //     position: absolute;
+  //     height: 100%;
+  //     width: 100%;
+  //     top: 0;
+  //     left: 0;
+  // background: radial-gradient(at center, #f4f4f400 30%, #F4F4F4 80%);
+  // // background: radial-gradient(at center, #f50707dc, #F4F4F4);
+  //   }
+  h2 {
+    text-align: center;
+    color: #d3d3d3;
+    padding-bottom: 5rem;
+    font-size: 70px;
+  }
+  .pool-note {
+    font-size: 19px;
+    padding-bottom: 3rem;
+    padding-left: 3px;
+    padding-right: 3px;
+    line-height: 150%;
+  }
+  .fees-table {
+    background: white;
+    border-radius: 10px;
+    padding: 25px 30px;
+    font-size: 17px;
+    height: 100%;
+    .fees-title {
+      color: rgb(140, 140, 140);
+      padding-bottom: 15px;
+      font-size: 19px;
+    }
+    .fees-side {
+      flex-grow: 1;
+      .fee-row {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 10px;
+        width: 100%;
+        ._1st-col {
+          img {
+            position: relative;
+            width: 13px;
+            height: auto;
+            top: -1.5px;
+          }
+        }
+        .spanner {
+          position: relative;
+          top: -7px;
+          flex: 1;
+          border-bottom: 1.5px dotted rgba(0, 0, 0, 0.184);
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+      }
+    }
+    &.initiation-fees {
+      padding: 0px;
+      .fees-title {
+        padding-bottom: 15px;
+        font-size: 21px;
+      }
+      .fees-side {
+        .fee-row {
+          padding-bottom: 5px;
+        }
+      }
+      hr {
+        height: 1.5px;
+        background-color: rgba(0, 0, 0, 0.123);
+        margin-top: 15px;
+        margin-bottom: 20px;
+      }
+
+      .first-bit {
+        padding: 33px 30px 27px 30px;
+      }
+      .second-bit {
+        padding: 23px 30px 25px 30px;
+        border-top: 1.5px solid #f6f6f6;
+      }
+      .third-bit {
+        padding: 25px 30px 35px 30px;
+        border-top: 1.5px solid #f6f6f6;
+      }
+    }
+    &.pool-membership-fees {
+      padding: 35px 40px 30px 40px;
+      background: white;
+      // border: 1px solid rgb(238, 238, 238);
+      .fees-title {
+        padding-bottom: 0px;
+        padding-top: 5px;
+      }
+    }
+  }
+  .notices {
+    box-shadow: none;
+    transform: none;
+    .row {
+      [class*="col"] {
+        &:not(:first-of-type) {
+          border-left: 1.5px solid #f6f6f6;
+        }
+        .notice-icon.golf-bag {
+          img {
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+  .table-wrapper-pool {
+    margin-bottom: 1.5rem;
+  }
+}
+.pool-rules {
+  padding-top: 16rem;
+  padding-bottom: 5rem;
+  .container {
+    .row {
+      .rules-introduction {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        padding-bottom: 5rem;
+        h2 {
+          text-align: center;
+          padding-bottom: 2rem;
+        }
+        h6 {
+          font-size: 20px;
+          &:not(:first-of-type) {
+            margin-top: 3rem;
+          }
+        }
+        p {
+          margin-bottom: 20px;
+        }
+      }
+
+      [class*="col"] {
+        .accordion-container-one {
+          width: 100%;
+          max-width: 900px;
+          .accordion {
+            .accordion-item {
+              border-radius: 10px;
+              overflow: hidden;
+              border: none;
+              border-top: none !important;
+              h3 {
+                font-family: var(--font-primary);
+                font-size: 19px;
+                .accordion-button {
+                  &[aria-expanded="true"]:after {
+                    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+                  }
+                }
+              }
+              .accordion-collapse {
+                .accordion-body {
+                  padding-top: 0px;
+                  padding-bottom: 3rem;
+                  & > ol {
+                    margin-top: 0px;
+                    &.exception {
+                      margin-top: 16px;
+                    }
+                    & > li:first-of-type {
+                      margin-top: 0px;
+                    }
+                  }
+                  .sublist {
+                    list-style-type: lower-alpha;
+                    margin-bottom: 16px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

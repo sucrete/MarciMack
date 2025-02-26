@@ -49,13 +49,13 @@ export class Header extends LitElement {
                       </a>
                       <ul class="submenu parent-nav with-border">
                         <li>
-                          <a href="blog-list.html"
+                          <a href="pool.html"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Membership</a
                           >
                         </li>
                         <li>
-                          <a href="blog-grid.html"
+                          <a href="pool.html#rules"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Pool Rules</a
                           >
