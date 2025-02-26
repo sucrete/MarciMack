@@ -1,0 +1,48 @@
+// pulled from tutorial by "Coding with Robby" on YT (https://youtu.be/nAjR0Oj0J8E?si=WZ3L94f1BkI2uMUP)
+// https://github.com/Coding-with-Robby/infinite-logo-carousel/tree/main
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.slider {
+  overflow: hidden;
+  padding: 40px 0;
+  padding-top: 40px;
+  white-space: nowrap;
+  position: relative;
+  padding-top: 30px;
+}
+
+.slider:after {
+  right: 0;
+}
+
+// .slider:hover .slide {
+//   animation-play-state: paused;
+// }
+
+.slide {
+  display: inline-block;
+  animation: 45s slide infinite linear;
+}
+
+.slide img {
+  height: 40px;
+  margin: 0 40px;
+
+}
+
+
+//* the HTML will look like this
+// the three (or more) slides are important
+
+// <div class="slider">
+//   <div class="slide"></div>
+//   <div class="slide"></div>
+//   <div class="slide"></div>
+// </div>

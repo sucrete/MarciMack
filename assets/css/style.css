@@ -20359,6 +20359,37 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   }
 }
 
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.slider {
+  overflow: hidden;
+  padding: 40px 0;
+  padding-top: 40px;
+  white-space: nowrap;
+  position: relative;
+  padding-top: 30px;
+}
+
+.slider:after {
+  right: 0;
+}
+
+.slide {
+  display: inline-block;
+  animation: 45s slide infinite linear;
+}
+
+.slide img {
+  height: 40px;
+  margin: 0 40px;
+}
+
 .my-hr {
   background-color: #d1d1d1;
   opacity: 1;
