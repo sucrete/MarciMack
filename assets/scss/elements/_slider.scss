@@ -11,34 +11,33 @@
 
 .slider {
   overflow: hidden;
-  padding: 40px 0;
-  padding-top: 40px;
   white-space: nowrap;
   position: relative;
-  padding-top: 30px;
 }
 
 .slider:after {
   right: 0;
 }
 
-// .slider:hover .slide {
-//   animation-play-state: paused;
-// }
 
 .slide {
   display: inline-block;
   animation: 45s slide infinite linear;
 }
 
-.slide img {
-  height: 40px;
-  margin: 0 40px;
+//~ not necessary but helpful for logo slider
+// .slide img {
+//   height: 40px;
+//   margin: 0 40px;
+// }
 
-}
+//~ if you want slider to pause when hovered over
+// .slider:hover .slide {
+//   animation-play-state: paused;
+// }
 
 
-//* the HTML will look like this
+//~ the HTML will look like this
 // the three (or more) slides are important
 
 // <div class="slider">

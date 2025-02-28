@@ -16454,7 +16454,7 @@ li.has-dropdown:hover .submenu li a {
 }
 .cta-one-wrapper .left-area {
   max-width: 700px;
-  padding: 103px 0px 118px 106px;
+  padding: 109px 0px 118px 106px;
 }
 .cta-one-wrapper .left-area .title {
   font-size: 48px;
@@ -16472,7 +16472,7 @@ li.has-dropdown:hover .submenu li a {
 .cta-one-wrapper .left-area p {
   position: relative;
   font-size: 20px;
-  left: -2px;
+  margin-bottom: 3rem;
 }
 @media only screen and (max-width: 575px) {
   .cta-one-wrapper .left-area p {
@@ -20369,11 +20369,8 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 }
 .slider {
   overflow: hidden;
-  padding: 40px 0;
-  padding-top: 40px;
   white-space: nowrap;
   position: relative;
-  padding-top: 30px;
 }
 
 .slider:after {
@@ -20383,11 +20380,6 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 .slide {
   display: inline-block;
   animation: 45s slide infinite linear;
-}
-
-.slide img {
-  height: 40px;
-  margin: 0 40px;
 }
 
 .my-hr {
@@ -20448,6 +20440,204 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   width: auto;
   height: 25px;
 }
+.slider-wrapper {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  z-index: 5;
+}
+.slider-wrapper .slider .slide .title-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.slider-wrapper .slider .slide .title-wrapper img {
+  width: 50px;
+  height: auto;
+  margin: 0 70px 0 80px;
+}
+.slider-wrapper .slider .slide .title-wrapper h2 {
+  font-size: 110px;
+  letter-spacing: -4px;
+  color: white;
+  margin-bottom: 0px;
+}
+.slider-wrapper .slider .slide .title-wrapper h2 .italicized {
+  font-family: "IKOB Italic";
+}
+
+.banner-four-area .shape {
+  bottom: 9rem;
+  z-index: 3;
+}
+
+section.hours-table {
+  background: #fafafa;
+  padding-bottom: 17rem;
+}
+section.hours-table .container .the-table-itself {
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  border-radius: 10px;
+}
+section.hours-table .container .the-table-itself .hours-table-brow {
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+section.hours-table .container .the-table-itself .hours-table-brow .table-title-wrapper {
+  display: flex;
+  padding: 2rem;
+  padding-right: 0px;
+  align-items: start;
+  margin-right: -15px;
+}
+section.hours-table .container .the-table-itself .hours-table-brow .table-title-wrapper .clock-icon {
+  width: 28px;
+  height: auto;
+  margin-right: 1rem;
+}
+section.hours-table .container .the-table-itself .hours-table-brow .table-title-wrapper h5 {
+  font-size: 30px;
+  margin-bottom: 0px;
+  line-height: 86%;
+}
+section.hours-table .container .the-table-itself .hours-table-brow .sunset-definition {
+  padding: 1.45rem 3rem 3rem 3rem;
+  border-left: 1.5px solid rgba(0, 0, 0, 0.05);
+  line-height: 150%;
+  height: 105px;
+  position: relative;
+  z-index: 9;
+}
+section.hours-table .container .the-table-itself .hours-table-brow .sunset-definition .core {
+  overflow-y: hidden;
+  height: 90px;
+}
+section.hours-table .container .the-table-itself .hours-table-brow .sunset-definition .image-box {
+  padding: 0.1rem;
+  background: #f4f4f4;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 99px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transform-origin: center;
+  bottom: 0px;
+  width: 30px;
+  height: 30px;
+  z-index: 999;
+}
+section.hours-table .container .the-table-itself .hours-table-brow .sunset-definition .image-box:hover {
+  box-shadow: 0 3px 6px -2px rgba(0, 0, 0, 0.166);
+  bottom: 1px;
+}
+section.hours-table .container .the-table-itself .hours-table-brow .sunset-definition .image-box img {
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  transform: rotate(0deg) translate(-50%, -50%);
+  width: 15px;
+  height: auto;
+}
+section.hours-table .container .the-table-itself .hours-table-brow .sunset-definition .gradient {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  background: linear-gradient(to bottom, hsla(0, 0%, 100%, 0) 0%, hsla(0, 0%, 100%, 0.089) 7.7%, hsla(0, 0%, 100%, 0.181) 14.1%, hsla(0, 0%, 100%, 0.273) 19.4%, hsla(0, 0%, 100%, 0.365) 24%, hsla(0, 0%, 100%, 0.455) 28.1%, hsla(0, 0%, 100%, 0.542) 32%, hsla(0, 0%, 100%, 0.625) 35.9%, hsla(0, 0%, 100%, 0.703) 40.2%, hsla(0, 0%, 100%, 0.775) 44.9%, hsla(0, 0%, 100%, 0.839) 50.5%, hsla(0, 0%, 100%, 0.893) 57.2%, hsla(0, 0%, 100%, 0.938) 65.2%, hsla(0, 0%, 100%, 0.972) 74.8%, hsla(0, 0%, 100%, 0.993) 86.4%, hsl(0, 0%, 100%) 100%);
+}
+section.hours-table .container .the-table-itself .hours-table-brow .sunset-definition.open {
+  height: fit-content;
+}
+section.hours-table .container .the-table-itself .hours-table-brow .sunset-definition.open .core {
+  height: fit-content;
+}
+section.hours-table .container .the-table-itself .hours-table-brow .sunset-definition.open .image-box img {
+  transform: rotate(180deg) translate(47%, 60%);
+}
+section.hours-table .container .the-table-itself .hours-table-brow .sunset-definition.open .gradient {
+  display: none;
+}
+section.hours-table .container .the-table-itself .hours-table-brow .definition-wrapper {
+  background: #f5f5f5;
+  border-radius: 5px;
+  padding: 1.45rem 2.25rem 2rem 2rem;
+  border-left: none !important;
+  max-height: 105px;
+}
+section.hours-table .container .the-table-itself .hours-table-brow .definition-wrapper .word {
+  font-family: "IKOB Italic";
+  font-size: 17px;
+  padding-bottom: 2px;
+  color: var(--color-offset);
+}
+section.hours-table .container .the-table-itself .hours-table-brow .definition-wrapper .word .pronunciation {
+  font-family: var(--font-primary);
+  font-size: 15px;
+  color: rgb(97, 97, 97);
+}
+section.hours-table .container .the-table-itself .hours-table-brow .definition-wrapper .definition {
+  line-height: 130%;
+  font-size: 15px;
+}
+section.hours-table .container .the-table-itself .some-tables [class*=col] {
+  padding: 3rem;
+  padding-top: 2.25rem;
+  padding-bottom: 2.75rem;
+}
+section.hours-table .container .the-table-itself .some-tables [class*=col]:not(:first-of-type) {
+  border-left: 1.5px solid rgba(0, 0, 0, 0.05);
+}
+section.hours-table .container .the-table-itself .some-tables [class*=col]:first-of-type {
+  padding-left: 3.5rem;
+}
+section.hours-table .container .the-table-itself .some-tables [class*=col]:last-of-type {
+  padding-right: 4.25rem;
+}
+section.hours-table .container .the-table-itself .some-tables [class*=col] .hours-title {
+  font-size: 24px;
+  margin-bottom: 0.65rem;
+}
+section.hours-table .container .the-table-itself .some-tables [class*=col] .hours-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  line-height: 170%;
+}
+section.hours-table .container .the-table-itself .some-tables [class*=col] .hours-row .gap {
+  position: relative;
+  flex: 1 1 auto;
+  border-bottom: 1.25px dashed rgba(0, 0, 0, 0.136);
+  top: -5px;
+  margin: 0 10px;
+}
+
+.cornered-container {
+  margin-bottom: 2rem;
+}
+
+.cornered-box {
+  color: white;
+  padding: 3rem;
+  max-width: 500px;
+  font-size: 19px;
+  line-height: 150%;
+  position: relative;
+  z-index: 6;
+  --b: 1px; /* thickness of the border */
+  --c: rgb(255, 255, 255); /* color of the border */
+  --w: 20px; /* width of border */
+  border: var(--b) solid rgba(0, 0, 0, 0); /* space for the border */
+  --_g: #0000 90deg, var(--c) 0;
+  --_p: var(--w) var(--w) border-box no-repeat;
+  background: conic-gradient(from 90deg at top var(--b) left var(--b), var(--_g)) 0 0/var(--_p), conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) 100% 0/var(--_p), conic-gradient(from 0deg at bottom var(--b) left var(--b), var(--_g)) 0 100%/var(--_p), conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g)) 100% 100%/var(--_p);
+}
+
 a .single-solution-style-one {
   border: none;
   box-shadow: 0 3px 3px -1px rgba(0, 0, 0, 0.072);
@@ -20626,14 +20816,19 @@ table tbody tr td {
 }
 
 .introduction-section {
-  padding-top: 16rem;
-  padding-bottom: 16rem;
+  padding-top: 18rem;
+  padding-bottom: 18rem;
+  background: #fafafa;
 }
 .introduction-section .introduction-column {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top: 0rem;
+}
+.introduction-section .introduction-column p {
+  font-size: 19px;
+  line-height: 150%;
 }
 .introduction-section .introduction-column .definition-box {
   padding: 40px;
