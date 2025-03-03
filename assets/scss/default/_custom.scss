@@ -40,6 +40,7 @@
   background: #ffffff;
   position: relative;
   z-index: 69;
+  overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   .row {
@@ -58,7 +59,28 @@
           height: 25px;
         }
       }
-      p {
+    }
+  }
+  // notices board on greens fees page
+  &.greens-fees {
+    @media (max-width: 992px) {
+      margin-bottom: 0rem;
+      .row {
+        [class*="col"] {
+          &:nth-of-type(3),
+          &:nth-of-type(4) {
+            border-top: 1.5px solid rgba(0, 0, 0, 0.05);
+          }
+        }
+      }
+    }
+    @media (max-width: 576px) {
+      .row {
+        [class*="col"] {
+          &:nth-of-type(2) {
+            border-top: 1.5px solid rgba(0, 0, 0, 0.05);
+          }
+        }
       }
     }
   }
@@ -68,7 +90,7 @@
 .slider-wrapper {
   position: absolute;
   left: 0;
-  bottom: 10px;
+  bottom: 3rem;
   z-index: 5;
   .slider {
     .slide {
@@ -82,7 +104,7 @@
           margin: 0 70px 0 80px;
         }
         h2 {
-          font-size: 110px;
+          font-size: 70px;
           letter-spacing: -4px;
           color: white;
           margin-bottom: 0px;
@@ -105,7 +127,7 @@
 
 section.hours-table {
   background: #fafafa;
-  padding-bottom: 17rem;
+  padding-bottom: 12rem;
   .container {
     .the-table-itself {
       background: white;
@@ -135,98 +157,13 @@ section.hours-table {
             line-height: 86%;
           }
         }
-        .sunset-definition {
-          padding: 1.45rem 3rem 3rem 3rem;
-          border-left: 1.5px solid rgba(0, 0, 0, 0.05);
-          line-height: 150%;
-          height: 105px;
-          position: relative;
-          z-index: 9;
-          
-          .core {
-            overflow-y: hidden;
-            height: 90px;
-          }
-          .image-box {
-            padding: 0.1rem;
-            // border: 1.25px solid rgba(0, 0, 0, 0.05);
-            background: #f4f4f4;
-            // background: white;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            border-radius: 99px;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            transform-origin: center;
-            bottom: 0px;
-            // right: 3px;
-            width: 30px;
-            height: 30px;
-            z-index: 999;
-
-            &:hover {
-              box-shadow: 0 3px 6px -2px rgba(0, 0, 0, 0.166);
-              bottom: 1px;
-            }
-            img {
-              position: absolute;
-              top: 54%;
-              left: 50%;
-              transform: rotate(0deg) translate(-50%, -50%);
-              width: 15px;
-              height: auto;
-            }
-          }
-          .gradient {
-            width: 100%;
-            height: 80px;
-            position: absolute;
-            left: 0;
-            bottom: 0px;
-            background: linear-gradient(
-              to bottom,
-              hsla(0, 0%, 100%, 0) 0%,
-              hsla(0, 0%, 100%, 0.089) 7.7%,
-              hsla(0, 0%, 100%, 0.181) 14.1%,
-              hsla(0, 0%, 100%, 0.273) 19.4%,
-              hsla(0, 0%, 100%, 0.365) 24%,
-              hsla(0, 0%, 100%, 0.455) 28.1%,
-              hsla(0, 0%, 100%, 0.542) 32%,
-              hsla(0, 0%, 100%, 0.625) 35.9%,
-              hsla(0, 0%, 100%, 0.703) 40.2%,
-              hsla(0, 0%, 100%, 0.775) 44.9%,
-              hsla(0, 0%, 100%, 0.839) 50.5%,
-              hsla(0, 0%, 100%, 0.893) 57.2%,
-              hsla(0, 0%, 100%, 0.938) 65.2%,
-              hsla(0, 0%, 100%, 0.972) 74.8%,
-              hsla(0, 0%, 100%, 0.993) 86.4%,
-              hsl(0, 0%, 100%) 100%
-            );
-          }
-          &.open {
-            // background: yellow;
-            height: fit-content;
-            .core {
-              height: fit-content;
-            }
-            .image-box {
-              img {
-                transform: rotate(180deg) translate(47%, 60%);
-              }
-            }
-            .gradient {
-              display: none;
-            }
-          }
-        }
         .definition-wrapper {
           background: #f5f5f5;
           // background: #f3f7f4;
           border-radius: 5px;
           padding: 1.45rem 2.25rem 2rem 2rem;
-          border-left: none !important;
-          max-height: 105px;
+          // border-left: none !important;
+          // max-height: 105px;
           .word {
             font-family: "IKOB Italic";
             font-size: 17px;
@@ -235,7 +172,7 @@ section.hours-table {
             .pronunciation {
               font-family: var(--font-primary);
               font-size: 15px;
-              color: rgb(97, 97, 97);
+              color: rgb(175, 175, 175);
               // color: #01a95b;
             }
           }
@@ -246,6 +183,7 @@ section.hours-table {
           }
         }
       }
+
       .some-tables {
         [class*="col"] {
           padding: 3rem;
@@ -273,19 +211,53 @@ section.hours-table {
               position: relative;
               flex: 1 1 auto;
               border-bottom: 1.25px dashed rgba(0, 0, 0, 0.136);
-              top: -5px;
+              top: -7px;
               margin: 0 10px;
             }
           }
+          &.pool {
+            position: relative;
+            .hours-title {
+              color: rgb(169, 169, 169);
+            }
+            color: rgb(169, 169, 169);
+            .closed {
+              z-index: 77;
+              opacity: 1;
+              width: 120px;
+              height: auto;
+              position: absolute;
+              top: 55%;
+              left: 50%;
+              filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.124));
+              transform: rotate(-3deg) translate(-50%, -50%);
+            }
+          }
         }
+      }
+      .addendum {
+        border-top: 1.5px solid rgba(0, 0, 0, 0.05);
+        padding: 2.75rem 3rem 3.7rem 3rem;
+        line-height: 140%;
       }
     }
   }
 }
 
+//* sidebar 'book tee time' button
+.sidebar-btn {
+  margin-left: 0px;
+  margin-top: 4rem;
+  width: 100%;
+  max-width: 100%;
+  justify-content: space-between;
+  padding: 24px 15px !important;
+  background-color: var(--color-primary) !important;
+}
+
 //* cornered box
 .cornered-container {
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
 }
 // from https://stackoverflow.com/questions/14387690/how-can-i-show-only-corner-borders
 .cornered-box {
@@ -436,6 +408,10 @@ a {
 }
 .MM-logo-small {
   width: 170px;
+  height: auto;
+  path {
+    fill: white;
+  }
 }
 
 header {
@@ -454,19 +430,72 @@ header {
   }
 }
 
+//* subpage header at the top (ie not .sticky)
 header {
   &.header-area-four {
     &.header--sticky:not(.sticky) {
       &.subpage {
         .container {
-          // background-color: yellow;
           .row {
             .header-four-wrapper {
               .logo {
-                .MM-logo {
+                .MM-logo,
+                .MM-logo-small {
                   path {
                     fill: var(--color-primary);
                   }
+                }
+              }
+              .button-area-right-header {
+                .menu-btn-toggle {
+                  svg {
+                    rect {
+                      fill: var(--color-primary);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  header {
+    &.header-area-four {
+      .container {
+        // background-color: yellow;
+        .row {
+          .header-four-wrapper {
+            height: 70px;
+            position: relative;
+            a.logo {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              .MM-logo {
+                display: none;
+              }
+              .MM-logo-small {
+                position: relative;
+                display: unset;
+                top: 3px;
+              }
+            }
+          }
+        }
+      }
+      &.header--sticky.sticky {
+        .container {
+          .row {
+            .header-four-wrapper {
+              .logo {
+                .MM-logo-small {
+                  top: 0px;
                 }
               }
             }
@@ -557,7 +586,7 @@ table {
 
 .introduction-section {
   padding-top: 18rem;
-  padding-bottom: 18rem;
+  padding-bottom: 14rem;
   background: #fafafa;
   .introduction-column {
     display: flex;
@@ -622,66 +651,6 @@ table {
       .definition {
         z-index: 8;
         position: relative;
-      }
-    }
-  }
-
-  .hours-of-operation {
-    margin-bottom: 30px;
-    .clock-icon {
-      margin-left: -2px;
-      width: 30px;
-      height: auto;
-    }
-    .title {
-      display: flex;
-      align-items: center;
-      font-size: 35px;
-      position: relative;
-      margin-top: 1rem;
-    }
-    hr {
-      margin-bottom: 27px;
-      &.hr-2 {
-        margin-top: 30px;
-        margin-bottom: 30px;
-      }
-    }
-    .hours-title {
-      margin-bottom: 5px;
-    }
-    .hours-row {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      line-height: 200%;
-      .gap {
-        position: relative;
-        flex: 1 1 auto;
-        border-bottom: 1.25px dashed rgba(0, 0, 0, 0.136);
-        top: -10px;
-        margin: 0 10px;
-      }
-    }
-    p {
-      margin-bottom: 1rem;
-    }
-    .pool-section {
-      position: relative;
-      .hours-title,
-      .hours-row {
-        opacity: 0.4;
-      }
-      .closed {
-        z-index: 77;
-        opacity: 1;
-        width: 100px;
-        height: auto;
-        position: absolute;
-        top: 65%;
-        left: 50%;
-        filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.124));
-        transform: rotate(-3deg) translate(-50%, -50%);
       }
     }
   }
@@ -986,7 +955,7 @@ table {
     padding-top: 10rem;
     padding-bottom: 3rem;
     justify-content: space-between;
-    align-items: center;
+    // align-items: center;
     border-bottom: 1.5px solid rgba(0, 0, 0, 0.05);
     h2 {
       display: inline-block;
@@ -1017,7 +986,7 @@ section.perks {
   background: white;
   .container {
     .row {
-      gap: 9rem;
+      // gap: 9rem;
       [class*="col"] {
         display: flex;
         align-items: center;
@@ -1273,6 +1242,17 @@ section.perks {
       &.busy {
         margin-bottom: -2.5rem;
       }
+      @media (max-width: 768px) {
+        padding-bottom: 3rem;
+      }
+      @media (max-width: 576px) {
+        [class*="col"] {
+          h3 {
+            font-size: 33px;
+            margin-bottom: 1rem;
+          }
+        }
+      }
     }
     table {
       .th-wrap {
@@ -1297,6 +1277,9 @@ section.perks {
     .table-preface {
       margin-bottom: -1.75rem;
     }
+  }
+  @media (max-width: 992px) {
+    padding-bottom: 2rem;
   }
 }
 
@@ -1505,11 +1488,6 @@ section.perks {
 //* ===================================================
 //* =================== LAYOUT ========================
 //* ===================================================
-//~ CTA
-.rts-cts-area {
-  margin-top: 14rem;
-  margin-bottom: 14rem;
-}
 
 //~ FOOTER
 footer {
@@ -1517,7 +1495,7 @@ footer {
   color: white;
   .container {
     .row {
-      .col-12.col-md-6 {
+      .logo-column {
         &.center-please {
           display: flex;
           flex-direction: column;
@@ -1529,12 +1507,14 @@ footer {
           // justify-content: center;
           .logo-brick {
             display: flex;
-            padding-bottom: 4rem;
+            flex-direction: row;
+            padding-bottom: 2rem;
+            align-items: center;
             .logo-col {
-              flex-basis: auto;
-              padding-right: 4rem;
+              //  flex-basis: 180px;
+              padding-bottom: 1rem;
               .footer-logo {
-                width: 170px;
+                width: 160px;
                 height: auto;
               }
             }
@@ -1578,7 +1558,9 @@ footer {
             .contact-stack {
               padding-top: 0.25rem;
               padding-right: 3rem;
+              // padding-left: 3rem;
               border-right: 1px solid var(--color-offset);
+              // border-left: 1px solid var(--color-offset);
               .link {
                 transition: all 0.3s ease;
                 line-height: 145%;
@@ -1785,6 +1767,183 @@ footer {
     .new-row {
       p {
         color: white;
+      }
+    }
+  }
+  @media screen and (max-width: 1106px) {
+    .gradient-footer-wrapper {
+      .rts-footer-area {
+        .container {
+          .row {
+            .logo-column {
+              .logo-brick {
+                .logo-col {
+                  flex-basis: unset;
+                }
+              }
+            }
+            .weather-col {
+              .weather-card {
+                padding: 5rem;
+                .card-body {
+                  .weather-heading {
+                    padding: 1rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .gradient-footer-wrapper {
+      .rts-footer-area {
+        .container {
+          .row {
+            .weather-col {
+              .weather-card {
+                padding: 4rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .gradient-footer-wrapper {
+      .rts-footer-area {
+        .container {
+          & > .row {
+            padding-bottom: 4rem;
+            .logo-column {
+              .logo-brick {
+                padding-bottom: 4rem;
+                .logo-col {
+                }
+              }
+              .footer-form {
+                padding-bottom: 5rem;
+              }
+            }
+            .weather-col {
+              .weather-card {
+                padding: 5rem 3rem;
+                width: 100%;
+                .card-body {
+                  .weather-heading {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//* ===================================================
+//* ================ PHABLET STYLING ==================
+//* ===================================================
+
+// padding for screens under 767px wide
+@media (max-width: 992px) {
+  .mobile-padding {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    &.booking-container {
+      .row {
+        padding-top: 0;
+        padding-bottom: 5rem;
+        gap: 30px;
+      }
+    }
+    &.why-choose-us-working-process {
+      padding-top: 12rem;
+      [class*="shape"] {
+        display: none;
+      }
+      .container {
+        // background-color: yellow;
+        & > .row {
+          flex-direction: column-reverse;
+          .pictures-stage {
+            padding-bottom: 4rem;
+          }
+          .why-choose-process-left {
+            .title {
+              font-size: 37px;
+              line-height: 110%;
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  section.hours-table {
+    .container {
+      .the-table-itself {
+        overflow: hidden;
+        .hours-table-brow {
+          .table-title-wrapper {
+            flex-direction: column;
+            .title {
+              padding-top: 1rem;
+              line-height: 100%;
+            }
+          }
+        }
+        .some-tables {
+          [class*="col"] {
+            // &:last-of-type {
+            //   padding-right: 3rem
+            // }
+            padding: 3.75rem;
+            &:nth-of-type(2),
+            &:nth-of-type(3) {
+              border-top: 1.5px solid rgba(0, 0, 0, 0.05);
+            }
+          }
+        }
+      }
+    }
+  }
+  section {
+    &.perks {
+      padding-top: 9rem;
+      padding-bottom: 9rem;
+      .container {
+        .row {
+          flex-direction: column-reverse;
+          [class*='col'] {
+            div {
+              h2 {
+                font-size: 47px;
+                margin-bottom: 2rem;
+              }
+            }
+            a {
+              margin-bottom: 3rem;
+            }
+          }
+        }
+      }
+    } 
+  }
+}
+
+@media screen and (max-width: 576px) {
+  section.hours-table {
+    .container {
+      .the-table-itself {
+        .hours-table-brow {
+          flex-direction: column;
+        }
       }
     }
   }

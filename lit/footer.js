@@ -12,9 +12,9 @@ export class Footer extends LitElement {
         <div class="rts-footer-area rts-section-gapTop">
           <div class="container">
             <div class="row">
-              <div class="col-12 col-md-6 center-please">
+              <div class="col-12 col-md-6 center-please logo-column">
                 <div>
-                  <div class="logo-brick">
+                  <div class="logo-brick row">
                     <div class="logo-col">
                       <a href="index.html" class="logo">
                         <img
@@ -23,6 +23,9 @@ export class Footer extends LitElement {
                           alt="logo"
                         />
                       </a>
+                    </div>
+                    <div class="col">
+                     
                     </div>
                   </div>
 
@@ -45,51 +48,51 @@ export class Footer extends LitElement {
                     </div>
                   </form>
                   <div class="link-group d-flex flex-row flex-start">
-                    <div class="contact-stack">
-                      <a href="tel:8166284800" class="link phone-link">
-                        <img
-                          class="icon phone-icon"
-                          src="./assets/images/icons/phone.svg"
-                          alt=""
-                        />(816) 628-4800
-                      </a>
-                      <a
-                        href="https://maps.app.goo.gl/Bzrg9oSfx67wBW1E7"
-                        target="_blank"
-                        class="link map-link d-flex flex-row align-items-start"
-                      >
-                        <img
-                          class="icon map-icon"
-                          src="./assets/images/icons/map-icon.svg"
-                          alt=""
-                        />
-                        <div>
-                          525 S Marimack Dr<br />
-                          Kearney, MO 64060
+                        <div class="contact-stack">
+                          <a href="tel:8166284800" class="link phone-link">
+                            <img
+                              class="icon phone-icon"
+                              src="./assets/images/icons/phone.svg"
+                              alt=""
+                            />(816) 628-4800
+                          </a>
+                          <a
+                            href="https://maps.app.goo.gl/Bzrg9oSfx67wBW1E7"
+                            target="_blank"
+                            class="link map-link d-flex flex-row align-items-start"
+                          >
+                            <img
+                              class="icon map-icon"
+                              src="./assets/images/icons/map-icon.svg"
+                              alt=""
+                            />
+                            <div>
+                              525 S Marimack Dr<br />
+                              Kearney, MO 64060
+                            </div>
+                          </a>
                         </div>
-                      </a>
-                    </div>
 
-                    <a
-                      class="facebook-link"
-                      href="https://www.facebook.com/ClubatMariMack"
-                      target="_blank"
-                    >
-                      <svg
-                        class="facebook-logo"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="102.28 102.2 886 158.33"
-                      >
-                        <path
-                          d="M881.583 257.897h29.48v-47.696l41.137 47.696h36.072l-47.89-54.969 40.909-47.663h-32.825l-37.403 43.93v-96.982l-29.48 3.864v151.82Zm-67.988-105.261c-32.728 0-55.455 22.013-55.455 53.929s22.727 53.929 55.455 53.929c32.727 0 55.455-22.013 55.455-53.929s-22.728-53.929-55.455-53.929Zm0 82.728c-15.163 0-25.552-11.721-25.552-28.799s10.389-28.799 25.552-28.799c15.162 0 25.552 11.721 25.552 28.799s-10.39 28.799-25.552 28.799Zm-119.807-82.728c-32.727 0-55.455 22.013-55.455 53.929s22.728 53.929 55.455 53.929c32.728 0 55.455-22.013 55.455-53.929s-22.727-53.929-55.455-53.929Zm0 82.728c-15.162 0-25.552-11.721-25.552-28.799s10.39-28.799 25.552-28.799c15.163 0 25.552 11.721 25.552 28.799s-10.389 28.799-25.552 28.799Zm-112.826-82.728c-13.636 0-24.935 5.357-32.013 15.162v-65.585l-29.513 3.831v151.82h26.169l.519-15.844c6.981 11.818 19.481 18.474 34.838 18.474 27.988 0 48.475-22.728 48.475-53.929 0-31.202-20.39-53.929-48.475-53.929Zm-6.98 82.728c-15.163 0-25.552-11.721-25.552-28.799s10.389-28.799 25.552-28.799c15.162 0 25.552 11.721 25.552 28.799s-10.39 28.799-25.552 28.799Zm-113.638 1.331c-15.649 0-26.883-7.273-30.714-19.805h72.63c.715-3.831 1.202-8.377 1.202-11.429 0-33.02-18.475-52.825-49.514-52.825-31.331 0-53.02 22.013-53.02 53.929 0 32.338 22.728 53.929 56.462 53.929 17.467 0 34.448-5.844 45.065-15.552l-10.617-18.701c-10.292 7.11-20.39 10.454-31.494 10.454Zm-6.591-61.137c13.637 0 22.338 8.279 22.338 21.104v.098h-47.078c2.825-13.604 11.623-21.202 24.74-21.202Zm-98.994 84.968c15.26 0 30.195-5.844 40.714-15.974l-11.526-19.383c-8.182 6.364-17.467 9.805-26.266 9.805-16.364 0-27.273-11.429-27.273-28.377s10.909-28.377 27.273-28.377c8.084 0 16.883 2.922 24.026 8.085l11.721-19.806c-9.481-8.571-24.156-13.831-38.702-13.831-32.013 0-54.643 22.338-54.643 53.929.032 31.494 22.662 53.929 54.676 53.929Zm-93.735-105.261-.519 15.975c-6.981-11.916-19.481-18.572-34.838-18.572-28.085 0-48.475 22.728-48.475 53.929 0 31.202 20.52 53.929 48.475 53.929 15.357 0 27.889-6.656 34.838-18.474l.519 15.844h26.169V155.265h-26.169Zm-28.377 80.099c-15.162 0-25.552-11.721-25.552-28.799s10.39-28.799 25.552-28.799c15.163 0 25.552 11.721 25.552 28.799s-10.422 28.799-25.552 28.799Zm-57.663-79.906h-26.526v-8.767c0-13.117 5.13-18.149 18.442-18.149 4.123 0 7.467.097 9.383.292v-22.5c-3.637-1.007-12.5-2.013-17.63-2.013-27.111 0-39.611 12.792-39.611 40.422v10.682h-16.753v24.806h16.753v77.631h29.448v-77.599h21.949l4.545-24.805Z"
-                        />
-                      </svg>
-                    </a>
-                  </div>
+                        <a
+                          class="facebook-link"
+                          href="https://www.facebook.com/ClubatMariMack"
+                          target="_blank"
+                        >
+                          <svg
+                            class="facebook-logo"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="102.28 102.2 886 158.33"
+                          >
+                            <path
+                              d="M881.583 257.897h29.48v-47.696l41.137 47.696h36.072l-47.89-54.969 40.909-47.663h-32.825l-37.403 43.93v-96.982l-29.48 3.864v151.82Zm-67.988-105.261c-32.728 0-55.455 22.013-55.455 53.929s22.727 53.929 55.455 53.929c32.727 0 55.455-22.013 55.455-53.929s-22.728-53.929-55.455-53.929Zm0 82.728c-15.163 0-25.552-11.721-25.552-28.799s10.389-28.799 25.552-28.799c15.162 0 25.552 11.721 25.552 28.799s-10.39 28.799-25.552 28.799Zm-119.807-82.728c-32.727 0-55.455 22.013-55.455 53.929s22.728 53.929 55.455 53.929c32.728 0 55.455-22.013 55.455-53.929s-22.727-53.929-55.455-53.929Zm0 82.728c-15.162 0-25.552-11.721-25.552-28.799s10.39-28.799 25.552-28.799c15.163 0 25.552 11.721 25.552 28.799s-10.389 28.799-25.552 28.799Zm-112.826-82.728c-13.636 0-24.935 5.357-32.013 15.162v-65.585l-29.513 3.831v151.82h26.169l.519-15.844c6.981 11.818 19.481 18.474 34.838 18.474 27.988 0 48.475-22.728 48.475-53.929 0-31.202-20.39-53.929-48.475-53.929Zm-6.98 82.728c-15.163 0-25.552-11.721-25.552-28.799s10.389-28.799 25.552-28.799c15.162 0 25.552 11.721 25.552 28.799s-10.39 28.799-25.552 28.799Zm-113.638 1.331c-15.649 0-26.883-7.273-30.714-19.805h72.63c.715-3.831 1.202-8.377 1.202-11.429 0-33.02-18.475-52.825-49.514-52.825-31.331 0-53.02 22.013-53.02 53.929 0 32.338 22.728 53.929 56.462 53.929 17.467 0 34.448-5.844 45.065-15.552l-10.617-18.701c-10.292 7.11-20.39 10.454-31.494 10.454Zm-6.591-61.137c13.637 0 22.338 8.279 22.338 21.104v.098h-47.078c2.825-13.604 11.623-21.202 24.74-21.202Zm-98.994 84.968c15.26 0 30.195-5.844 40.714-15.974l-11.526-19.383c-8.182 6.364-17.467 9.805-26.266 9.805-16.364 0-27.273-11.429-27.273-28.377s10.909-28.377 27.273-28.377c8.084 0 16.883 2.922 24.026 8.085l11.721-19.806c-9.481-8.571-24.156-13.831-38.702-13.831-32.013 0-54.643 22.338-54.643 53.929.032 31.494 22.662 53.929 54.676 53.929Zm-93.735-105.261-.519 15.975c-6.981-11.916-19.481-18.572-34.838-18.572-28.085 0-48.475 22.728-48.475 53.929 0 31.202 20.52 53.929 48.475 53.929 15.357 0 27.889-6.656 34.838-18.474l.519 15.844h26.169V155.265h-26.169Zm-28.377 80.099c-15.162 0-25.552-11.721-25.552-28.799s10.39-28.799 25.552-28.799c15.163 0 25.552 11.721 25.552 28.799s-10.422 28.799-25.552 28.799Zm-57.663-79.906h-26.526v-8.767c0-13.117 5.13-18.149 18.442-18.149 4.123 0 7.467.097 9.383.292v-22.5c-3.637-1.007-12.5-2.013-17.63-2.013-27.111 0-39.611 12.792-39.611 40.422v10.682h-16.753v24.806h16.753v77.631h29.448v-77.599h21.949l4.545-24.805Z"
+                            />
+                          </svg>
+                        </a>
+                      </div>
                 </div>
               </div>
-              <div class="col-12 col-md-5 justify-content-end d-flex">
+              <div class="col-12 col-md-5 justify-content-md-end d-flex weather-col pt-5 pt-md-0 mt-5 pt-md-0">
                 <div class="weather-card">
                   <div class="card-body">
                     <div class=" _500 fs-24 weather-heading">
@@ -252,115 +255,67 @@ export class Footer extends LitElement {
         <div class="mobile-menu-main">
           <nav class="nav-main mainmenu-nav mt--30">
             <ul class="mainmenu metismenu" id="mobile-menu-active">
-              <li class="has-droupdown">
-                <a href="#" class="main">Home</a>
-                <ul class="submenu mm-collapse">
-                  <li><a href="index.html">Home One</a></li>
-                  <li><a href="index-two.html">Home Two</a></li>
-                  <li><a href="index-three.html">Home Three</a></li>
-                  <li><a href="index-four.html">Home Four</a></li>
-                  <li><a href="index-five.html">Home Five</a></li>
-                </ul>
+              <li>
+                <a href="rates.html" class="main">Greens Fees</a>
               </li>
               <li class="has-droupdown">
-                <a href="#" class="main">Pages</a>
+                <a href="#" class="main" aria-expanded="false">Events</a>
                 <ul class="submenu mm-collapse">
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="service.html">Services</a></li>
-                  <li><a href="service-single.html">Services Single</a></li>
-                  <li><a href="case-studies.html">Case Studies</a></li>
-                  <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                  <li>
-                    <a href="case-studies-single.html">Case Studies Single</a>
-                  </li>
-                  <li><a href="why-choose-us.html">Why Choose Us</a></li>
-                  <li><a href="career.html">Career</a></li>
-                  <li><a href="career-single.html">Career Single</a></li>
-                  <li><a href="industry.html">Industry</a></li>
-                  <li><a href="apply.html">Apply</a></li>
-                  <li><a href="team.html">Team</a></li>
-                  <li><a href="team-single.html">Team Single</a></li>
-                  <li><a href="faq.html">Faq's</a></li>
-                  <li><a href="coming-soon.html">Coming Soon</a></li>
-                  <li><a href="partner.html">Our Partner</a></li>
-                  <li><a href="award.html">Award</a></li>
-                  <li>
-                    <a href="free-consultation.html">Free Consultation</a>
-                  </li>
-                  <li><a href="terms-of-use.html">Terms Of Use</a></li>
-                  <li><a href="404.html">Error</a></li>
+                  <li><a href="events.html">Calendar</a></li>
+                  <li><a href="host-your-event.html">Host Your Event</a></li>
                 </ul>
               </li>
               <li>
-                <a href="case-studies.html" class="main">Case Studies</a>
+                <a href="membership.html" class="main">Membership</a>
               </li>
+
               <li class="has-droupdown">
-                <a href="#" class="main">Services</a>
+                <a href="#" class="main" aria-expanded="false">Pool</a>
                 <ul class="submenu mm-collapse">
-                  <li><a href="service.html">Service</a></li>
-                  <li><a href="service-single.html">Cloud Migration</a></li>
-                  <li><a href="it-strategies.html">IT Strategies</a></li>
-                  <li>
-                    <a href="cyber-security-service.html">Cyber Security</a>
-                  </li>
-                  <li><a href="technologies-service.html">Technologies</a></li>
-                  <li>
-                    <a href="it-consulting-service.html">IT Consulting</a>
-                  </li>
-                  <li><a href="development-service.html">Development</a></li>
-                  <li><a href="ai-learning-service.html">AI Learning</a></li>
-                  <li>
-                    <a href="management-service.html">Management Service</a>
-                  </li>
-                  <li><a href="it-innovations.html">IT Innovations</a></li>
-                </ul>
-              </li>
-              <li class="has-droupdown">
-                <a href="#" class="main">Blog</a>
-                <ul class="submenu mm-collapse">
-                  <li><a href="blog-list.html">Blog List</a></li>
-                  <li><a href="blog-grid.html">Blog Grid</a></li>
-                  <li><a href="blog-grid-two.html">Blog Grid Two</a></li>
-                  <li><a href="blog-grid-four.html">Blog Grid Three</a></li>
-                  <li><a href="blog-masonry.html">Blog Masonry</a></li>
-                  <li><a href="blog-details.html">Blog Details</a></li>
+                  <li><a href="pool.html">Membership</a></li>
+                  <li><a href="pool.html#rules">Pool Rules</a></li>
                 </ul>
               </li>
               <li>
-                <a href="contact.html" class="main">Contact</a>
+                <a href="online-store.html" class="main">Online Store</a>
+              </li>
+              <li class="has-droupdown">
+                <a href="#" class="main" aria-expanded="false">About</a>
+                <ul class="submenu mm-collapse">
+                  <li><a href="about.html">Contact</a></li>
+                  <li><a href="about.html#clubhouse-rental">Services</a></li>
+
+                  <li><a href="scorecard.html">Scorecard</a></li>
+                  <li><a href="holes-in-one.html">Holes-in-One!</a></li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  href="book-tee-time.html"
+                  class="rts-btn btn-primary my-btn sidebar-btn"
+                >
+                  Book tee time
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    data-inject-url="http://127.0.0.1:5500/assets/images/service/icons/13.svg"
+                    class="injectable"
+                  >
+                    <path
+                      d="M9.3335 22.6667L22.6668 9.33337M22.6668 9.33337H9.3335M22.6668 9.33337V22.6667"
+                      stroke="#999999"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </a>
               </li>
             </ul>
           </nav>
-
-          <div class="rts-social-border-area right-sidebar mt--80">
-            <ul>
-              <li>
-                <a href="#" aria-label="social link" data-description="social"
-                  ><i class="fa-brands fa-facebook-f"></i
-                ></a>
-              </li>
-              <li>
-                <a href="#" aria-label="social link" data-description="social"
-                  ><i class="fa-brands fa-twitter"></i
-                ></a>
-              </li>
-              <li>
-                <a href="#" aria-label="social link" data-description="social"
-                  ><i class="fa-brands fa-linkedin-in"></i
-                ></a>
-              </li>
-              <li>
-                <a href="#" aria-label="social link" data-description="social"
-                  ><i class="fa-brands fa-pinterest"></i
-                ></a>
-              </li>
-              <li>
-                <a href="#" aria-label="social link" data-description="social"
-                  ><i class="fa-brands fa-youtube"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
         </div>
         <!-- mobile menu area end -->
       </div>

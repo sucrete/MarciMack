@@ -386,9 +386,48 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
+  @media screen and (min-width: 767px) and (max-width: 992px) {
+    .cornered-container {
+      margin-bottom: 6rem;
+    }
+  }
+  @media (max-width: 992px) {
+    &.banner-four-area {
+      .shape {
+        right: 3rem;
+      }
+    }
+  }
   @media #{$sm-layout} {
-    height: 853px !important;
+    height: 600px !important;
+    .cornered-container {
+      margin-bottom: 3.25rem;
+      .cornered-box {
+        padding: 2.5rem;
+        font-size: 17px;
+      }
+    }
+
+    .shape {
+      display: none;
+    }
+    .slider-wrapper {
+      bottom: 0.75rem;
+      .slider {
+        .slide {
+          .title-wrapper {
+            .crest-white {
+              width: 35px;
+              margin: 0 20px 0 30px;
+            }
+            h2 {
+              font-size: 55px;
+              letter-spacing: -2px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -519,13 +558,14 @@ $darker-background-gradient: linear-gradient(
 );
 $subpage-height: 550px;
 .banner-subpage {
-  height: $subpage-height !important;
+  height: $subpage-height;
+  min-height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
   .banner-four-wrapper {
     justify-content: center;
     .title {
-      text-align: center;
+      // text-align: center;
       font-size: 70px;
       margin-bottom: 0;
       text-shadow: 0 0 10px rgba(0, 0, 0, 0.455);
@@ -567,7 +607,6 @@ $subpage-height: 550px;
     .overlay {
       background-image: $to-transparent-bg-gradient;
     }
-   
   }
   &.online-store-banner {
     background-image: url(../images/golf/golfer-in-trap.jpg);
@@ -613,9 +652,9 @@ $subpage-height: 550px;
   }
 
   @media #{$sm-layout} {
-    height: $subpage-height !important;
+    height: $subpage-height;
   }
- 
+
   &-subpage {
     background-image: none;
     background: #f4f4f4;
@@ -627,6 +666,28 @@ $subpage-height: 550px;
     }
     .overlay {
       display: none;
+    }
+    @media (max-width: 992px) {
+      height: 400px;
+      min-height: 400px;
+      .banner-four-wrapper {
+        .title {
+          font-size: 54px;
+          text-align: center;
+          width: 100%;
+        }
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    height: 400px;
+    min-height: 400px;
+    .banner-four-wrapper {
+      .title {
+        font-size: 54px;
+        text-align: center;
+        width: 100%;
+      }
     }
   }
 }

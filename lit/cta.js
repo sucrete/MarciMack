@@ -12,18 +12,6 @@ export class CTA extends LitElement {
           <div class="row">
             <div class="col-gl-12">
               <div class="cta-one-wrapper">
-
-                <!-- decorative squares start -->
-                <!-- <div class="shape-area">
-                  <img
-                    loading="lazy"
-                    rel="preload"
-                    src="assets/images/cta/01.svg"
-                    alt="cta-area"
-                  />
-                </div> -->
-                <!-- decorative squares end -->
-
                 <div class="left-area">
                   <h3 class="title wow fadeInUp" data-wow-delay=".1s">
                     Have 2 or More Players?

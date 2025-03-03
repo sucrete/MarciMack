@@ -1,113 +1,171 @@
 // cta main one wrapper
 
-.cta-one-wrapper {
-  background: #e3f5e8;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100%;
-  .cta-tartan {
-    width: 400px;
-    height: auto;
-  }
-  @media #{$large-mobile} {
-    padding: 35px 40px;
-  }
-
-  @media #{$small-mobile} {
-    padding: 30px 15px;
-  }
-
-  .right {
-    @media #{$sm-layout} {
-      display: none;
-    }
-  }
-
-  .left-area {
-    max-width: 700px;
-    padding: 109px 0px 118px 106px;
-    .title {
-      font-size: 48px;
-      font-weight: 400;
-      line-height: 1.4;
-      left: -4px;
-      margin-bottom: 0px;
-      position: relative;
-      @media #{$large-mobile} {
-        font-size: 30px;
-      }
-    }
-
-    p {
-      position: relative;
-      font-size: 20px;
-      // left: -2px;
-      margin-bottom: 3rem;
-      @media #{$large-mobile} {
-        font-size: 16px;
-      }
-    }
-
-    .rts-btn {
-      img {
-        filter: brightness(0) saturate(100%) invert(100%) sepia(0%)
-          saturate(7495%) hue-rotate(205deg) brightness(112%) contrast(101%);
-      }
-    }
-  }
-
-  .right {
-    display: flex;
-    flex: 1 1 auto;
-    align-items: stretch;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-    z-index: 2;
-   
-    .right-overlay {
-      position: absolute;
-      top: 0;
-      left: 0; 
+section.cta {
+  .rts-cts-area {
+    padding-top: 0rem;
+    padding-bottom: 12rem;
+    .cta-one-wrapper {
+      background: #e3f5e8;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       height: 100%;
-      width: 100%;
-      z-index: 7;
-      background-image: linear-gradient(
-        to right,
-        hsl(137.65, 48.57%, 93.14%) 0%,
-        hsla(137.65, 48.57%, 93.14%, 0.988) 4.9%,
-        hsla(137.65, 48.57%, 93.14%, 0.953) 9.2%,
-        hsla(137.65, 48.57%, 93.14%, 0.899) 13.2%,
-        hsla(137.65, 48.57%, 93.14%, 0.83) 17%,
-        hsla(137.65, 48.57%, 93.14%, 0.749) 20.8%,
-        hsla(137.65, 48.57%, 93.14%, 0.659) 24.8%,
-        hsla(137.65, 48.57%, 93.14%, 0.563) 29.2%,
-        hsla(137.65, 48.57%, 93.14%, 0.467) 34.2%,
-        hsla(137.65, 48.57%, 93.14%, 0.371) 39.9%,
-        hsla(137.65, 48.57%, 93.14%, 0.281) 46.5%,
-        hsla(137.65, 48.57%, 93.14%, 0.2) 54.3%,
-        hsla(137.65, 48.57%, 93.14%, 0.131) 63.3%,
-        hsla(137.65, 48.57%, 93.14%, 0.077) 73.8%,
-        hsla(137.65, 48.57%, 93.14%, 0.042) 86%,
-        hsla(137.65, 48.57%, 93.14%, 0.03) 100%
-      );
+      .cta-tartan {
+        width: 400px;
+        height: auto;
+      }
+      @media #{$large-mobile} {
+        padding: 35px 40px;
+      }
+
+      @media #{$small-mobile} {
+        padding: 30px 15px;
+      }
+
+      .right {
+        @media #{$sm-layout} {
+          display: none;
+        }
+      }
+
+      .left-area {
+        max-width: 700px;
+        padding: 109px 0px 118px 106px;
+        .title {
+          font-size: 48px;
+          font-weight: 400;
+          line-height: 1.4;
+          left: -4px;
+          margin-bottom: 0px;
+          position: relative;
+          @media #{$large-mobile} {
+            font-size: 30px;
+          }
+        }
+
+        p {
+          position: relative;
+          font-size: 20px;
+          // left: -2px;
+          margin-bottom: 3rem;
+          @media #{$large-mobile} {
+            font-size: 16px;
+          }
+        }
+
+        .rts-btn {
+          img {
+            filter: brightness(0) saturate(100%) invert(100%) sepia(0%)
+              saturate(7495%) hue-rotate(205deg) brightness(112%) contrast(101%);
+          }
+        }
+      }
+
+      .right {
+        display: flex;
+        flex: 1 1 auto;
+        align-items: stretch;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        z-index: 2;
+
+        .right-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          z-index: 7;
+          background-image: linear-gradient(
+            to right,
+            hsl(137.65, 48.57%, 93.14%) 0%,
+            hsla(137.65, 48.57%, 93.14%, 0.988) 4.9%,
+            hsla(137.65, 48.57%, 93.14%, 0.953) 9.2%,
+            hsla(137.65, 48.57%, 93.14%, 0.899) 13.2%,
+            hsla(137.65, 48.57%, 93.14%, 0.83) 17%,
+            hsla(137.65, 48.57%, 93.14%, 0.749) 20.8%,
+            hsla(137.65, 48.57%, 93.14%, 0.659) 24.8%,
+            hsla(137.65, 48.57%, 93.14%, 0.563) 29.2%,
+            hsla(137.65, 48.57%, 93.14%, 0.467) 34.2%,
+            hsla(137.65, 48.57%, 93.14%, 0.371) 39.9%,
+            hsla(137.65, 48.57%, 93.14%, 0.281) 46.5%,
+            hsla(137.65, 48.57%, 93.14%, 0.2) 54.3%,
+            hsla(137.65, 48.57%, 93.14%, 0.131) 63.3%,
+            hsla(137.65, 48.57%, 93.14%, 0.077) 73.8%,
+            hsla(137.65, 48.57%, 93.14%, 0.042) 86%,
+            hsla(137.65, 48.57%, 93.14%, 0.03) 100%
+          );
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          width: 150%;
+          height: 200%;
+          top: -187%;
+          left: -50%;
+          z-index: 1;
+          background: url("../images/golf/grand-tartan.svg") 0 0 repeat;
+          background-size: 100%;
+          transform: rotate(30deg) translate(50%, 50%);
+          transform-origin: center center;
+        }
+        @media #{$large-mobile} {
+          display: none;
+        }
+      }
     }
-    &:after {
-      content: "";
-      position: absolute;
-      width: 150%;
-      height: 200%;
-      top: -187%;
-      left: -50%;
-      z-index: 1;
-      background: url("../images/golf/grand-tartan.svg") 0 0 repeat;
-      background-size: 100%;
-      transform: rotate(30deg) translate(50%, 50%);
-      transform-origin: center center;
+    @media (max-width: 992px) {
+      padding-top: 7rem;
+      padding-bottom: 7rem;
+      .cta-one-wrapper {
+        .left-area {
+          .title {
+            line-height: 100%;
+            padding-bottom: 1rem;
+            font-size: 42px;
+          }
+          width: 100%;
+          max-width: 100%;
+          padding: 190px 110px;
+          .title, p {
+            text-align: center;
+          }
+          a {
+            margin: 0 auto;
+          }
+        }
+        .right {
+          display: none;
+        }
+      }
     }
-    @media #{$large-mobile} {
-      display: none;
+    @media (max-width: 814px) {
+      .cta-one-wrapper {
+        .left-area {
+          padding: 10rem 6rem;
+        }
+      }
+    }
+    @media (max-width: 576px) {
+      .cta-one-wrapper {
+        padding: 0rem;
+        .left-area {
+          
+          .title {
+            font-size: 35px;
+            line-height: 120%;
+          }
+          p {
+            margin-bottom: 2rem;
+          }
+        }
+      }
+    }
+  }
+  &.blonde {
+    .rts-cts-area {
+      background-color: #fafafa;
     }
   }
 }

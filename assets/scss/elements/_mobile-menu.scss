@@ -18,7 +18,7 @@
     overflow: visible;
 
     @media #{$large-mobile} {
-        width: 310px;
+        width: 90%;
     }
 
     .inner-main-wrapper-desk {
@@ -113,7 +113,7 @@
                 padding: 0;
 
                 a.main {
-                    padding: 12px 0 17px 0;
+                    padding: 12px 0 14px 0;
                     border-bottom: 1px solid #f3f3f3;
                     cursor: pointer;
                     font-weight: 500;
