@@ -20874,6 +20874,8 @@ header.header-area-four.header--sticky:not(.sticky).subpage .container .row .hea
   }
 }
 table {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
   font-size: 17px;
 }
 table * {
@@ -20925,6 +20927,9 @@ table tbody tr th {
 table tbody tr td {
   padding-left: 0;
   text-align: center;
+}
+table.de-emphasize {
+  opacity: 0.3;
 }
 
 .with-chevron {
@@ -21367,6 +21372,32 @@ section.perks .container .row [class*=col] .single-solution-style-one:hover {
 }
 .membership-page-body .container .row .col .tab-content {
   padding-top: 4rem;
+}
+.membership-page-body .container .row .col .tab-content .table-info {
+  transition: all 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+}
+.membership-page-body .container .row .col .tab-content .table-info .icon {
+  width: 40px;
+}
+.membership-page-body .container .row .col .tab-content .table-info.animate-in {
+  opacity: 1;
+  bottom: 30%;
+}
+.membership-page-body .container .row .col .tab-content .table-info.animate-out {
+  animation: go-away 0.3s ease forwards;
+}
+@keyframes go-away {
+  to {
+    opacity: 0;
+    left: 40%;
+  }
 }
 .membership-page-body .container .row .col .tab-content .something-to-note {
   font-size: 19px;
@@ -22020,6 +22051,9 @@ footer .rts-copyright-area-one .new-row p {
     padding-top: 9rem;
     padding-bottom: 9rem;
   }
+  section.perks .container {
+    padding: 0 45px;
+  }
   section.perks .container .row {
     flex-direction: column-reverse;
   }
@@ -22029,6 +22063,18 @@ footer .rts-copyright-area-one .new-row p {
   }
   section.perks .container .row [class*=col] a {
     margin-bottom: 3rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .membership-page-body .container .row .col .tab-content {
+    position: relative;
+  }
+  .membership-page-body .container .row .col .tab-content .tab-pane {
+    overflow-x: scroll;
+  }
+  .membership-page-body .container .row .col .tab-content .tab-pane table {
+    width: 972px;
+    position: relative;
   }
 }
 @media screen and (max-width: 576px) {

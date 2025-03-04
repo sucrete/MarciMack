@@ -507,6 +507,8 @@ header {
 }
 
 table {
+  transition: opacity .3s ease-in-out;
+  opacity: 1;
   font-size: 17px;
   & * {
     border: none;
@@ -571,6 +573,9 @@ table {
         text-align: center;
       }
     }
+  }
+  &.de-emphasize {
+    opacity: .3;
   }
 }
 
@@ -1093,6 +1098,33 @@ section.perks {
         }
         .tab-content {
           padding-top: 4rem;
+          .table-info {
+            transition: all .3s ease;
+            opacity: 0;
+            pointer-events: none;
+            position: absolute;
+            bottom: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 99;
+            .icon {
+              width: 40px;
+
+            }
+            &.animate-in {
+              opacity: 1;
+              bottom: 30%;
+            }
+            &.animate-out {
+              animation: go-away .3s ease forwards;
+              @keyframes go-away {
+                to {
+                  opacity: 0;
+                  left: 40%;
+                }
+              }
+            }
+          }
           .something-to-note {
             font-size: 19px;
             padding: 20px;
@@ -1917,10 +1949,12 @@ footer {
     &.perks {
       padding-top: 9rem;
       padding-bottom: 9rem;
+
       .container {
+        padding: 0 45px;
         .row {
           flex-direction: column-reverse;
-          [class*='col'] {
+          [class*="col"] {
             div {
               h2 {
                 font-size: 47px;
@@ -1933,7 +1967,31 @@ footer {
           }
         }
       }
-    } 
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .membership-page-body {
+    .container {
+      .row {
+        .col {
+          .tab-content {
+            position: relative;
+            
+            .tab-pane {
+              overflow-x: scroll;
+              table {
+                width: 972px;
+                position: relative;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 

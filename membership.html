@@ -237,6 +237,13 @@
               <div class="lil-line"></div>
             </div>
             <div class="tab-content" id="pills-tabContent">
+              <div class="table-info">
+                <img
+                  src="assets/images/icons/swipe-left.png"
+                  alt=""
+                  class="icon"
+                />
+              </div>
               <div
                 class="tab-pane fade show active"
                 id="pills-home"
@@ -302,8 +309,9 @@
 
                   <hr />
                 </div>
-                <!--* Annual Start -->
-                <table class="">
+                <!--* Annual Rates Table Start -->
+
+                <table class="table-one">
                   <thead>
                     <tr>
                       <th scope="col"></th>
@@ -314,7 +322,7 @@
                       <th scope="col">Pool Only</th>
                     </tr>
                   </thead>
-                  <tbody class="">
+                  <tbody>
                     <tr>
                       <th scope="row">
                         <div class="th-wrap">
@@ -478,7 +486,7 @@
                     </tr>
                   </tbody>
                 </table>
-                <!--* Annual End -->
+                <!--* Annual Rates Table End -->
               </div>
               <div
                 class="tab-pane fade"
@@ -713,7 +721,7 @@
     <!-- membership rates section end  -->
 
     <!-- cta area start -->
-    <section class="cta">
+    <section class="cta" style="background: #f4f4f4">
       <my-cta></my-cta>
     </section>
 
@@ -795,5 +803,73 @@
     <script defer src="assets/js/animated-tabs.js"></script>
     <script defer src="assets/js/main.js"></script>
     <script src="./assets/js/weather.js "></script>
+
+    <script>
+      function getWidth() {
+        const width =
+          window.innerWidth ||
+          document.documentElement.clientWidth ||
+          document.body.clientWidth;
+        console.log("size of window: ", width);
+        return width;
+      }
+      console.log(typeof getWidth());
+      window.addEventListener("load", onLoadFunction);
+      console.log("%c1", "color: red");
+      function onLoadFunction(e) {
+        console.log("%c2", "color: yellow");
+
+        window.addEventListener("resize", onResizeFunction);
+        let size = getWidth();
+        if (size > 768) return;
+        console.log("inside onloadfunction");
+
+        swipeHelper();
+      }
+
+      function onResizeFunction(e) {
+        //do whatever you want to do on resize event
+        console.log("inside onresizefunction");
+        let size = getWidth();
+        if (size > 768) return;
+        swipeHelper();
+      }
+
+      const myTable = document.getElementsByClassName("table-one")[0];
+      const iconBox = document.getElementsByClassName("table-info")[0];
+
+      let call = 0;
+
+      var observer = new IntersectionObserver(
+        function (entries) {
+          // check to see if observer has been called before
+          if (call == 0) {
+            if (entries[0].isIntersecting === true) {
+              console.log("Table has just APPEARED!");
+
+              myTable.classList.toggle("de-emphasize");
+              iconBox.classList.toggle("animate-in");
+              setTimeout(() => {
+                myTable.classList.toggle("de-emphasize");
+                iconBox.classList.toggle("animate-out");
+              }, 1500);
+              call++;
+            } else {
+              console.log("Table has just DISAPPEARED!");
+            }
+          } else {
+            return;
+          }
+        },
+        { threshold: [0.5] }
+      );
+
+      const swipeHelper = () => {
+        console.log("inside swipeHelper");
+        console.log("%c3", "color: green");
+
+        observer.observe(myTable);
+      };
+    </script>
   </body>
 </html>
