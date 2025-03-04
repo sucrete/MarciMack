@@ -681,6 +681,7 @@ table {
       // margin-top: -7px;
       font-size: 26px;
       line-height: 1.5;
+      padding: 7px;
     }
   }
   .id-card-card {
@@ -833,8 +834,8 @@ table {
 // section on clubhouse rental
 .rental-section {
   background-color: #f4f4f4;
-  padding-top: 11rem;
-  padding-bottom: 6rem;
+  padding-top: 14rem;
+  padding-bottom: 14rem;
   .container {
     height: 100%;
     .row {
@@ -1915,7 +1916,27 @@ footer {
       }
     }
   }
-
+  .rental-section {
+    .container {
+      .row {
+        flex-direction: column-reverse;
+        gap: 4rem;
+        .left-column {
+          width: 100%;
+          padding: 0 20px;
+        }
+        [class*="col"] {
+          .tag-wrapper {
+            flex-direction: column;
+            align-items: flex-start;
+            .single-tag {
+              // display: block;
+            }
+          }
+        }
+      }
+    }
+  }
   section.hours-table {
     .container {
       .the-table-itself {
@@ -2093,27 +2114,7 @@ footer {
       margin-bottom: 20px;
     }
   }
-  .rental-section {
-    .container {
-      .row {
-        flex-direction: column-reverse;
-        gap: 4rem;
-        .left-column {
-          width: 100%;
-          padding: 0 20px;
-        }
-        [class*="col"] {
-          .tag-wrapper {
-            flex-direction: column;
-            align-items: flex-start;
-            .single-tag {
-              // display: block;
-            }
-          }
-        }
-      }
-    }
-  }
+  
   .scorecard-page-body {
     padding-bottom: 0;
   }
@@ -2141,7 +2142,7 @@ footer {
       [class*="col"] {
         p {
           &.p1 {
-            font-size: 17px;
+            font-size: 21px;
           }
         }
       }

@@ -21010,6 +21010,7 @@ table.de-emphasize {
 .booking-container .row:first-child .p1 {
   font-size: 26px;
   line-height: 1.5;
+  padding: 7px;
 }
 .booking-container .id-card-card {
   padding: 3rem;
@@ -21145,8 +21146,8 @@ table.de-emphasize {
 
 .rental-section {
   background-color: #f4f4f4;
-  padding-top: 11rem;
-  padding-bottom: 6rem;
+  padding-top: 14rem;
+  padding-bottom: 14rem;
 }
 .rental-section .container {
   height: 100%;
@@ -22032,6 +22033,18 @@ footer .rts-copyright-area-one .new-row p {
     line-height: 110%;
     margin-bottom: 15px;
   }
+  .rental-section .container .row {
+    flex-direction: column-reverse;
+    gap: 4rem;
+  }
+  .rental-section .container .row .left-column {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .rental-section .container .row [class*=col] .tag-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
   section.hours-table .container .the-table-itself {
     overflow: hidden;
   }
@@ -22120,18 +22133,6 @@ footer .rts-copyright-area-one .new-row p {
     padding: 3.25rem 3.5rem 3.5rem 3.5rem;
     margin-bottom: 20px;
   }
-  .rental-section .container .row {
-    flex-direction: column-reverse;
-    gap: 4rem;
-  }
-  .rental-section .container .row .left-column {
-    width: 100%;
-    padding: 0 20px;
-  }
-  .rental-section .container .row [class*=col] .tag-wrapper {
-    flex-direction: column;
-    align-items: flex-start;
-  }
   .scorecard-page-body {
     padding-bottom: 0;
   }
@@ -22153,6 +22154,6 @@ footer .rts-copyright-area-one .new-row p {
     padding: 7rem 45px;
   }
   .booking-container .row [class*=col] p.p1 {
-    font-size: 17px;
+    font-size: 21px;
   }
 }/*# sourceMappingURL=style.css.map */
