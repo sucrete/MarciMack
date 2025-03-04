@@ -4,7 +4,7 @@
 }
 .my-btn {
   color: white !important;
-  font-family: "Aeonik Medium", sans-serif !important;
+  font-family: "Aeonik", sans-serif !important;
   font-weight: 300 !important;
   height: 42px !important;
   gap: 19px !important;
@@ -217,11 +217,7 @@ section.hours-table {
           }
           &.pool {
             position: relative;
-            .hours-title {
-              color: rgb(169, 169, 169);
-            }
-            color: rgb(169, 169, 169);
-            .closed {
+            .closed-sign {
               z-index: 77;
               opacity: 1;
               width: 120px;
@@ -231,6 +227,12 @@ section.hours-table {
               left: 50%;
               filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.124));
               transform: rotate(-3deg) translate(-50%, -50%);
+            }
+            .closed {
+              .hours-title {
+                color: rgb(169, 169, 169);
+              }
+              color: rgb(169, 169, 169);
             }
           }
         }
@@ -524,8 +526,7 @@ table {
     tr {
       th {
         padding-bottom: 20px;
-        font-family: var(--font-medium);
-        font-family: 'Aeonik Bold';
+        font-family: 'Aeonik Medium';
         text-transform: capitalize;
         text-align: center;
       }
@@ -559,10 +560,7 @@ table {
           display: flex;
           flex-direction: row;
           align-items: center;
-
-          font-family: var(--font-medium);
-
-          font-family: 'Aeonik Bold';
+          font-family: 'Aeonik Medium';
           text-transform: capitalize;
         }
       }

@@ -1,8 +1,14 @@
-
+//* Aeonik
+@font-face {
+  font-family: "Aeonik Light";
+  src: 
+    url("../fonts/Aeonik-Light.otf") format("opentype");
+  // font-weight: 500;
+}
 @font-face {
   font-family: "Aeonik";
   src: 
-    url("../fonts/Aeonik.otf") format("opentype");
+    url("../fonts/Aeonik-Regular.otf") format("opentype");
   // font-weight: 500;
 }
 @font-face {
@@ -17,6 +23,8 @@
     url("../fonts/Aeonik-Bold.otf") format("opentype");
   // font-weight: 500;
 }
+
+//* IKOB
 @font-face {
   font-family: "IKOB";
   src: url("../fonts/ikob.otf") format("opentype");
@@ -48,7 +56,7 @@ body {
   line-height: var(--line-height-b1);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Aeonik Medium", sans-serif;
+  font-family: "Aeonik", sans-serif;
   color: var(--color-body);
   font-weight: var(--p-regular);
   position: relative;

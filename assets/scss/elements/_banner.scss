@@ -595,6 +595,9 @@ $subpage-height: 550px;
 
   &.book-tee-time-banner {
     background-image: url(../images/golf/player-in-view.jpg);
+    .overlay {
+      background-image: $to-transparent-bg-gradient;
+    }
   }
   &.about-banner {
     background-image: url(../images/golf/marimack-tournament-start.jpg);

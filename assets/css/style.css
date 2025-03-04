@@ -104,8 +104,12 @@
 }
 
 @font-face {
+  font-family: "Aeonik Light";
+  src: url("../fonts/Aeonik-Light.otf") format("opentype");
+}
+@font-face {
   font-family: "Aeonik";
-  src: url("../fonts/Aeonik.otf") format("opentype");
+  src: url("../fonts/Aeonik-Regular.otf") format("opentype");
 }
 @font-face {
   font-family: "Aeonik Medium";
@@ -145,7 +149,7 @@ body {
   line-height: var(--line-height-b1);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Aeonik Medium", sans-serif;
+  font-family: "Aeonik", sans-serif;
   color: var(--color-body);
   font-weight: var(--p-regular);
   position: relative;
@@ -13505,6 +13509,9 @@ li.has-dropdown:hover .submenu li a {
 .banner-subpage.book-tee-time-banner {
   background-image: url(../images/golf/player-in-view.jpg);
 }
+.banner-subpage.book-tee-time-banner .overlay {
+  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.72) 0%, hsla(0, 0%, 0%, 0.585) 4.2%, hsla(0, 0%, 0%, 0.469) 7.4%, hsla(0, 0%, 0%, 0.369) 10%, hsla(0, 0%, 0%, 0.284) 12.2%, hsla(0, 0%, 0%, 0.213) 14.4%, hsla(0, 0%, 0%, 0.156) 16.8%, hsla(0, 0%, 0%, 0.109) 19.7%, hsla(0, 0%, 0%, 0.073) 23.5%, hsla(0, 0%, 0%, 0.046) 28.5%, hsla(0, 0%, 0%, 0.027) 35%, hsla(0, 0%, 0%, 0.014) 43.2%, hsla(0, 0%, 0%, 0.006) 53.5%, hsla(0, 0%, 0%, 0.002) 66.2%, hsla(0, 0%, 0%, 0) 81.6%, hsla(0, 0%, 0%, 0) 100%);
+}
 .banner-subpage.about-banner {
   background-image: url(../images/golf/marimack-tournament-start.jpg);
 }
@@ -20498,7 +20505,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .my-btn {
   color: white !important;
-  font-family: "Aeonik Medium", sans-serif !important;
+  font-family: "Aeonik", sans-serif !important;
   font-weight: 300 !important;
   height: 42px !important;
   gap: 19px !important;
@@ -20681,12 +20688,8 @@ section.hours-table .container .the-table-itself .some-tables [class*=col] .hour
 }
 section.hours-table .container .the-table-itself .some-tables [class*=col].pool {
   position: relative;
-  color: rgb(169, 169, 169);
 }
-section.hours-table .container .the-table-itself .some-tables [class*=col].pool .hours-title {
-  color: rgb(169, 169, 169);
-}
-section.hours-table .container .the-table-itself .some-tables [class*=col].pool .closed {
+section.hours-table .container .the-table-itself .some-tables [class*=col].pool .closed-sign {
   z-index: 77;
   opacity: 1;
   width: 120px;
@@ -20696,6 +20699,12 @@ section.hours-table .container .the-table-itself .some-tables [class*=col].pool 
   left: 50%;
   filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.124));
   transform: rotate(-3deg) translate(-50%, -50%);
+}
+section.hours-table .container .the-table-itself .some-tables [class*=col].pool .closed {
+  color: rgb(169, 169, 169);
+}
+section.hours-table .container .the-table-itself .some-tables [class*=col].pool .closed .hours-title {
+  color: rgb(169, 169, 169);
 }
 section.hours-table .container .the-table-itself .addendum {
   border-top: 1.5px solid rgba(0, 0, 0, 0.05);
@@ -20895,8 +20904,7 @@ table .explainer-icon {
 }
 table thead tr th {
   padding-bottom: 20px;
-  font-family: var(--font-medium);
-  font-family: "Aeonik Bold";
+  font-family: "Aeonik Medium";
   text-transform: capitalize;
   text-align: center;
 }
@@ -20922,8 +20930,7 @@ table tbody tr th .th-wrap {
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-family: var(--font-medium);
-  font-family: "Aeonik Bold";
+  font-family: "Aeonik Medium";
   text-transform: capitalize;
 }
 table tbody tr td,
