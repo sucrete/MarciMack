@@ -507,7 +507,7 @@ header {
 }
 
 table {
-  transition: opacity .3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
   opacity: 1;
   font-size: 17px;
   & * {
@@ -575,7 +575,7 @@ table {
     }
   }
   &.de-emphasize {
-    opacity: .3;
+    opacity: 0.3;
   }
 }
 
@@ -1099,24 +1099,23 @@ section.perks {
         .tab-content {
           padding-top: 4rem;
           .table-info {
-            transition: all .3s ease;
+            transition: all 0.3s ease;
             opacity: 0;
             pointer-events: none;
             position: absolute;
-            bottom: 20%;
+            bottom: 26%;
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 99;
             .icon {
               width: 40px;
-
             }
             &.animate-in {
               opacity: 1;
               bottom: 30%;
             }
             &.animate-out {
-              animation: go-away .3s ease forwards;
+              animation: go-away 0.3s ease forwards;
               @keyframes go-away {
                 to {
                   opacity: 0;
@@ -1958,7 +1957,7 @@ footer {
             div {
               h2 {
                 font-size: 47px;
-                margin-bottom: 2rem;
+                margin-bottom: 1rem;
               }
             }
             a {
@@ -1971,21 +1970,42 @@ footer {
   }
 }
 
-
-
 @media screen and (max-width: 768px) {
   .membership-page-body {
     .container {
       .row {
         .col {
+          h2 {
+            font-size: 58px;
+          }
           .tab-content {
             position: relative;
-            
+
             .tab-pane {
               overflow-x: scroll;
               table {
                 width: 972px;
                 position: relative;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .pool-page-body {
+    .container {
+      .bento-wrapper {
+        .notices-wrapper {
+          overflow: hidden;
+          .notices {
+            .row {
+              [class*="col"] {
+                &:nth-of-type(2),
+                &:nth-of-type(3) {
+                  border-top: 1.5px solid rgba(0, 0, 0, 0.05);
+                }
               }
             }
           }
@@ -2001,6 +2021,112 @@ footer {
       .the-table-itself {
         .hours-table-brow {
           flex-direction: column;
+        }
+      }
+    }
+  }
+
+  section {
+    &.perks {
+      .container {
+        padding: 0 15px;
+        .row {
+          [class*="col"] {
+            div {
+              h2 {
+                font-size: 40px;
+                margin-bottom: 1rem;
+              }
+            }
+            a {
+              // margin-bottom: 3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .membership-page-body {
+    .container {
+      .row {
+        .col {
+          h2 {
+          }
+          .membership-nav-wrapper {
+            ul.membership-nav {
+              .nav-item {
+                .nav-link {
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .pool-page-body {
+    .container {
+      h2 {
+        font-size: 40px;
+        padding-bottom: 2rem;
+      }
+    }
+  }
+
+  .pool-rules {
+    padding-top: 9rem;
+    padding-bottom: 3rem;
+  }
+
+  .contact-section {
+    .contact-row {
+      flex-direction: column;
+    }
+    .contact-box {
+      padding: 3.25rem 3.5rem 3.5rem 3.5rem;
+      margin-bottom: 20px;
+    }
+  }
+  .rental-section {
+    .container {
+      .row {
+        flex-direction: column-reverse;
+        gap: 4rem;
+        .left-column {
+          width: 100%;
+          padding: 0 20px;
+        }
+        [class*="col"] {
+          .tag-wrapper {
+            flex-direction: column;
+            align-items: flex-start;
+            .single-tag {
+              // display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+  .scorecard-page-body {
+    padding-bottom: 0;
+  }
+  .holes-in-one-page-body {
+    padding-top: 9rem;
+    padding-bottom: 6rem;
+    .container {
+      .col {
+        h3 {
+          font-size: 45px;
+        }
+        .hr-group {
+          margin-bottom: 5rem;
+        }
+        p {
+          font-size: 17px;
+          margin-bottom: 8px;
         }
       }
     }

@@ -283,7 +283,7 @@ export class Footer extends LitElement {
                 <a href="#" class="main" aria-expanded="false">About</a>
                 <ul class="submenu mm-collapse">
                   <li><a href="about.html">Contact</a></li>
-                  <li><a href="about.html#clubhouse-rental">Services</a></li>
+                  <li><a href="about.html#clubhouse-rental">Clubhouse Rental</a></li>
 
                   <li><a href="scorecard.html">Scorecard</a></li>
                   <li><a href="holes-in-one.html">Holes-in-One!</a></li>
