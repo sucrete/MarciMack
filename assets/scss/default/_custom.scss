@@ -525,6 +525,7 @@ table {
       th {
         padding-bottom: 20px;
         font-family: var(--font-medium);
+        font-family: 'Aeonik Bold';
         text-transform: capitalize;
         text-align: center;
       }
@@ -560,6 +561,8 @@ table {
           align-items: center;
 
           font-family: var(--font-medium);
+
+          font-family: 'Aeonik Bold';
           text-transform: capitalize;
         }
       }
@@ -2137,7 +2140,7 @@ footer {
     }
   }
   .booking-container {
-    padding: 7rem 45px;
+    padding: 7rem 29px;
     .row {
       [class*="col"] {
         p {
