@@ -20,7 +20,7 @@ export class CTA extends LitElement {
                     Click here to book online and save.
                   </p>
                   <a
-                    href="contact.html"
+                    href="book-tee-time.html"
                     class="rts-btn btn-primary wow fadeInUp cta-button"
                     data-wow-delay=".3s"
                   >
