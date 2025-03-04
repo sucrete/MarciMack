@@ -1,16 +1,21 @@
-@import url("https://db.onlinewebfonts.com/c/d95bf2f30035a050142565e03d44da71?family=Aeonik");
 
 @font-face {
-  font-family: "6500595b785e358dcc2a2f3a_AeonikMedium";
-  src: url("../fonts/6500595b785e358dcc2a2f3a_AeonikMedium.eot");
-  src: url("../fonts/6500595b785e358dcc2a2f3a_AeonikMedium.eot")
-      format("embedded-opentype"),
-    url("../fonts/6500595b785e358dcc2a2f3a_AeonikMedium.woff2") format("woff2"),
-    url("../fonts/6500595b785e358dcc2a2f3a_AeonikMedium.woff") format("woff"),
-    url("../fonts/6500595b785e358dcc2a2f3a_AeonikMedium.ttf") format("truetype"),
-    url("../fonts/6500595b785e358dcc2a2f3a_AeonikMedium.svg#6500595b785e358dcc2a2f3a_AeonikMedium")
-      format("svg");
-  font-weight: 500;
+  font-family: "Aeonik";
+  src: 
+    url("../fonts/Aeonik.otf") format("opentype");
+  // font-weight: 500;
+}
+@font-face {
+  font-family: "Aeonik Medium";
+  src: 
+    url("../fonts/Aeonik-Medium.otf") format("opentype");
+  // font-weight: 500;
+}
+@font-face {
+  font-family: "Aeonik Bold";
+  src: 
+    url("../fonts/Aeonik-Bold.otf") format("opentype");
+  // font-weight: 500;
 }
 @font-face {
   font-family: "IKOB";
@@ -43,7 +48,7 @@ body {
   line-height: var(--line-height-b1);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Aeonik", sans-serif;
+  font-family: "Aeonik Medium", sans-serif;
   color: var(--color-body);
   font-weight: var(--p-regular);
   position: relative;
@@ -115,7 +120,7 @@ h6,
 .h5,
 .h6 {
   word-break: break-word;
-  font-family: "Aeonik", sans-serif;
+  font-family: "Aeonik Medium", sans-serif;
   line-height: 1.4074;
   color: var(--color-heading-1);
 }

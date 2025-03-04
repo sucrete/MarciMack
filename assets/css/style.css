@@ -44,7 +44,6 @@
 
 ==============================================  */
 /* Default  */
-@import url("https://db.onlinewebfonts.com/c/d95bf2f30035a050142565e03d44da71?family=Aeonik");
 :root {
   --color-primary: #0b2e16;
   --color-offset: #004716;
@@ -86,9 +85,9 @@
   --s-extra-bold: 400;
   --s-black: 400;
   --transition: 0.3s;
-  --font-primary: "Aeonik", sans-serif;
-  --font-medium: "6500595b785e358dcc2a2f3a_AeonikMedium", sans-serif;
-  --font-secondary: "Aeonik", sans-serif;
+  --font-primary: "Aeonik Medium", sans-serif;
+  --font-medium: "Aeonik Medium", sans-serif;
+  --font-secondary: "Aeonik Medium", sans-serif;
   --font-3: "fontawesome";
   --font-size-b1: 16px;
   --font-size-b2: 16px;
@@ -105,10 +104,16 @@
 }
 
 @font-face {
-  font-family: "6500595b785e358dcc2a2f3a_AeonikMedium";
-  src: url("../fonts/6500595b785e358dcc2a2f3a_AeonikMedium.eot");
-  src: url("../fonts/6500595b785e358dcc2a2f3a_AeonikMedium.eot") format("embedded-opentype"), url("../fonts/6500595b785e358dcc2a2f3a_AeonikMedium.woff2") format("woff2"), url("../fonts/6500595b785e358dcc2a2f3a_AeonikMedium.woff") format("woff"), url("../fonts/6500595b785e358dcc2a2f3a_AeonikMedium.ttf") format("truetype"), url("../fonts/6500595b785e358dcc2a2f3a_AeonikMedium.svg#6500595b785e358dcc2a2f3a_AeonikMedium") format("svg");
-  font-weight: 500;
+  font-family: "Aeonik";
+  src: url("../fonts/Aeonik.otf") format("opentype");
+}
+@font-face {
+  font-family: "Aeonik Medium";
+  src: url("../fonts/Aeonik-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "Aeonik Bold";
+  src: url("../fonts/Aeonik-Bold.otf") format("opentype");
 }
 @font-face {
   font-family: "IKOB";
@@ -140,7 +145,7 @@ body {
   line-height: var(--line-height-b1);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Aeonik", sans-serif;
+  font-family: "Aeonik Medium", sans-serif;
   color: var(--color-body);
   font-weight: var(--p-regular);
   position: relative;
@@ -211,7 +216,7 @@ h6,
 .h5,
 .h6 {
   word-break: break-word;
-  font-family: "Aeonik", sans-serif;
+  font-family: "Aeonik Medium", sans-serif;
   line-height: 1.4074;
   color: var(--color-heading-1);
 }
@@ -12585,8 +12590,8 @@ Copyright (c) 2015 Daniel Eden
   padding: 38px 0;
   display: block;
   color: #000000;
-  font-size: 16px;
-  font-family: var(--font-medium);
+  font-size: 17px;
+  font-family: "Aeonik Medium";
 }
 
 .header--sticky.sticky .nav-area ul li > a.nav-link {
@@ -20493,7 +20498,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .my-btn {
   color: white !important;
-  font-family: "Aeonik", sans-serif !important;
+  font-family: "Aeonik Medium", sans-serif !important;
   font-weight: 300 !important;
   height: 42px !important;
   gap: 19px !important;

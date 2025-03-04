@@ -66,9 +66,9 @@
 
 
     // Font Family
-    --font-primary: 'Aeonik', sans-serif;
-    --font-medium: '6500595b785e358dcc2a2f3a_AeonikMedium', sans-serif;
-    --font-secondary: 'Aeonik', sans-serif;
+    --font-primary: 'Aeonik Medium', sans-serif;
+    --font-medium: 'Aeonik Medium', sans-serif;
+    --font-secondary: 'Aeonik Medium', sans-serif;
     --font-3: 'fontawesome';
     //Fonts Size
     --font-size-b1: 16px;
@@ -104,3 +104,7 @@ $md-layout: 'only screen and (min-width: 768px) and (max-width: 991px)';
 $sm-layout: 'only screen and (max-width: 767px)';
 $large-mobile: 'only screen and (max-width: 575px)';
 $small-mobile: 'only screen and (max-width: 479px)';
+
+@mixin thicken() {
+    
+}
