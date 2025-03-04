@@ -2,7 +2,7 @@
 
 section.cta {
   .rts-cts-area {
-    padding-top: 0rem;
+    padding-top: 12rem;
     padding-bottom: 12rem;
     .cta-one-wrapper {
       background: #e3f5e8;
@@ -162,6 +162,9 @@ section.cta {
         }
       }
     }
+    // @media screen and (max-width) {
+      
+    // }
   }
   &.blonde {
     .rts-cts-area {

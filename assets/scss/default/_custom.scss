@@ -834,7 +834,7 @@ table {
 .rental-section {
   background-color: #f4f4f4;
   padding-top: 11rem;
-  padding-bottom: 14rem;
+  padding-bottom: 6rem;
   .container {
     height: 100%;
     .row {
@@ -960,8 +960,8 @@ table {
     padding-top: 10rem;
     padding-bottom: 3rem;
     justify-content: space-between;
-    // align-items: center;
     border-bottom: 1.5px solid rgba(0, 0, 0, 0.05);
+    margin-bottom: 5rem;
     h2 {
       display: inline-block;
       width: fit-content;
@@ -1191,7 +1191,7 @@ section.perks {
 //~ Rates/Greens Fees
 .rates-page-body {
   padding-top: 0rem;
-  padding-bottom: 16rem;
+  padding-bottom: 5rem;
   background-color: #fafafa;
   position: relative;
 
@@ -2041,6 +2041,10 @@ footer {
             a {
               // margin-bottom: 3rem;
             }
+            &:first-of-type {
+              padding-left: 15px;
+              padding-right: 15px;
+            }
           }
         }
       }
@@ -2127,6 +2131,18 @@ footer {
         p {
           font-size: 17px;
           margin-bottom: 8px;
+        }
+      }
+    }
+  }
+  .booking-container {
+    padding: 7rem 45px;
+    .row {
+      [class*="col"] {
+        p {
+          &.p1 {
+            font-size: 17px;
+          }
         }
       }
     }
