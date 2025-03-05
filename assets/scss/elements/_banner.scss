@@ -603,6 +603,7 @@ $subpage-height: 550px;
     background-image: url(../images/golf/marimack-tournament-start.jpg);
     .overlay {
       background-image: $dark-background-gradient;
+      background-image: $to-transparent-bg-gradient;
     }
   }
   &.events-banner {
@@ -747,7 +748,7 @@ $subpage-height: 550px;
   position: relative;
   .shape {
     position: absolute;
-    right: 270px;
+    right: 212px;
     bottom: 53px;
   }
 }
