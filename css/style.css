@@ -105,29 +105,29 @@
 
 @font-face {
   font-family: "Aeonik Light";
-  src: url("../fonts/Aeonik-Light.otf") format("opentype");
+  src: url("../assets/fonts/Aeonik-Light.otf") format("opentype");
 }
 @font-face {
   font-family: "Aeonik";
-  src: url("../fonts/Aeonik-Regular.otf") format("opentype");
+  src: url("../assets/fonts/Aeonik-Regular.otf") format("opentype");
 }
 @font-face {
   font-family: "Aeonik Medium";
-  src: url("../fonts/Aeonik-Medium.otf") format("opentype");
+  src: url("../assets/fonts/Aeonik-Medium.otf") format("opentype");
 }
 @font-face {
   font-family: "Aeonik Bold";
-  src: url("../fonts/Aeonik-Bold.otf") format("opentype");
+  src: url("../assets/fonts/Aeonik-Bold.otf") format("opentype");
 }
 @font-face {
   font-family: "IKOB";
-  src: url("../fonts/ikob.otf") format("opentype");
+  src: url("../assets/fonts/ikob.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "IKOB Italic";
-  src: url("../fonts/ikob-italic.otf") format("opentype");
+  src: url("../assets/fonts/ikob-italic.otf") format("opentype");
   font-weight: normal;
   font-style: italic;
 }
@@ -13399,7 +13399,7 @@ li.has-dropdown:hover .submenu li a {
 }
 
 .banner-four-bg {
-  background-image: url(../images/golf/aerial-view-of-green-forest.jpg);
+  background-image: url(../images/marimack-aerial-2.jpg);
   height: 853px !important;
   background-repeat: no-repeat;
   background-position: center;
@@ -13507,32 +13507,32 @@ li.has-dropdown:hover .submenu li a {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.29) 0%, hsla(0, 0%, 0%, 0.288) 8.1%, hsla(0, 0%, 0%, 0.283) 15.5%, hsla(0, 0%, 0%, 0.274) 22.5%, hsla(0, 0%, 0%, 0.264) 29%, hsla(0, 0%, 0%, 0.251) 35.3%, hsla(0, 0%, 0%, 0.237) 41.2%, hsla(0, 0%, 0%, 0.222) 47.1%, hsla(0, 0%, 0%, 0.208) 52.9%, hsla(0, 0%, 0%, 0.193) 58.8%, hsla(0, 0%, 0%, 0.179) 64.7%, hsla(0, 0%, 0%, 0.166) 71%, hsla(0, 0%, 0%, 0.156) 77.5%, hsla(0, 0%, 0%, 0.147) 84.5%, hsla(0, 0%, 0%, 0.142) 91.9%, hsla(0, 0%, 0%, 0.14) 100%);
 }
 .banner-subpage.book-tee-time-banner {
-  background-image: url(../images/golf/player-in-view.jpg);
+  background-image: url(../images/player-in-view.jpg);
 }
 .banner-subpage.book-tee-time-banner .overlay {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.72) 0%, hsla(0, 0%, 0%, 0.585) 4.2%, hsla(0, 0%, 0%, 0.469) 7.4%, hsla(0, 0%, 0%, 0.369) 10%, hsla(0, 0%, 0%, 0.284) 12.2%, hsla(0, 0%, 0%, 0.213) 14.4%, hsla(0, 0%, 0%, 0.156) 16.8%, hsla(0, 0%, 0%, 0.109) 19.7%, hsla(0, 0%, 0%, 0.073) 23.5%, hsla(0, 0%, 0%, 0.046) 28.5%, hsla(0, 0%, 0%, 0.027) 35%, hsla(0, 0%, 0%, 0.014) 43.2%, hsla(0, 0%, 0%, 0.006) 53.5%, hsla(0, 0%, 0%, 0.002) 66.2%, hsla(0, 0%, 0%, 0) 81.6%, hsla(0, 0%, 0%, 0) 100%);
 }
 .banner-subpage.about-banner {
-  background-image: url(../images/golf/marimack-tournament-start.jpg);
+  background-image: url(../images/marimack-tournament-start.jpg);
 }
 .banner-subpage.about-banner .overlay {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.4) 0%, hsla(0, 0%, 0%, 0.397) 4.6%, hsla(0, 0%, 0%, 0.387) 8.4%, hsla(0, 0%, 0%, 0.373) 11.7%, hsla(0, 0%, 0%, 0.354) 14.8%, hsla(0, 0%, 0%, 0.333) 17.9%, hsla(0, 0%, 0%, 0.308) 21.2%, hsla(0, 0%, 0%, 0.283) 25%, hsla(0, 0%, 0%, 0.257) 29.5%, hsla(0, 0%, 0%, 0.232) 34.8%, hsla(0, 0%, 0%, 0.207) 41.4%, hsla(0, 0%, 0%, 0.186) 49.4%, hsla(0, 0%, 0%, 0.167) 59%, hsla(0, 0%, 0%, 0.153) 70.5%, hsla(0, 0%, 0%, 0.143) 84.1%, hsla(0, 0%, 0%, 0.14) 100%);
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.72) 0%, hsla(0, 0%, 0%, 0.585) 4.2%, hsla(0, 0%, 0%, 0.469) 7.4%, hsla(0, 0%, 0%, 0.369) 10%, hsla(0, 0%, 0%, 0.284) 12.2%, hsla(0, 0%, 0%, 0.213) 14.4%, hsla(0, 0%, 0%, 0.156) 16.8%, hsla(0, 0%, 0%, 0.109) 19.7%, hsla(0, 0%, 0%, 0.073) 23.5%, hsla(0, 0%, 0%, 0.046) 28.5%, hsla(0, 0%, 0%, 0.027) 35%, hsla(0, 0%, 0%, 0.014) 43.2%, hsla(0, 0%, 0%, 0.006) 53.5%, hsla(0, 0%, 0%, 0.002) 66.2%, hsla(0, 0%, 0%, 0) 81.6%, hsla(0, 0%, 0%, 0) 100%);
 }
 .banner-subpage.events-banner {
-  background-image: url(../images/golf/marimack-bunch-of-carts.jpg);
+  background-image: url(../images/marimack-bunch-of-carts.jpg);
 }
 .banner-subpage.events-banner .overlay {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.72) 0%, hsla(0, 0%, 0%, 0.585) 4.2%, hsla(0, 0%, 0%, 0.469) 7.4%, hsla(0, 0%, 0%, 0.369) 10%, hsla(0, 0%, 0%, 0.284) 12.2%, hsla(0, 0%, 0%, 0.213) 14.4%, hsla(0, 0%, 0%, 0.156) 16.8%, hsla(0, 0%, 0%, 0.109) 19.7%, hsla(0, 0%, 0%, 0.073) 23.5%, hsla(0, 0%, 0%, 0.046) 28.5%, hsla(0, 0%, 0%, 0.027) 35%, hsla(0, 0%, 0%, 0.014) 43.2%, hsla(0, 0%, 0%, 0.006) 53.5%, hsla(0, 0%, 0%, 0.002) 66.2%, hsla(0, 0%, 0%, 0) 81.6%, hsla(0, 0%, 0%, 0) 100%);
 }
 .banner-subpage.online-store-banner {
-  background-image: url(../images/golf/golfer-in-trap.jpg);
+  background-image: url(../images/marimack-bunch-of-carts-2.jpg);
 }
 .banner-subpage.online-store-banner .overlay {
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
+  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.4) 0%, hsla(0, 0%, 0%, 0.397) 4.6%, hsla(0, 0%, 0%, 0.387) 8.4%, hsla(0, 0%, 0%, 0.373) 11.7%, hsla(0, 0%, 0%, 0.354) 14.8%, hsla(0, 0%, 0%, 0.333) 17.9%, hsla(0, 0%, 0%, 0.308) 21.2%, hsla(0, 0%, 0%, 0.283) 25%, hsla(0, 0%, 0%, 0.257) 29.5%, hsla(0, 0%, 0%, 0.232) 34.8%, hsla(0, 0%, 0%, 0.207) 41.4%, hsla(0, 0%, 0%, 0.186) 49.4%, hsla(0, 0%, 0%, 0.167) 59%, hsla(0, 0%, 0%, 0.153) 70.5%, hsla(0, 0%, 0%, 0.143) 84.1%, hsla(0, 0%, 0%, 0.14) 100%);
 }
 .banner-subpage.host-your-event-banner {
-  background-image: url(../images/golf/people-cheersing.jpg);
+  background-image: url(../images/people-cheersing.jpg);
 }
 .banner-subpage.host-your-event-banner .overlay {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
@@ -13541,7 +13541,7 @@ li.has-dropdown:hover .submenu li a {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
 }
 .banner-subpage.membership-banner {
-  background-image: url(../images/golf/young-man-in-trap.jpg);
+  background-image: url(../images/young-man-in-trap.jpg);
 }
 .banner-subpage.membership-banner .overlay {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
@@ -13550,7 +13550,7 @@ li.has-dropdown:hover .submenu li a {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
 }
 .banner-subpage.rates-banner {
-  background-image: url(../images/golf/golf-bag-in-foreground.jpg);
+  background-image: url(../images/golf-bag-in-foreground.jpg);
 }
 .banner-subpage.rates-banner .overlay {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
@@ -13559,7 +13559,7 @@ li.has-dropdown:hover .submenu li a {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
 }
 .banner-subpage.pool-banner {
-  background-image: url(../images/golf/water-surface.jpg);
+  background-image: url(../images/water-surface.jpg);
 }
 .banner-subpage.pool-banner .overlay {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.6) 0%, hsla(0, 0%, 0%, 0.594) 2.7%, hsla(0, 0%, 0%, 0.576) 5.2%, hsla(0, 0%, 0%, 0.548) 7.7%, hsla(0, 0%, 0%, 0.512) 10.4%, hsla(0, 0%, 0%, 0.47) 13.5%, hsla(0, 0%, 0%, 0.424) 17.1%, hsla(0, 0%, 0%, 0.375) 21.3%, hsla(0, 0%, 0%, 0.325) 26.4%, hsla(0, 0%, 0%, 0.276) 32.5%, hsla(0, 0%, 0%, 0.23) 39.9%, hsla(0, 0%, 0%, 0.188) 48.5%, hsla(0, 0%, 0%, 0.152) 58.7%, hsla(0, 0%, 0%, 0.124) 70.6%, hsla(0, 0%, 0%, 0.106) 84.3%, hsla(0, 0%, 0%, 0.1) 100%);
@@ -13741,101 +13741,6 @@ li.has-dropdown:hover .submenu li a {
 .rts-service-banner-area .shape-area-start img.two {
   right: 44%;
   top: 69%;
-}
-
-.service-single-area-banner {
-  background-image: url(../images/service/06.webp);
-  height: 600px !important;
-}
-@media only screen and (max-width: 575px) {
-  .service-single-area-banner {
-    height: 400px !important;
-  }
-}
-.service-single-area-banner.it-strategies {
-  background-image: url(../images/service/11.webp);
-}
-.service-single-area-banner.cyber-security {
-  background-image: url(../images/service/12.webp);
-}
-.service-single-area-banner.technology-service {
-  background-image: url(../images/service/13.webp);
-}
-.service-single-area-banner.it-service {
-  background-image: url(../images/service/14.webp);
-}
-.service-single-area-banner.development-service {
-  background-image: url(../images/service/15.webp);
-}
-.service-single-area-banner.ai-learning-service {
-  background-image: url(../images/service/16.webp);
-}
-.service-single-area-banner.management-service {
-  background-image: url(../images/service/17.webp);
-}
-.service-single-area-banner.it-innovations {
-  background-image: url(../images/service/18.webp);
-}
-
-.case-studies-banner-top {
-  padding: 80px 0;
-  text-align: center;
-}
-.case-studies-banner-top .title {
-  font-size: 48px;
-}
-@media only screen and (max-width: 575px) {
-  .case-studies-banner-top .title {
-    font-size: 46px;
-  }
-}
-.case-studies-banner-top p {
-  margin: 0;
-  font-size: 20px;
-}
-
-.rts-case-studies-banner-area {
-  position: relative;
-}
-.rts-case-studies-banner-area .shape-left-top {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-@media only screen and (max-width: 575px) {
-  .rts-case-studies-banner-area .shape-left-top {
-    display: none;
-  }
-}
-
-.banner-inner-why-choose-us {
-  max-width: 60%;
-  margin: auto;
-  padding: 100px 0 60px 0;
-  text-align: center;
-}
-@media only screen and (max-width: 575px) {
-  .banner-inner-why-choose-us {
-    padding: 30px 0 25px 0;
-    max-width: 100%;
-  }
-}
-
-.thumbnail-banner-choose-us {
-  height: 500px !important;
-}
-@media only screen and (max-width: 575px) {
-  .thumbnail-banner-choose-us {
-    height: 300px !important;
-  }
-}
-.thumbnail-banner-choose-us img {
-  height: 100%;
-}
-@media only screen and (max-width: 575px) {
-  .thumbnail-banner-choose-us img {
-    width: 100%;
-  }
 }
 
 .career-page-single-banner.blog-page {
@@ -16572,7 +16477,7 @@ section.cta .rts-cts-area .cta-one-wrapper .right:after {
   top: -187%;
   left: -50%;
   z-index: 1;
-  background: url("../images/golf/grand-tartan.svg") 0 0 repeat;
+  background: url("../assets/images/svgs/grand-tartan.svg") 0 0 repeat;
   background-size: 100%;
   transform: rotate(30deg) translate(50%, 50%);
   transform-origin: center center;
@@ -21383,7 +21288,6 @@ section.perks .container .row [class*=col] .single-solution-style-one:hover {
 }
 .membership-page-body .container .row .col .sales-tax-note {
   text-align: center;
-  opacity: 0.8;
   padding-top: 2rem;
   font-size: 19px;
 }

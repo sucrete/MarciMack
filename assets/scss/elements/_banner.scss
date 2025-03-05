@@ -381,7 +381,7 @@
 }
 
 .banner-four-bg {
-  background-image: url(../images/golf/aerial-view-of-green-forest.jpg);
+  background-image: url(../images/marimack-aerial-2.jpg);
   height: 853px !important;
   background-repeat: no-repeat;
   background-position: center;
@@ -594,32 +594,32 @@ $subpage-height: 550px;
   }
 
   &.book-tee-time-banner {
-    background-image: url(../images/golf/player-in-view.jpg);
+    background-image: url(../images/player-in-view.jpg);
     .overlay {
       background-image: $to-transparent-bg-gradient;
     }
   }
   &.about-banner {
-    background-image: url(../images/golf/marimack-tournament-start.jpg);
+    background-image: url(../images/marimack-tournament-start.jpg);
     .overlay {
       background-image: $dark-background-gradient;
       background-image: $to-transparent-bg-gradient;
     }
   }
   &.events-banner {
-    background-image: url(../images/golf/marimack-bunch-of-carts.jpg);
+    background-image: url(../images/marimack-bunch-of-carts.jpg);
     .overlay {
       background-image: $to-transparent-bg-gradient;
     }
   }
   &.online-store-banner {
-    background-image: url(../images/golf/golfer-in-trap.jpg);
+    background-image: url(../images/marimack-bunch-of-carts-2.jpg);
     .overlay {
-      background-image: $darker-background-gradient;
+      background-image: $dark-background-gradient;
     }
   }
   &.host-your-event-banner {
-    background-image: url(../images/golf/people-cheersing.jpg);
+    background-image: url(../images/people-cheersing.jpg);
     .overlay {
       background-image: $darker-background-gradient;
     }
@@ -628,7 +628,7 @@ $subpage-height: 550px;
     }
   }
   &.membership-banner {
-    background-image: url(../images/golf/young-man-in-trap.jpg);
+    background-image: url(../images/young-man-in-trap.jpg);
     .overlay {
       background-image: $darker-background-gradient;
     }
@@ -637,7 +637,7 @@ $subpage-height: 550px;
     }
   }
   &.rates-banner {
-    background-image: url(../images/golf/golf-bag-in-foreground.jpg);
+    background-image: url(../images/golf-bag-in-foreground.jpg);
     .overlay {
       background-image: $darker-background-gradient;
     }
@@ -646,7 +646,7 @@ $subpage-height: 550px;
     }
   }
   &.pool-banner {
-    background-image: url(../images/golf/water-surface.jpg);
+    background-image: url(../images/water-surface.jpg);
     .overlay {
       background-image: $darker-background-gradient;
     }
@@ -854,106 +854,7 @@ $subpage-height: 550px;
   }
 }
 
-.service-single-area-banner {
-  background-image: url(../images/service/06.webp);
-  height: 600px !important;
 
-  @media #{$large-mobile} {
-    height: 400px !important;
-  }
-
-  &.it-strategies {
-    background-image: url(../images/service/11.webp);
-  }
-
-  &.cyber-security {
-    background-image: url(../images/service/12.webp);
-  }
-
-  &.technology-service {
-    background-image: url(../images/service/13.webp);
-  }
-
-  &.it-service {
-    background-image: url(../images/service/14.webp);
-  }
-
-  &.development-service {
-    background-image: url(../images/service/15.webp);
-  }
-
-  &.ai-learning-service {
-    background-image: url(../images/service/16.webp);
-  }
-
-  &.management-service {
-    background-image: url(../images/service/17.webp);
-  }
-
-  &.it-innovations {
-    background-image: url(../images/service/18.webp);
-  }
-}
-
-.case-studies-banner-top {
-  padding: 80px 0;
-  text-align: center;
-
-  .title {
-    font-size: 48px;
-
-    @media #{$large-mobile} {
-      font-size: 46px;
-    }
-  }
-
-  p {
-    margin: 0;
-    font-size: 20px;
-  }
-}
-
-.rts-case-studies-banner-area {
-  position: relative;
-
-  .shape-left-top {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    @media #{$large-mobile} {
-      display: none;
-    }
-  }
-}
-
-.banner-inner-why-choose-us {
-  max-width: 60%;
-  margin: auto;
-  padding: 100px 0 60px 0;
-  text-align: center;
-
-  @media #{$large-mobile} {
-    padding: 30px 0 25px 0;
-    max-width: 100%;
-  }
-}
-
-.thumbnail-banner-choose-us {
-  height: 500px !important;
-
-  @media #{$large-mobile} {
-    height: 300px !important;
-  }
-
-  img {
-    height: 100%;
-
-    @media #{$large-mobile} {
-      width: 100%;
-    }
-  }
-}
 
 .career-page-single-banner.blog-page {
   max-width: 65%;
