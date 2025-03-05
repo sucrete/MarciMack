@@ -526,7 +526,7 @@ table {
     tr {
       th {
         padding-bottom: 20px;
-        font-family: 'Aeonik Medium';
+        font-family: "Aeonik Medium";
         text-transform: capitalize;
         text-align: center;
       }
@@ -560,7 +560,7 @@ table {
           display: flex;
           flex-direction: row;
           align-items: center;
-          font-family: 'Aeonik Medium';
+          font-family: "Aeonik Medium";
           text-transform: capitalize;
         }
       }
@@ -964,6 +964,7 @@ table {
     justify-content: space-between;
     border-bottom: 1.5px solid rgba(0, 0, 0, 0.05);
     margin-bottom: 5rem;
+    align-items: center;
     h2 {
       display: inline-block;
       width: fit-content;
@@ -1321,7 +1322,6 @@ section.perks {
   padding-top: 14rem;
   padding-bottom: 16rem;
   background-color: #f4f4f4;
-  // background-image: url(../images/svgs/waves.svg);
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -1335,8 +1335,8 @@ section.perks {
   //     width: 100%;
   //     top: 0;
   //     left: 0;
-  // background: radial-gradient(at center, #f4f4f400 30%, #F4F4F4 80%);
-  // // background: radial-gradient(at center, #f50707dc, #F4F4F4);
+  //     background: radial-gradient(at center, #f4f4f400 30%, #F4F4F4 80%);
+  //     background: radial-gradient(at center, #f50707dc, #F4F4F4);
   //   }
   h2 {
     text-align: center;
@@ -2115,7 +2115,7 @@ footer {
       margin-bottom: 20px;
     }
   }
-  
+
   .scorecard-page-body {
     padding-bottom: 0;
   }
@@ -2148,5 +2148,20 @@ footer {
         }
       }
     }
+  }
+  .calendar-section {
+    .title-bar {
+      padding-top: 7rem;
+      flex-direction: column;
+      align-items: unset;
+      h2 {
+        font-size: 36px;
+        margin-bottom: 8px;
+      }
+      .single-tag {
+        margin-left: 8px;
+      }
+    }
+
   }
 }

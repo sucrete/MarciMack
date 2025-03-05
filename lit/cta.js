@@ -13,16 +13,16 @@ export class CTA extends LitElement {
             <div class="col-gl-12">
               <div class="cta-one-wrapper">
                 <div class="left-area">
-                  <h3 class="title wow fadeInUp" data-wow-delay=".1s">
+                  <h3 class="title">
                     Have 2 or More Players?
                   </h3>
-                  <p class="wow fadeInUp" data-wow-delay=".3s">
+                  <p>
                     Click here to book online and save.
                   </p>
                   <a
                     href="book-tee-time.html"
-                    class="rts-btn btn-primary wow fadeInUp cta-button"
-                    data-wow-delay=".3s"
+                    class="rts-btn btn-primary cta-button"
+                    
                   >
                     Book tee time
                     <img
