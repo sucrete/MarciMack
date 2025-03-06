@@ -49,7 +49,7 @@ export class Footer extends LitElement {
                   </form>
                   <div class="link-group d-flex flex-row flex-start">
                         <div class="contact-stack">
-                          <a href="tel:8166284800" class="link phone-link">
+                          <a href="tel:8166284800" class="link phone-link no-underline">
                             <img
                               class="icon phone-icon"
                               src="./assets/images/icons/phone.svg"
@@ -59,7 +59,7 @@ export class Footer extends LitElement {
                           <a
                             href="https://maps.app.goo.gl/Bzrg9oSfx67wBW1E7"
                             target="_blank"
-                            class="link map-link d-flex flex-row align-items-start"
+                            class="link map-link d-flex flex-row align-items-start no-underline"
                           >
                             <img
                               class="icon map-icon"
@@ -74,7 +74,7 @@ export class Footer extends LitElement {
                         </div>
 
                         <a
-                          class="facebook-link"
+                          class="facebook-link "
                           href="https://www.facebook.com/ClubatMariMack"
                           target="_blank"
                         >
@@ -216,7 +216,7 @@ export class Footer extends LitElement {
                       </p>
                     </div>
                     <a
-                      class="teequest-link"
+                      class="teequest-link no-underline"
                       target="_blank"
                       href="https://www.teequestsolutions.com"
                     >

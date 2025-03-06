@@ -21,7 +21,7 @@ export class CTA extends LitElement {
                   </p>
                   <a
                     href="book-tee-time.html"
-                    class="rts-btn btn-primary cta-button"
+                    class="rts-btn btn-primary cta-button no-underline"
                     
                   >
                     Book tee time

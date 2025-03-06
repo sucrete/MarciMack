@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap");
+
 .my-hr {
   background-color: #d1d1d1;
   opacity: 1;
@@ -241,8 +243,11 @@ section.hours-table {
               position: absolute;
               top: 55%;
               left: 50%;
-              filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.4));
               transform: rotate(-3deg) translate(-50%, -50%);
+              // filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.4));
+              filter: drop-shadow(0px 9px 17px rgba(50, 50, 93, 0.25))
+                drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.3));
+              // box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
             }
             &.closed {
               .hours-title,
@@ -574,10 +579,14 @@ table {
           text-transform: capitalize;
         }
         .note {
-          font-family: "Aeonik Medium";
-          font-size: 11.5px;
-          letter-spacing: 1.25px;
-          line-height: 125%;
+          font-family: "Sono", monospace;
+          font-optical-sizing: auto;
+          font-weight: 450;
+          /* font-style: normal; */
+          font-variation-settings: "MONO" 1;
+          font-size: 13px;
+          letter-spacing: 0.5px;
+          line-height: 120%;
           margin-left: 1px;
           color: #878787;
           .explainer-icon {
@@ -772,6 +781,7 @@ table {
       flex: 1 1 50%;
       background: rgb(244, 244, 244);
       box-shadow: 0px 0px 0px rgba(24, 16, 16, 0);
+      // font-family: "Aeonik Medium";
       .icon {
         padding-right: 14px;
         &-blast {
@@ -1085,8 +1095,8 @@ section.perks {
               min-height: 20px;
               width: 70px;
               transition: all 0.3s ease;
-              box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-                rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+              box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+                rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
             }
             .nav-item {
               position: relative;
@@ -1564,7 +1574,7 @@ footer {
           .logo-brick {
             display: flex;
             flex-direction: row;
-            padding-bottom: 2rem;
+            padding-bottom: 4rem;
             align-items: center;
             .logo-col {
               //  flex-basis: 180px;
