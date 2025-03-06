@@ -13521,7 +13521,7 @@ li.has-dropdown:hover .submenu li a {
   background-image: url(../images/marimack-bunch-of-carts-2.jpg);
 }
 .banner-subpage.online-store-banner .overlay {
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.4) 0%, hsla(0, 0%, 0%, 0.397) 4.6%, hsla(0, 0%, 0%, 0.387) 8.4%, hsla(0, 0%, 0%, 0.373) 11.7%, hsla(0, 0%, 0%, 0.354) 14.8%, hsla(0, 0%, 0%, 0.333) 17.9%, hsla(0, 0%, 0%, 0.308) 21.2%, hsla(0, 0%, 0%, 0.283) 25%, hsla(0, 0%, 0%, 0.257) 29.5%, hsla(0, 0%, 0%, 0.232) 34.8%, hsla(0, 0%, 0%, 0.207) 41.4%, hsla(0, 0%, 0%, 0.186) 49.4%, hsla(0, 0%, 0%, 0.167) 59%, hsla(0, 0%, 0%, 0.153) 70.5%, hsla(0, 0%, 0%, 0.143) 84.1%, hsla(0, 0%, 0%, 0.14) 100%);
+  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.76) 0%, hsla(0, 0%, 0%, 0.706) 7.1%, hsla(0, 0%, 0%, 0.655) 13.2%, hsla(0, 0%, 0%, 0.609) 18.3%, hsla(0, 0%, 0%, 0.566) 22.7%, hsla(0, 0%, 0%, 0.528) 26.8%, hsla(0, 0%, 0%, 0.492) 30.7%, hsla(0, 0%, 0%, 0.461) 34.8%, hsla(0, 0%, 0%, 0.432) 39.1%, hsla(0, 0%, 0%, 0.407) 44.1%, hsla(0, 0%, 0%, 0.385) 49.9%, hsla(0, 0%, 0%, 0.366) 56.7%, hsla(0, 0%, 0%, 0.351) 64.9%, hsla(0, 0%, 0%, 0.338) 74.7%, hsla(0, 0%, 0%, 0.327) 86.3%, hsla(0, 0%, 0%, 0.32) 100%);
 }
 .banner-subpage.host-your-event-banner {
   background-image: url(../images/people-cheersing.jpg);
@@ -20380,6 +20380,14 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   opacity: 1;
 }
 
+.explainer-icon {
+  width: 14px;
+  height: auto;
+  margin-left: 5px;
+  margin-top: 1px;
+  cursor: pointer;
+}
+
 .my-btn {
   color: white !important;
   font-family: "Aeonik", sans-serif !important;
@@ -20433,6 +20441,9 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 .notices .row [class*=col] .notice-icon img {
   width: auto;
   height: 25px;
+}
+.notices .row [class*=col] p .explainer-icon {
+  margin-bottom: 3px;
 }
 @media (max-width: 992px) {
   .notices.greens-fees {
@@ -20772,13 +20783,6 @@ table {
 table * {
   border: none;
 }
-table .explainer-icon {
-  width: 14px;
-  height: auto;
-  margin-left: 5px;
-  margin-top: 1px;
-  cursor: pointer;
-}
 table thead tr th {
   padding-bottom: 20px;
   font-family: "Aeonik Medium";
@@ -20809,6 +20813,19 @@ table tbody tr th .th-wrap {
   align-items: center;
   font-family: "Aeonik Medium";
   text-transform: capitalize;
+}
+table tbody tr th .note {
+  font-family: "Aeonik Medium";
+  font-size: 11.5px;
+  letter-spacing: 2px;
+  line-height: 125%;
+  margin-left: 1px;
+  color: #878787;
+}
+table tbody tr th .note .explainer-icon {
+  width: 11.5px;
+  margin-top: -2.5px;
+  margin-left: unset;
 }
 table tbody tr td,
 table tbody tr th {
@@ -21430,7 +21447,7 @@ section.perks .container .row [class*=col] .single-solution-style-one:hover {
   margin-bottom: 1.5rem;
 }
 .rates-page-body [class*=table-wrapper] .table-preface.busy {
-  margin-bottom: -2.5rem;
+  margin-bottom: -1rem;
 }
 @media (max-width: 768px) {
   .rates-page-body [class*=table-wrapper] .table-preface {

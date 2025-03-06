@@ -556,6 +556,29 @@ $darker-background-gradient: linear-gradient(
   hsla(0, 0%, 0%, 0.106) 84.3%,
   hsla(0, 0%, 0%, 0.1) 100%
 );
+
+$starker-gradient: linear-gradient(
+  to bottom,
+  hsla(0, 0%, 0%, 0.76) 0%,
+  hsla(0, 0%, 0%, 0.706) 7.1%,
+  hsla(0, 0%, 0%, 0.655) 13.2%,
+  hsla(0, 0%, 0%, 0.609) 18.3%,
+  hsla(0, 0%, 0%, 0.566) 22.7%,
+  hsla(0, 0%, 0%, 0.528) 26.8%,
+  hsla(0, 0%, 0%, 0.492) 30.7%,
+  hsla(0, 0%, 0%, 0.461) 34.8%,
+  hsla(0, 0%, 0%, 0.432) 39.1%,
+  hsla(0, 0%, 0%, 0.407) 44.1%,
+  hsla(0, 0%, 0%, 0.385) 49.9%,
+  hsla(0, 0%, 0%, 0.366) 56.7%,
+  hsla(0, 0%, 0%, 0.351) 64.9%,
+  hsla(0, 0%, 0%, 0.338) 74.7%,
+  hsla(0, 0%, 0%, 0.327) 86.3%,
+  hsla(0, 0%, 0%, 0.32) 100%
+);
+
+
+
 $subpage-height: 550px;
 .banner-subpage {
   height: $subpage-height;
@@ -615,7 +638,7 @@ $subpage-height: 550px;
   &.online-store-banner {
     background-image: url(../images/marimack-bunch-of-carts-2.jpg);
     .overlay {
-      background-image: $dark-background-gradient;
+      background-image: $starker-gradient;
     }
   }
   &.host-your-event-banner {
@@ -853,8 +876,6 @@ $subpage-height: 550px;
     }
   }
 }
-
-
 
 .career-page-single-banner.blog-page {
   max-width: 65%;

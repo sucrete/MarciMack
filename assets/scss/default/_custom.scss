@@ -2,6 +2,15 @@
   background-color: #d1d1d1;
   opacity: 1;
 }
+
+.explainer-icon {
+  width: 14px;
+  height: auto;
+  margin-left: 5px;
+  margin-top: 1px;
+  cursor: pointer;
+}
+
 .my-btn {
   color: white !important;
   font-family: "Aeonik", sans-serif !important;
@@ -57,6 +66,11 @@
         img {
           width: auto;
           height: 25px;
+        }
+      }
+      p {
+        .explainer-icon {
+          margin-bottom: 3px;
         }
       }
     }
@@ -515,13 +529,7 @@ table {
   & * {
     border: none;
   }
-  .explainer-icon {
-    width: 14px;
-    height: auto;
-    margin-left: 5px;
-    margin-top: 1px;
-    cursor: pointer;
-  }
+  
   thead {
     tr {
       th {
@@ -562,6 +570,19 @@ table {
           align-items: center;
           font-family: "Aeonik Medium";
           text-transform: capitalize;
+        }
+        .note {
+          font-family: "Aeonik Medium";
+          font-size: 11.5px;
+          letter-spacing: 2px;
+          line-height: 125%;
+          margin-left: 1px;
+          color: #878787;
+          .explainer-icon {
+            width: 11.5px;
+            margin-top: -2.5px;
+            margin-left: unset;
+          }
         }
       }
       td,
@@ -1274,7 +1295,7 @@ section.perks {
         }
       }
       &.busy {
-        margin-bottom: -2.5rem;
+        margin-bottom: -1rem;
       }
       @media (max-width: 768px) {
         padding-bottom: 3rem;
