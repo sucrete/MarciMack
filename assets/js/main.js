@@ -1,21 +1,22 @@
 /*========= Javascript function index ===========
 
-1.counterUp ----------(Its use for counting number)
+
 2.stickyHeader -------(header class sticky)
 3.wowActive ----------( Waw js plugins activation)
-4.swiperJs -----------(All swiper in this website hear)
-5.salActive ----------(Sal animation for card and all text)
+
+
 6.textChanger --------(Text flip for banner section)
-7.timeLine -----------(History Time line)
+
 8.datePicker ---------(On click date calender)
 9.timePicker ---------(On click time picker)
-10.timeLineStory -----(History page time line)
-11.vedioActivation----(Vedio activation)
-12.searchOption ------(search open)
-13.cartBarshow -------(Cart sode bar)
+
+
+
+
 14.sideMenu ----------(Open side menu for desktop)
 15.Back to top -------(back to top)
-16.filterPrice -------(Price filtering)
+
+
 
 ==================================================*/
 

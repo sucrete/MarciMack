@@ -28,7 +28,7 @@ export class CTA extends LitElement {
                     <img
                       class="injectable"
                       src="assets/images/service/icons/13.svg"
-                      alt="arrow"
+                      alt=""
                     />
                   </a>
                 </div>

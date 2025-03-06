@@ -196,7 +196,7 @@ export class Header extends LitElement {
                 <svg
                   class="MM-logo-small"
                   src="assets/images/logo/MM-logo-small-2.svg"
-                  alt="logo"
+                  alt=""
                   id="a"
                   data-name="Layer_1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -287,7 +287,7 @@ export class Header extends LitElement {
                         <img
                           class="injectable"
                           src="assets/images/service/icons/13.svg"
-                          alt="arrow"
+                          alt=""
                         />
                       </a>
                     </li>

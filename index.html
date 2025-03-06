@@ -56,7 +56,8 @@
     <div
       class="banner-four-area banner-four-bg rts-section-gap jarallax home-page"
     >
-      <div class="overlay"></div>
+      <!-- aerial photo of MariMack is quite dark - uncomment with lighter photo -->
+      <!-- <div class="overlay"></div> -->
       <div class="slider-wrapper">
         <div class="slider wow fadeIn" data-wow-delay=".7s">
           <div class="slide">
@@ -118,7 +119,7 @@
       </div>
 
       <div class="shape wow toBottomLeft" data-wow-offset="120">
-        <img src="assets/images/banner/checkered.svg" alt="banner" />
+        <img src="assets/images/banner/checkered.svg" alt="" />
       </div>
     </div>
     <!-- rts banner four end -->
@@ -127,10 +128,10 @@
       class="why-choose-us-working-process introduction-section rts-section-gap mobile-padding"
     >
       <div class="shape-top-right wow toBottomLeft">
-        <img src="assets/images/service/checkered.svg" alt="shape" />
+        <img src="assets/images/service/checkered.svg" alt="" />
       </div>
       <div class="container">
-        <div class="row g-5 justify-content-between ">
+        <div class="row g-5 justify-content-between">
           <div
             class="col-lg-6 pr--50 d-flex flex-column align-items-centered introduction-column wow fadeInUp"
             data-wow-offset="120"
@@ -182,7 +183,7 @@
               <img class="clock-icon" src="assets/images/icons/clock.svg" />
               <h5 class="title">Hours of Operation</h5>
             </div>
-          
+
             <div class="definition-wrapper col-12 col-sm-6">
               <div class="word">
                 tee time <span class="pronunciation">/ˈtē ˌtīm/</span>
@@ -210,8 +211,12 @@
                 <div class="hours">10am - Sunset</div>
               </div>
             </div>
-            <div class="col-12 col-lg-4 pool">
-            <img src="assets/images/closed-for-the-season.svg" alt="" class="closed-sign">
+            <div class="col-12 col-lg-4 pool closed">
+              <img
+                src="assets/images/closed-for-the-season.svg"
+                alt=""
+                class="closed-sign"
+              />
               <h5 class="hours-title">Pool</h5>
               <div class="hours-row">
                 <div class="days">Sunday - Thursday</div>
@@ -261,28 +266,6 @@
     </div> -->
     <!-- rtl btn area end -->
 
-    <div id="anywhere-home"></div>
-
-    <!-- progress area start -->
-    <!-- <div class="progress-wrap">
-      <svg
-        class="progress-circle svg-content"
-        width="100%"
-        height="100%"
-        viewBox="-1 -1 102 102"
-      >
-        <path
-          d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
-          style="
-            transition: stroke-dashoffset 10ms linear 0s;
-            stroke-dasharray: 307.919, 307.919;
-            stroke-dashoffset: 307.919;
-          "
-        ></path>
-      </svg>
-    </div> -->
-    <!-- progress area end -->
-
     <script defer src="assets/js/plugins/jquery.js"></script>
     <script defer src="assets/js/vendor/waw.js"></script>
     <script defer src="assets/js/vendor/jarallax.js"></script>
@@ -293,13 +276,5 @@
     <script defer src="assets/js/vendor/bootstrap.min.js"></script>
     <script defer src="assets/js/main.js"></script>
     <script src="./assets/js/weather.js "></script>
-    <script>
-      // let open = false;
-      // const def = document.getElementsByClassName("sunset-definition")[0];
-      // const imgBox = document.getElementsByClassName("image-box")[0];
-      // imgBox.addEventListener("click", () => {
-      //   def.classList.toggle("open");
-      // });
-    </script>
   </body>
 </html>

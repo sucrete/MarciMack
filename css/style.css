@@ -20524,13 +20524,13 @@ section.hours-table .container .the-table-itself .hours-table-brow .table-title-
   line-height: 86%;
 }
 section.hours-table .container .the-table-itself .hours-table-brow .definition-wrapper {
-  background: #f5f5f5;
+  background: #f0f5f1;
   border-radius: 5px;
   padding: 1.45rem 2.25rem 2rem 2rem;
 }
 section.hours-table .container .the-table-itself .hours-table-brow .definition-wrapper .word {
   font-family: "IKOB Italic";
-  font-size: 17px;
+  font-size: 21px;
   padding-bottom: 2px;
   color: var(--color-offset);
 }
@@ -20542,6 +20542,7 @@ section.hours-table .container .the-table-itself .hours-table-brow .definition-w
 section.hours-table .container .the-table-itself .hours-table-brow .definition-wrapper .definition {
   line-height: 130%;
   font-size: 15px;
+  color: var(--color-offset);
 }
 section.hours-table .container .the-table-itself .some-tables [class*=col] {
   padding: 3rem;
@@ -20585,14 +20586,12 @@ section.hours-table .container .the-table-itself .some-tables [class*=col].pool 
   position: absolute;
   top: 55%;
   left: 50%;
-  filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.124));
+  filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.4));
   transform: rotate(-3deg) translate(-50%, -50%);
 }
-section.hours-table .container .the-table-itself .some-tables [class*=col].pool .closed {
-  color: rgb(169, 169, 169);
-}
-section.hours-table .container .the-table-itself .some-tables [class*=col].pool .closed .hours-title {
-  color: rgb(169, 169, 169);
+section.hours-table .container .the-table-itself .some-tables [class*=col].pool.closed .hours-title,
+section.hours-table .container .the-table-itself .some-tables [class*=col].pool.closed .hours-row {
+  opacity: 0.7;
 }
 section.hours-table .container .the-table-itself .addendum {
   border-top: 1.5px solid rgba(0, 0, 0, 0.05);
@@ -20817,7 +20816,7 @@ table tbody tr th .th-wrap {
 table tbody tr th .note {
   font-family: "Aeonik Medium";
   font-size: 11.5px;
-  letter-spacing: 2px;
+  letter-spacing: 1.25px;
   line-height: 125%;
   margin-left: 1px;
   color: #878787;

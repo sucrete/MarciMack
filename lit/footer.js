@@ -20,7 +20,7 @@ export class Footer extends LitElement {
                         <img
                           class="footer-logo"
                           src="assets/images/logo/MM-logo-light-light.svg"
-                          alt="logo"
+                          alt=""
                         />
                       </a>
                     </div>
