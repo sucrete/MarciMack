@@ -5,7 +5,8 @@ section.cta {
     padding-top: 12rem;
     padding-bottom: 12rem;
     .cta-one-wrapper {
-      background: #e3f5e8;
+      // background: #e3f5e8;
+      background: #8ba1ff;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -38,6 +39,7 @@ section.cta {
           left: -4px;
           margin-bottom: 0px;
           position: relative;
+          color: white;
           @media #{$large-mobile} {
             font-size: 30px;
           }
@@ -48,6 +50,7 @@ section.cta {
           font-size: 20px;
           // left: -2px;
           margin-bottom: 3rem;
+          color: rgba(255, 255, 255, 0.746);
           @media #{$large-mobile} {
             font-size: 16px;
           }
@@ -77,24 +80,26 @@ section.cta {
           height: 100%;
           width: 100%;
           z-index: 7;
+
+          
           background-image: linear-gradient(
             to right,
-            hsl(137.65, 48.57%, 93.14%) 0%,
-            hsla(137.65, 48.57%, 93.14%, 0.988) 4.9%,
-            hsla(137.65, 48.57%, 93.14%, 0.953) 9.2%,
-            hsla(137.65, 48.57%, 93.14%, 0.899) 13.2%,
-            hsla(137.65, 48.57%, 93.14%, 0.83) 17%,
-            hsla(137.65, 48.57%, 93.14%, 0.749) 20.8%,
-            hsla(137.65, 48.57%, 93.14%, 0.659) 24.8%,
-            hsla(137.65, 48.57%, 93.14%, 0.563) 29.2%,
-            hsla(137.65, 48.57%, 93.14%, 0.467) 34.2%,
-            hsla(137.65, 48.57%, 93.14%, 0.371) 39.9%,
-            hsla(137.65, 48.57%, 93.14%, 0.281) 46.5%,
-            hsla(137.65, 48.57%, 93.14%, 0.2) 54.3%,
-            hsla(137.65, 48.57%, 93.14%, 0.131) 63.3%,
-            hsla(137.65, 48.57%, 93.14%, 0.077) 73.8%,
-            hsla(137.65, 48.57%, 93.14%, 0.042) 86%,
-            hsla(137.65, 48.57%, 93.14%, 0.03) 100%
+            hsl(229.23, 100%, 77.06%) 0%,
+            hsla(229.23, 100%, 77.06%, 0.987) 9.6%,
+            hsla(229.23, 100%, 77.06%, 0.951) 18.2%,
+            hsla(229.23, 100%, 77.06%, 0.896) 26%,
+            hsla(229.23, 100%, 77.06%, 0.825) 32.9%,
+            hsla(229.23, 100%, 77.06%, 0.741) 39.3%,
+            hsla(229.23, 100%, 77.06%, 0.648) 45.1%,
+            hsla(229.23, 100%, 77.06%, 0.55) 50.7%,
+            hsla(229.23, 100%, 77.06%, 0.45) 56%,
+            hsla(229.23, 100%, 77.06%, 0.352) 61.3%,
+            hsla(229.23, 100%, 77.06%, 0.259) 66.7%,
+            hsla(229.23, 100%, 77.06%, 0.175) 72.4%,
+            hsla(229.23, 100%, 77.06%, 0.104) 78.4%,
+            hsla(229.23, 100%, 77.06%, 0.049) 84.9%,
+            hsla(229.23, 100%, 77.06%, 0.013) 92%,
+            hsla(229.23, 100%, 77.06%, 0) 100%
           );
         }
         &:after {
@@ -105,7 +110,7 @@ section.cta {
           top: -187%;
           left: -50%;
           z-index: 1;
-          background: url("../assets/images/svgs/grand-tartan.svg") 0 0 repeat;
+          background: url("../assets/images/svgs/grand-tartan-white.svg") 0 0 repeat;
           background-size: 100%;
           transform: rotate(30deg) translate(50%, 50%);
           transform-origin: center center;
