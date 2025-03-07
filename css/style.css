@@ -20590,7 +20590,7 @@ section.hours-table .container .the-table-itself .some-tables [class*=col].pool 
   top: 55%;
   left: 50%;
   transform: rotate(-3deg) translate(-50%, -50%);
-  filter: drop-shadow(0px 9px 17px rgba(50, 50, 93, 0.25)) drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0px 9px 17px rgba(50, 50, 93, 0.15)) drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.2));
 }
 section.hours-table .container .the-table-itself .some-tables [class*=col].pool.closed .hours-title,
 section.hours-table .container .the-table-itself .some-tables [class*=col].pool.closed .hours-row {
@@ -20831,7 +20831,7 @@ table tbody tr th .note {
 table tbody tr th .note .explainer-icon {
   width: 11.5px;
   margin-top: -2.5px;
-  margin-left: unset;
+  margin-left: -4px;
 }
 table tbody tr td,
 table tbody tr th {
