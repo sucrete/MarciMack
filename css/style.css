@@ -20829,7 +20829,7 @@ table tbody tr th .note {
   color: #878787;
 }
 table tbody tr th .note .explainer-icon {
-  width: 11.5px;
+  width: 11.25px;
   margin-top: -2.5px;
   margin-left: -4px;
 }
@@ -21060,7 +21060,7 @@ table.de-emphasize {
 
 .rental-section {
   background-color: #f4f4f4;
-  padding-top: 14rem;
+  padding-top: 10rem;
   padding-bottom: 14rem;
 }
 .rental-section .container {
@@ -21071,7 +21071,7 @@ table.de-emphasize {
   height: 100%;
 }
 .rental-section .container .row [class*=col] h2 {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 .rental-section .container .row [class*=col] .highlighted {
   color: var(--body-text);
@@ -21283,11 +21283,21 @@ section.perks .container .row [class*=col] .single-solution-style-one:hover {
 }
 .membership-page-body .container .row .col .sales-tax-note {
   text-align: center;
-  padding-top: 2rem;
   font-size: 19px;
 }
 .membership-page-body .container .row .col .tab-content {
-  padding-top: 4rem;
+  padding-top: 2rem;
+}
+.membership-page-body .container .row .col .tab-content hr {
+  margin-top: 4.5rem;
+  margin-bottom: 4rem;
+  opacity: 0.05;
+  border-top: solid 1.5px;
+}
+.membership-page-body .container .row .col .tab-content h3 {
+  font-size: 48px;
+  position: relative;
+  left: 9px;
 }
 .membership-page-body .container .row .col .tab-content .table-info {
   transition: all 0.3s ease;
@@ -21317,8 +21327,9 @@ section.perks .container .row [class*=col] .single-solution-style-one:hover {
 }
 .membership-page-body .container .row .col .tab-content .something-to-note {
   font-size: 19px;
-  padding: 20px;
-  padding-top: 10px;
+  padding: 10px;
+  padding-top: 0px;
+  padding-bottom: 7rem;
   line-height: 150%;
 }
 .membership-page-body .container .row .col .tab-content .something-to-note .crest {
@@ -21340,6 +21351,7 @@ section.perks .container .row [class*=col] .single-solution-style-one:hover {
 }
 .membership-page-body .container .row .col .tab-content .something-to-note .row {
   gap: 4rem;
+  align-items: center;
 }
 .membership-page-body .container .row .col .tab-content .something-to-note .row .fees {
   background: #ebebeb;
@@ -21369,6 +21381,13 @@ section.perks .container .row [class*=col] .single-solution-style-one:hover {
   border-bottom: 1.5px dotted rgba(0, 0, 0, 0.184);
   margin-left: 10px;
   margin-right: 10px;
+}
+.membership-page-body .container .row .col .tab-content .something-to-note.vets {
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+}
+.membership-page-body .container .row .col .tab-content.veterans {
+  padding-top: 7rem;
 }
 
 .rates-page-body {

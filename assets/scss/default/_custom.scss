@@ -589,7 +589,7 @@ table {
           margin-left: 1px;
           color: #878787;
           .explainer-icon {
-            width: 11.5px;
+            width: 11.25px;
             margin-top: -2.5px;
             margin-left: -4px;
           }
@@ -867,7 +867,7 @@ table {
 // section on clubhouse rental
 .rental-section {
   background-color: #f4f4f4;
-  padding-top: 14rem;
+  padding-top: 10rem;
   padding-bottom: 14rem;
   .container {
     height: 100%;
@@ -876,7 +876,7 @@ table {
       height: 100%;
       [class*="col"] {
         h2 {
-          margin-bottom: 2.5rem;
+          margin-bottom: 2rem;
         }
         .highlighted {
           color: var(--body-text);
@@ -1127,12 +1127,23 @@ section.perks {
           text-align: center;
           // opacity: 0.8;
           // font-family: var(--font-medium);
-          padding-top: 2rem;
+          // padding-top: 2rem;
           font-size: 19px;
           // text-decoration: underline;
         }
         .tab-content {
-          padding-top: 4rem;
+          padding-top: 2rem;
+          hr {
+            margin-top: 4.5rem;
+            margin-bottom: 4rem;
+            opacity: 0.05;
+            border-top: solid 1.5px;
+          }
+          h3 {
+            font-size: 48px;
+            position: relative;
+            left: 9px;
+          }
           .table-info {
             transition: all 0.3s ease;
             opacity: 0;
@@ -1161,8 +1172,9 @@ section.perks {
           }
           .something-to-note {
             font-size: 19px;
-            padding: 20px;
-            padding-top: 10px;
+            padding: 10px;
+            padding-top: 0px;
+            padding-bottom: 7rem;
             line-height: 150%;
             .crest {
               position: relative;
@@ -1186,6 +1198,7 @@ section.perks {
             }
             .row {
               gap: 4rem;
+              align-items: center;
               .fees {
                 background: #ebebeb;
                 border-radius: 10px;
@@ -1216,6 +1229,13 @@ section.perks {
                 }
               }
             }
+            &.vets {
+              padding-top: 1rem;
+              padding-bottom: 5rem;
+            }
+          }
+          &.veterans {
+            padding-top: 7rem;
           }
         }
       }

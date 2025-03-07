@@ -172,55 +172,29 @@
 
     <!-- membership rates section start  -->
     <section
-      class="membership-page-body rental-section rental-section-host-your-event wow fadeInUp mobile-padding"
+      class="membership-page-body rental-section rental-section-host-your-event mobile-padding"
     >
       <div class="container p-4 p-md-5">
         <div class="row">
-          <div
-            class="col wow fadeInUp"
-            data-wow-offset="120"
-            data-wow-delay=".3s"
-          >
-            <h2>Rates</h2>
-            <div class="membership-nav-wrapper">
-              <ul class="nav membership-nav mb-3" id="pills-tab" role="tablist">
-                <div class="highlight"></div>
-                <li class="nav-item member-link" role="presentation">
-                  <button
-                    class="nav-link active"
-                    id="pills-home-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-home"
-                    type="button"
-                    role="tab"
-                    aria-controls="pills-home"
-                    aria-selected="true"
-                  >
-                    Annual
-                  </button>
-                </li>
-                <li class="nav-item member-link" role="presentation">
-                  <button
-                    class="nav-link"
-                    id="pills-profile-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-profile"
-                    type="button"
-                    role="tab"
-                    aria-controls="pills-profile"
-                    aria-selected="false"
-                  >
-                    Veterans & Porter Communities
-                  </button>
-                </li>
-              </ul>
+          <div class="col">
+            <div
+              class="wow fadeInUp"
+              data-wow-offset="300"
+              data-wow-delay=".1s"
+            >
+              <h2>Rates</h2>
+              <div class="sales-tax-note">
+                <div class="lil-line"></div>
+                <span class="highlighted">All rates subject to sales tax.</span>
+                <div class="lil-line"></div>
+              </div>
             </div>
-            <div class="sales-tax-note">
-              <div class="lil-line"></div>
-              <span class="highlighted">All rates subject to sales tax.</span>
-              <div class="lil-line"></div>
-            </div>
-            <div class="tab-content" id="pills-tabContent">
+
+            <div
+              class="tab-content wow fadeInUp"
+              data-wow-offset="120"
+              data-wow-delay=".3s"
+            >
               <div class="table-info">
                 <img
                   src="assets/images/icons/swipe-left.png"
@@ -228,12 +202,9 @@
                   class="icon"
                 />
               </div>
-              <div
-                class="tab-pane fade show active"
-                id="pills-home"
-                role="tabpanel"
-                aria-labelledby="pills-home-tab"
-              >
+              <hr />
+              <h3>Annual Rates</h3>
+              <div>
                 <div class="something-to-note">
                   <div class="row">
                     <div class="col-12 col-md">
@@ -290,8 +261,6 @@
                       </div>
                     </div>
                   </div>
-
-                  <hr />
                 </div>
                 <!--* Annual Rates Table Start -->
 
@@ -472,13 +441,22 @@
                 </table>
                 <!--* Annual Rates Table End -->
               </div>
-              <div
-                class="tab-pane fade"
-                id="pills-profile"
-                role="tabpanel"
-                aria-labelledby="pills-profile-tab"
-              >
-                <div class="something-to-note">
+            </div>
+            <div class="tab-content veterans wow fadeInUp"
+              data-wow-offset="120"
+              data-wow-delay=".3s"
+            >
+              <div class="table-info">
+                <img
+                  src="assets/images/icons/swipe-left.png"
+                  alt=""
+                  class="icon"
+                />
+              </div>
+              <hr />
+              <h3>Veterans & Porter Communities Residents</h3>
+              <div>
+                <div class="something-to-note vets">
                   <svg
                     class="crest"
                     id="a"
@@ -516,7 +494,6 @@
                   us know. There are NO OTHER subdivisions that are eligible for
                   this discount. Proof of residency and/or military verification
                   may be required.
-                  <hr />
                 </div>
 
                 <!--* Veterans Start -->
