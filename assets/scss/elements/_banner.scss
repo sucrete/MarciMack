@@ -653,7 +653,7 @@ $subpage-height: 550px;
   &.membership-banner {
     background-image: url(../images/marimack-aerial-2.jpg);
     .overlay {
-      background-image: $darker-background-gradient;
+      background-image: $to-transparent-bg-gradient;
     }
     .title {
       text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
