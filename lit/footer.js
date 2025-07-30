@@ -217,8 +217,7 @@ export class Footer extends LitElement {
                     </div>
                     <a
                       class="teequest-link no-underline"
-                      target="_blank"
-                      href="https://www.teequestsolutions.com"
+                      href="javascrip:void(0)"
                     >
                       <svg
                         class="svg-inline--fa fa-gears"
