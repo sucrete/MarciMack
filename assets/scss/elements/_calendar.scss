@@ -177,6 +177,7 @@ $inner-border-color: #e7e7e7;
 //* Modal styling
 $modal-margin: 3rem;
 .modal {
+  background: rgba(0, 0, 0, 0.262745098);
   .modal-dialog {
     max-width: 625px;
     // .modal-content defines the modal box
@@ -194,14 +195,13 @@ $modal-margin: 3rem;
         // padding-top: 2.5rem;
         border: none;
         .modal-title {
-          font-family: "Inter";
           color: rgb(29, 29, 29);
-          font-weight: 600;
-          font-size: 24px;
-          letter-spacing: 0.1px;
-          line-height: 128%;
-          width: 75%;
           padding-bottom: 0.55rem;
+          font-family: "Aeonik Medium";
+          color: rgb(29, 29, 29);
+          font-size: 24px;
+          width: 90%;
+          line-height: 1.2;
         }
         .close-button-wrapper {
           background-color: #f9f9f9;
@@ -274,7 +274,7 @@ $modal-margin: 3rem;
           justify-content: center;
           height: 35px;
           border-radius: 1px;
-          background-color: var(--color-secondary);
+          background-color: #cf9d39;
           padding-bottom: 5px;
           transition: all 0.25s ease;
           border: none;
@@ -287,9 +287,9 @@ $modal-margin: 3rem;
             border: none;
           }
           &.modal-attachment {
-            border: 1.5px solid var(--color-secondary);
+            border: 1.5px solid #cf9d39;
             background-color: transparent;
-            color: var(--color-secondary);
+            color: #cf9d39;
             &:hover {
               color: white;
               background-color: #e3ab3b;
@@ -322,12 +322,13 @@ $outline-color: #e6e6e6;
         background-color: #fffbca;
       }
       .event-list-title {
-        font-family: "Inter";
+        color: rgb(29, 29, 29);
+        padding-bottom: 0.55rem;
+        font-family: "Aeonik Medium";
         color: rgb(29, 29, 29);
         font-size: 24px;
-        font-weight: 600;
-        padding-bottom: 0.75rem;
-        letter-spacing: 0.1px;
+        width: 90%;
+        line-height: 1.2;
       }
       .event-list-date-wrapper {
         color: hsla(50, 8%, 45%, 0.836);
@@ -367,14 +368,14 @@ $outline-color: #e6e6e6;
           display: flex;
           align-items: center;
           justify-content: center;
+
+          letter-spacing: 1px;
           height: 35px;
-          letter-spacing: 2px;
-          text-transform: uppercase;
           border-radius: 1px;
-          background-color: var(--color-secondary);
-          padding-bottom: 4.5px;
-          padding-left: 1rem;
-          padding-right: 1rem;
+          background-color: #cf9d39;
+          padding-bottom: 6px;
+          padding-left: 3rem;
+          padding-right: 3rem;
           transition: all 0.25s ease;
           border: none;
           &:hover {
@@ -387,9 +388,9 @@ $outline-color: #e6e6e6;
           }
         }
         .event-list-flyer-btn {
-          border: 1.5px solid var(--color-secondary);
+          border: 1.5px solid #cf9d39;
           background-color: transparent;
-          color: var(--color-secondary);
+          color: #cf9d39;
           &:hover {
             color: white;
             background-color: #e3ab3b;

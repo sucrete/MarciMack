@@ -13111,6 +13111,9 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
   font-weight: 700;
 }
 
+.modal {
+  background: rgba(0, 0, 0, 0.262745098);
+}
 .modal .modal-dialog {
   max-width: 625px;
 }
@@ -13126,14 +13129,13 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
   border: none;
 }
 .modal .modal-dialog .modal-content .modal-header .modal-title {
-  font-family: "Inter";
   color: rgb(29, 29, 29);
-  font-weight: 600;
-  font-size: 24px;
-  letter-spacing: 0.1px;
-  line-height: 128%;
-  width: 75%;
   padding-bottom: 0.55rem;
+  font-family: "Aeonik Medium";
+  color: rgb(29, 29, 29);
+  font-size: 24px;
+  width: 90%;
+  line-height: 1.2;
 }
 .modal .modal-dialog .modal-content .modal-header .close-button-wrapper {
   background-color: #f9f9f9;
@@ -13211,7 +13213,7 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
   justify-content: center;
   height: 35px;
   border-radius: 1px;
-  background-color: var(--color-secondary);
+  background-color: #cf9d39;
   padding-bottom: 5px;
   transition: all 0.25s ease;
   border: none;
@@ -13224,9 +13226,9 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
   border: none;
 }
 .modal .modal-dialog .modal-content .modal-footer .btn.modal-attachment {
-  border: 1.5px solid var(--color-secondary);
+  border: 1.5px solid #cf9d39;
   background-color: transparent;
-  color: var(--color-secondary);
+  color: #cf9d39;
 }
 .modal .modal-dialog .modal-content .modal-footer .btn.modal-attachment:hover {
   color: white;
@@ -13255,12 +13257,13 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
   background-color: #fffbca;
 }
 .fc-monthList-view .events-list-wrapper .event-list-item .event-list-title {
-  font-family: "Inter";
+  color: rgb(29, 29, 29);
+  padding-bottom: 0.55rem;
+  font-family: "Aeonik Medium";
   color: rgb(29, 29, 29);
   font-size: 24px;
-  font-weight: 600;
-  padding-bottom: 0.75rem;
-  letter-spacing: 0.1px;
+  width: 90%;
+  line-height: 1.2;
 }
 .fc-monthList-view .events-list-wrapper .event-list-item .event-list-date-wrapper {
   color: hsla(50, 8%, 45%, 0.836);
@@ -13306,14 +13309,13 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
   display: flex;
   align-items: center;
   justify-content: center;
+  letter-spacing: 1px;
   height: 35px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
   border-radius: 1px;
-  background-color: var(--color-secondary);
-  padding-bottom: 4.5px;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  background-color: #cf9d39;
+  padding-bottom: 6px;
+  padding-left: 3rem;
+  padding-right: 3rem;
   transition: all 0.25s ease;
   border: none;
 }
@@ -13327,9 +13329,9 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
   box-shadow: none;
 }
 .fc-monthList-view .events-list-wrapper .event-list-item .event-list-footer .event-list-flyer-btn {
-  border: 1.5px solid var(--color-secondary);
+  border: 1.5px solid #cf9d39;
   background-color: transparent;
-  color: var(--color-secondary);
+  color: #cf9d39;
 }
 .fc-monthList-view .events-list-wrapper .event-list-item .event-list-footer .event-list-flyer-btn:hover {
   color: white;
@@ -17324,6 +17326,7 @@ section.hours-table .container .the-table-itself .some-tables [class*=col].pool 
   position: relative;
 }
 section.hours-table .container .the-table-itself .some-tables [class*=col].pool .closed-sign {
+  display: none;
   z-index: 77;
   opacity: 1;
   width: 120px;
@@ -17357,8 +17360,85 @@ section.hours-table .container .the-table-itself .addendum {
 .cornered-container {
   margin-bottom: 0rem;
 }
-
-.cornered-box {
+.cornered-container .frost-warning {
+  display: none;
+  background: #fff9b9;
+  border-radius: 1px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border: 1px solid #ecc903;
+  border-left-width: 7px;
+  overflow: hidden;
+  max-width: 600px;
+}
+.cornered-container .frost-warning .warning-row {
+  display: flex;
+  flex-direction: row;
+  margin: 0.4rem;
+  border-radius: 7px;
+}
+.cornered-container .frost-warning .warning-row .icon-col {
+  position: relative;
+  flex-basis: 40px;
+}
+.cornered-container .frost-warning .warning-row .icon-col .warning-icon-wrapper {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 35%;
+  left: 60%;
+}
+.cornered-container .frost-warning .warning-row .icon-col .warning-icon-wrapper .warning-icon {
+  width: 18px;
+  height: auto;
+  position: relative;
+  z-index: 7;
+}
+.cornered-container .frost-warning .warning-row .icon-col .warning-icon-wrapper .warning-icon path {
+  fill: #ecc903;
+}
+.cornered-container .frost-warning .warning-row .icon-col .warning-icon-wrapper .radiate-stack {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 57%;
+}
+.cornered-container .frost-warning .warning-row .icon-col .warning-icon-wrapper .radiate-stack .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 246, 194);
+  border-radius: 200px;
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+}
+.cornered-container .frost-warning .warning-row .text-col {
+  position: relative;
+  z-index: 9;
+  padding: 0.5rem;
+  width: 87%;
+  flex-basis: auto;
+}
+.cornered-container .frost-warning .warning-row .text-col .text-wrapper {
+  z-index: 88;
+  padding: 0.5rem 2.5rem 0.75rem 1.5rem;
+}
+.cornered-container .frost-warning .warning-row .text-col .text-wrapper .frost-warning-title {
+  font-family: "Aeonik Medium";
+  font-size: 17px;
+  color: oklch(55.4% 0.135 66.442deg);
+  margin-bottom: 1px;
+  letter-spacing: 0.2px;
+}
+.cornered-container .frost-warning .warning-row .text-col .text-wrapper .frost-warning-text {
+  font-size: 15px;
+  text-shadow: none;
+  color: oklch(55.299% 0.12746 61.788deg / 0.774);
+  letter-spacing: 0.2px;
+  line-height: 117%;
+}
+.cornered-container .cornered-box {
   color: white;
   padding: 3rem;
   max-width: 500px;
@@ -17872,23 +17952,26 @@ table.de-emphasize {
   padding: 14rem 0;
   text-align: center;
 }
-.holes-in-one-page-body h3 {
+.holes-in-one-page-body .container .HIO-parent .HIO-year:not(:first-of-type) {
+  padding-top: 17rem;
+}
+.holes-in-one-page-body .container .HIO-parent .HIO-year h3 {
   font-size: 72px;
   color: rgb(178, 178, 178);
 }
-.holes-in-one-page-body .hr-group {
+.holes-in-one-page-body .container .HIO-parent .HIO-year .hr-group {
   position: relative;
   width: 300px;
   margin: 5rem auto 6rem auto;
 }
-.holes-in-one-page-body .hr-group .image-container {
+.holes-in-one-page-body .container .HIO-parent .HIO-year .hr-group .image-container {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -60%);
   z-index: 7;
 }
-.holes-in-one-page-body .hr-group .image-container:after {
+.holes-in-one-page-body .container .HIO-parent .HIO-year .hr-group .image-container:after {
   content: "";
   width: 50px;
   height: 50px;
@@ -17899,13 +17982,13 @@ table.de-emphasize {
   background: #fff;
   z-index: 6;
 }
-.holes-in-one-page-body .hr-group .image-container .hole-in-one-icon {
+.holes-in-one-page-body .container .HIO-parent .HIO-year .hr-group .image-container .hole-in-one-icon {
   width: 30px;
   height: auto;
   position: relative;
   z-index: 8;
 }
-.holes-in-one-page-body p {
+.holes-in-one-page-body .container .HIO-parent .HIO-year p {
   font-size: 28px;
 }
 
@@ -18391,6 +18474,9 @@ section.perks .container .row [class*=col] .single-solution-style-one:hover {
 .pool-rules .container .row [class*=col] .accordion-container-one {
   width: 100%;
   max-width: 900px;
+  margin: 0 auto;
+  padding-left: 7.5px;
+  padding-right: 7.5px;
 }
 .pool-rules .container .row [class*=col] .accordion-container-one .accordion .accordion-item {
   border-radius: 10px;
@@ -18398,16 +18484,32 @@ section.perks .container .row [class*=col] .single-solution-style-one:hover {
   border: none;
   border-top: none !important;
 }
-.pool-rules .container .row [class*=col] .accordion-container-one .accordion .accordion-item h3 {
+.pool-rules .container .row [class*=col] .accordion-container-one .accordion .accordion-item h3 .accordion-button {
   font-family: var(--font-primary);
-  font-size: 19px;
+  font-size: 20px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
 }
 .pool-rules .container .row [class*=col] .accordion-container-one .accordion .accordion-item h3 .accordion-button[aria-expanded=true]:after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
+.pool-rules .container .row [class*=col] .accordion-container-one .accordion .accordion-item h3 .accordion-button:not(.collapsed) {
+  color: black;
+  border-bottom: 1.25px solid #f1f1f1;
+  box-shadow: none;
+}
+.pool-rules .container .row [class*=col] .accordion-container-one .accordion .accordion-item h3 .accordion-button:focus, .pool-rules .container .row [class*=col] .accordion-container-one .accordion .accordion-item h3 .accordion-button:active {
+  box-shadow: none;
+}
 .pool-rules .container .row [class*=col] .accordion-container-one .accordion .accordion-item .accordion-collapse .accordion-body {
-  padding-top: 0px;
+  padding-top: 3rem;
   padding-bottom: 3rem;
+  padding-left: 0;
+  line-height: 26px;
 }
 .pool-rules .container .row [class*=col] .accordion-container-one .accordion .accordion-item .accordion-collapse .accordion-body > ol {
   margin-top: 0px;

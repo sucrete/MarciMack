@@ -106,6 +106,32 @@
         <div class="row">
           <div class="col">
             <div
+              class="frost-warning wow fadeInUp"
+              data-wow-offset="120"
+              data-wow-delay=".6s"
+            >
+              <div class="warning-row">
+                <div class="icon-col">
+                  <div class="warning-icon-wrapper">
+                    <img
+                      src="assets/images/icons/triangle-warning.svg"
+                      alt=""
+                      class="warning-icon injectable"
+                    />
+                  </div>
+                </div>
+                <div class="text-col">
+                  <div class="text-wrapper">
+                    <h4 class="frost-warning-title">Frost Alert!</h4>
+                    <p class="frost-warning-text">
+                      Due to frost on the greens, course is closed until
+                      11:00am.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
               class="cornered-box wow fadeInUp"
               data-wow-offset="100"
               data-wow-delay=".7s"
@@ -211,7 +237,7 @@
                 <div class="hours">10am - Sunset</div>
               </div>
             </div>
-            <div class="col-12 col-lg-4 pool closed">
+            <div class="col-12 col-lg-4 pool">
               <img
                 src="assets/images/closed-for-the-season.svg"
                 alt=""
@@ -344,5 +370,8 @@
     <script defer src="assets/js/vendor/bootstrap.min.js"></script>
     <script defer src="assets/js/main.js"></script>
     <script src="./assets/js/weather.js "></script>
+    <!-- fetch and hydrate -->
+    <script src="assets/js/fetchData.js"></script>
+    <script src="./assets/js/homePageMutate.js"></script>
   </body>
 </html>
