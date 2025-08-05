@@ -12377,7 +12377,7 @@ Copyright (c) 2015 Daniel Eden
 }
 @media only screen and (max-width: 767px) {
   .header-area-four .header-four-wrapper {
-    padding: 15px 10px;
+    padding: 15px 5px;
   }
 }
 .header-area-four .header-four-wrapper .nav-area ul li > a.nav-link {
@@ -12487,20 +12487,33 @@ Copyright (c) 2015 Daniel Eden
   }
 }
 
-.header-area-four .button-area-right-header {
+header.header-area-four .button-area-right-header {
   display: none;
 }
 @media only screen and (max-width: 991px) {
-  .header-area-four .button-area-right-header {
+  header.header-area-four .button-area-right-header {
     display: block;
+    position: absolute;
+    right: 5px;
+    top: 52%;
+    transform: translateY(-50%);
   }
-  .header-area-four .button-area-right-header svg rect {
+  header.header-area-four .button-area-right-header svg rect {
     fill: #fff;
   }
 }
 @media only screen and (max-width: 991px) {
-  .header-area-four .nav-area {
+  header.header-area-four .nav-area {
     display: none;
+  }
+}
+@media only screen and (max-width: 575px) {
+  header.header-area-four.sticky .container .row .header-four-wrapper {
+    padding: 5px;
+    height: 59px;
+  }
+  header.header-area-four.sticky .container .row .header-four-wrapper .button-area-right-header {
+    top: 48.5%;
   }
 }
 
@@ -13415,7 +13428,7 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
 
 @media screen and (max-width: 768px) {
   section.hours-table {
-    padding-top: 16rem;
+    padding-top: 0rem;
     padding-bottom: 10rem;
   }
   section.hours-table .container .row [class*=col] .events-list-container .events-list-heading {
@@ -13867,11 +13880,28 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
     height: 600px !important;
   }
   .banner-four-bg .cornered-container {
-    margin-bottom: 3.25rem;
+    margin-bottom: 2rem;
+  }
+  .banner-four-bg .cornered-container .frost-warning .warning-row .icon-col {
+    flex-basis: 32px;
+  }
+  .banner-four-bg .cornered-container .frost-warning .warning-row .icon-col .warning-icon-wrapper {
+    top: 26%;
+    left: 67%;
+  }
+  .banner-four-bg .cornered-container .frost-warning .warning-row .text-col {
+    padding-left: 0.5rem;
+  }
+  .banner-four-bg .cornered-container .frost-warning .warning-row .text-col .text-wrapper .frost-warning-title {
+    margin-bottom: 3px;
   }
   .banner-four-bg .cornered-container .cornered-box {
-    padding: 2.5rem;
-    font-size: 17px;
+    padding: 2rem;
+    font-size: 15px;
+    /* text-align: justify; */
+    letter-spacing: 0.4px;
+    line-height: 1.5;
+    --w: 14px;
   }
   .banner-four-bg .shape {
     display: none;
@@ -13884,8 +13914,8 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
     margin: 0 20px 0 30px;
   }
   .banner-four-bg .slider-wrapper .slider .slide .title-wrapper h2 {
-    font-size: 55px;
-    letter-spacing: -2px;
+    font-size: 42px;
+    letter-spacing: -1px;
   }
 }
 
@@ -13904,6 +13934,11 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
   width: 100%;
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.72) 0%, hsla(0, 0%, 0%, 0.585) 4.2%, hsla(0, 0%, 0%, 0.469) 7.4%, hsla(0, 0%, 0%, 0.369) 10%, hsla(0, 0%, 0%, 0.284) 12.2%, hsla(0, 0%, 0%, 0.213) 14.4%, hsla(0, 0%, 0%, 0.156) 16.8%, hsla(0, 0%, 0%, 0.109) 19.7%, hsla(0, 0%, 0%, 0.073) 23.5%, hsla(0, 0%, 0%, 0.046) 28.5%, hsla(0, 0%, 0%, 0.027) 35%, hsla(0, 0%, 0%, 0.014) 43.2%, hsla(0, 0%, 0%, 0.006) 53.5%, hsla(0, 0%, 0%, 0.002) 66.2%, hsla(0, 0%, 0%, 0) 81.6%, hsla(0, 0%, 0%, 0) 100%);
   z-index: 1;
+}
+@media (max-width: 768px) {
+  .banner-four-area .overlay {
+    background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.74) 0%, hsla(0, 0%, 0%, 0.658) 7%, hsla(0, 0%, 0%, 0.587) 12.8%, hsla(0, 0%, 0%, 0.526) 17.8%, hsla(0, 0%, 0%, 0.474) 22.2%, hsla(0, 0%, 0%, 0.43) 26.1%, hsla(0, 0%, 0%, 0.394) 30%, hsla(0, 0%, 0%, 0.364) 34%, hsla(0, 0%, 0%, 0.34) 38.4%, hsla(0, 0%, 0%, 0.322) 43.3%, hsla(0, 0%, 0%, 0.307) 49.2%, hsla(0, 0%, 0%, 0.296) 56.1%, hsla(0, 0%, 0%, 0.288) 64.4%, hsla(0, 0%, 0%, 0.281) 74.4%, hsla(0, 0%, 0%, 0.275) 86.1%, hsla(0, 0%, 0%, 0.27) 100%);
+  }
 }
 .banner-four-area .banner-four-wrapper .inner-left {
   max-width: 992px;
@@ -17362,12 +17397,13 @@ section.hours-table .container .the-table-itself .addendum {
 }
 .cornered-container .frost-warning {
   display: none;
-  background: #fff9b9;
+  background: rgba(255, 249, 185, 0.9098039216);
   border-radius: 1px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   border: 1px solid #ecc903;
   border-left-width: 7px;
   overflow: hidden;
+  backdrop-filter: blur(5px);
   max-width: 600px;
 }
 .cornered-container .frost-warning .warning-row {
@@ -17446,6 +17482,7 @@ section.hours-table .container .the-table-itself .addendum {
   line-height: 150%;
   position: relative;
   z-index: 6;
+  text-shadow: 0 0 15px black;
   --b: 1px; /* thickness of the border */
   --c: rgb(255, 255, 255); /* color of the border */
   --w: 20px; /* width of border */
@@ -17552,7 +17589,7 @@ a .single-solution-style-one:hover .bottom .card-subheading .arrow path {
 }
 
 .MM-logo-small {
-  width: 170px;
+  width: 156px;
   height: auto;
 }
 .MM-logo-small path {
@@ -17689,6 +17726,7 @@ table.de-emphasize {
   flex-direction: column;
   justify-content: center;
   margin-top: 0rem;
+  padding-right: 7rem;
 }
 .introduction-section .introduction-column p {
   font-size: 19px;
@@ -18744,10 +18782,7 @@ footer .weather-card .row.future-row .icon {
     display: none;
   }
   footer .weather-card .card-body {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 2.5rem;
-    padding-top: 1rem;
+    padding: 3.5rem 2rem 3.5rem 2rem;
   }
   footer .weather-card .card-body .today-icon {
     padding-right: 0rem;
@@ -18768,6 +18803,7 @@ footer .rts-copyright-area-one .new-row p {
   }
   footer .gradient-footer-wrapper .rts-footer-area .container .row .weather-col .weather-card .card-body .weather-heading {
     padding: 1rem;
+    line-height: 1.1;
   }
 }
 @media screen and (max-width: 768px) {
@@ -18777,7 +18813,7 @@ footer .rts-copyright-area-one .new-row p {
 }
 @media screen and (max-width: 576px) {
   footer .gradient-footer-wrapper .rts-footer-area .container > .row {
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;
   }
   footer .gradient-footer-wrapper .rts-footer-area .container > .row .logo-column .logo-brick {
     padding-bottom: 4rem;
@@ -18786,7 +18822,7 @@ footer .rts-copyright-area-one .new-row p {
     padding-bottom: 5rem;
   }
   footer .gradient-footer-wrapper .rts-footer-area .container > .row .weather-col .weather-card {
-    padding: 5rem 3rem;
+    padding: 0rem;
     width: 100%;
   }
 }
@@ -18794,7 +18830,7 @@ footer .rts-copyright-area-one .new-row p {
 @media (max-width: 992px) {
   .mobile-padding {
     padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
   }
   .mobile-padding.booking-container .row {
     padding-top: 0;
@@ -18802,7 +18838,7 @@ footer .rts-copyright-area-one .new-row p {
     gap: 30px;
   }
   .mobile-padding.why-choose-us-working-process {
-    padding-top: 12rem;
+    padding-top: 8rem;
   }
   .mobile-padding.why-choose-us-working-process [class*=shape] {
     display: none;
@@ -18811,12 +18847,18 @@ footer .rts-copyright-area-one .new-row p {
     flex-direction: column-reverse;
   }
   .mobile-padding.why-choose-us-working-process .container > .row .pictures-stage {
-    padding-bottom: 4rem;
+    padding-bottom: 2.5rem;
   }
-  .mobile-padding.why-choose-us-working-process .container > .row .why-choose-process-left .title {
+  .mobile-padding.why-choose-us-working-process .container > .row .introduction-column {
+    padding-right: 15px;
+  }
+  .mobile-padding.why-choose-us-working-process .container > .row .introduction-column .why-choose-process-left .title {
     font-size: 37px;
     line-height: 110%;
     margin-bottom: 15px;
+  }
+  .mobile-padding.why-choose-us-working-process .container > .row .introduction-column .why-choose-process-left p {
+    font-size: 16px;
   }
   .rental-section .container .row {
     flex-direction: column-reverse;
@@ -18835,16 +18877,23 @@ footer .rts-copyright-area-one .new-row p {
   }
   section.hours-table .container .the-table-itself .hours-table-brow .table-title-wrapper {
     flex-direction: column;
+    padding-left: 6px;
   }
   section.hours-table .container .the-table-itself .hours-table-brow .table-title-wrapper .title {
     padding-top: 1rem;
     line-height: 100%;
   }
   section.hours-table .container .the-table-itself .some-tables [class*=col] {
-    padding: 3.75rem;
+    padding: 2.25rem;
+  }
+  section.hours-table .container .the-table-itself .some-tables [class*=col]:first-of-type {
+    padding: 2.25rem;
   }
   section.hours-table .container .the-table-itself .some-tables [class*=col]:nth-of-type(2), section.hours-table .container .the-table-itself .some-tables [class*=col]:nth-of-type(3) {
     border-top: 1.5px solid rgba(0, 0, 0, 0.05);
+  }
+  section.hours-table .container .the-table-itself .addendum {
+    padding: 3rem 2.25rem 4rem 2.25rem;
   }
   section.perks {
     padding-top: 9rem;
@@ -18888,6 +18937,9 @@ footer .rts-copyright-area-one .new-row p {
 @media screen and (max-width: 576px) {
   section.hours-table .container .the-table-itself .hours-table-brow {
     flex-direction: column;
+  }
+  section.hours-table .container .the-table-itself .hours-table-brow .table-title-wrapper .clock-icon {
+    margin-left: -2px;
   }
   section.perks .container {
     padding: 0 15px;

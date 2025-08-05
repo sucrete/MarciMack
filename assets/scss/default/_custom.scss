@@ -284,13 +284,14 @@ section.hours-table {
 
   .frost-warning {
     display: none;
-    background: #fff9b9;
+    background: #fff9b9e8;
     border-radius: 1px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
       rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     border: 1px solid #ecc903;
     border-left-width: 7px;
     overflow: hidden;
+    backdrop-filter: blur(5px);
     max-width: 600px;
     .warning-row {
       display: flex;
@@ -365,7 +366,7 @@ section.hours-table {
     line-height: 150%;
     position: relative;
     z-index: 6;
-
+    text-shadow: 0 0 15px black;
     // corners ruleset
     --b: 1px; /* thickness of the border */
     --c: rgb(255, 255, 255); /* color of the border */
@@ -506,7 +507,7 @@ a {
   }
 }
 .MM-logo-small {
-  width: 170px;
+  width: 156px;
   height: auto;
   path {
     fill: white;
@@ -707,6 +708,7 @@ table {
     flex-direction: column;
     justify-content: center;
     margin-top: 0rem;
+    padding-right: 7rem;
     p {
       font-size: 19px;
       line-height: 150%;
@@ -1950,11 +1952,7 @@ footer {
         }
       }
       .card-body {
-        padding-left: 2rem;
-        padding-right: 2rem;
-        padding-bottom: 2.5rem;
-        padding-top: 1rem;
-
+        padding: 3.5rem 2rem 3.5rem 2rem;
         .today-icon {
           padding-right: 0rem;
         }
@@ -1987,6 +1985,7 @@ footer {
                 .card-body {
                   .weather-heading {
                     padding: 1rem;
+                    line-height: 1.1;
                   }
                 }
               }
@@ -2016,7 +2015,7 @@ footer {
       .rts-footer-area {
         .container {
           & > .row {
-            padding-bottom: 4rem;
+            padding-bottom: 3rem;
             .logo-column {
               .logo-brick {
                 padding-bottom: 4rem;
@@ -2029,7 +2028,7 @@ footer {
             }
             .weather-col {
               .weather-card {
-                padding: 5rem 3rem;
+                padding: 0rem;
                 width: 100%;
                 .card-body {
                   .weather-heading {
@@ -2052,7 +2051,7 @@ footer {
 @media (max-width: 992px) {
   .mobile-padding {
     padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
     &.booking-container {
       .row {
         padding-top: 0;
@@ -2061,7 +2060,7 @@ footer {
       }
     }
     &.why-choose-us-working-process {
-      padding-top: 12rem;
+      padding-top: 8rem;
       [class*="shape"] {
         display: none;
       }
@@ -2070,13 +2069,19 @@ footer {
         & > .row {
           flex-direction: column-reverse;
           .pictures-stage {
-            padding-bottom: 4rem;
+            padding-bottom: 2.5rem;
           }
-          .why-choose-process-left {
-            .title {
-              font-size: 37px;
-              line-height: 110%;
-              margin-bottom: 15px;
+          .introduction-column {
+            padding-right: 15px;
+            .why-choose-process-left {
+              .title {
+                font-size: 37px;
+                line-height: 110%;
+                margin-bottom: 15px;
+              }
+              p {
+                font-size: 16px;
+              }
             }
           }
         }
@@ -2111,6 +2116,7 @@ footer {
         .hours-table-brow {
           .table-title-wrapper {
             flex-direction: column;
+            padding-left: 6px;
             .title {
               padding-top: 1rem;
               line-height: 100%;
@@ -2119,15 +2125,18 @@ footer {
         }
         .some-tables {
           [class*="col"] {
-            // &:last-of-type {
-            //   padding-right: 3rem
-            // }
-            padding: 3.75rem;
+            &:first-of-type {
+              padding: 2.25rem;
+            }
+            padding: 2.25rem;
             &:nth-of-type(2),
             &:nth-of-type(3) {
               border-top: 1.5px solid rgba(0, 0, 0, 0.05);
             }
           }
+        }
+        .addendum {
+          padding: 3rem 2.25rem 4rem 2.25rem;
         }
       }
     }
@@ -2209,6 +2218,11 @@ footer {
       .the-table-itself {
         .hours-table-brow {
           flex-direction: column;
+          .table-title-wrapper {
+            .clock-icon {
+              margin-left: -2px;
+            }
+          }
         }
       }
     }

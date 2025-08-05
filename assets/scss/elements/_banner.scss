@@ -480,10 +480,34 @@ $starker-gradient: linear-gradient(
   @media #{$sm-layout} {
     height: 600px !important;
     .cornered-container {
-      margin-bottom: 3.25rem;
+      margin-bottom: 2rem;
+      .frost-warning {
+        .warning-row {
+          .icon-col {
+            flex-basis: 32px;
+            .warning-icon-wrapper {
+              top: 26%;
+              left: 67%;
+            }
+          }
+          .text-col {
+            padding-left: 0.5rem;
+            .text-wrapper {
+              .frost-warning-title {
+                margin-bottom: 3px;
+              }
+            }
+          }
+        }
+      }
       .cornered-box {
-        padding: 2.5rem;
-        font-size: 17px;
+        padding: 2rem;
+        font-size: 15px;
+        /* text-align: justify; */
+        letter-spacing: 0.4px;
+        line-height: 1.5;
+        
+        --w: 14px;
       }
     }
 
@@ -500,8 +524,8 @@ $starker-gradient: linear-gradient(
               margin: 0 20px 0 30px;
             }
             h2 {
-              font-size: 55px;
-              letter-spacing: -2px;
+              font-size: 42px;
+              letter-spacing: -1px;
             }
           }
         }
@@ -523,8 +547,28 @@ $starker-gradient: linear-gradient(
     height: 100%;
     width: 100%;
     background-image: $to-transparent-bg-gradient;
-
     z-index: 1;
+    @media (max-width: 768px) {
+      background-image: linear-gradient(
+        to bottom,
+        hsla(0, 0%, 0%, 0.74) 0%,
+        hsla(0, 0%, 0%, 0.658) 7%,
+        hsla(0, 0%, 0%, 0.587) 12.8%,
+        hsla(0, 0%, 0%, 0.526) 17.8%,
+        hsla(0, 0%, 0%, 0.474) 22.2%,
+        hsla(0, 0%, 0%, 0.43) 26.1%,
+        hsla(0, 0%, 0%, 0.394) 30%,
+        hsla(0, 0%, 0%, 0.364) 34%,
+        hsla(0, 0%, 0%, 0.34) 38.4%,
+        hsla(0, 0%, 0%, 0.322) 43.3%,
+        hsla(0, 0%, 0%, 0.307) 49.2%,
+        hsla(0, 0%, 0%, 0.296) 56.1%,
+        hsla(0, 0%, 0%, 0.288) 64.4%,
+        hsla(0, 0%, 0%, 0.281) 74.4%,
+        hsla(0, 0%, 0%, 0.275) 86.1%,
+        hsla(0, 0%, 0%, 0.27) 100%
+      );
+    }
   }
   .banner-four-wrapper {
     .inner-left {
