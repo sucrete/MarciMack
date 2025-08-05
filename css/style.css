@@ -569,8 +569,8 @@ ol ul {
 }
 @media only screen and (max-width: 479px) {
   h2 {
-    font-size: 26px;
-    line-height: 1.4;
+    font-size: 31px;
+    line-height: 1.2;
   }
 }
 
@@ -14513,7 +14513,7 @@ section.cta .rts-cts-area .cta-one-wrapper .right:after {
 }
 @media (max-width: 814px) {
   section.cta .rts-cts-area .cta-one-wrapper .left-area {
-    padding: 10rem 6rem;
+    padding: 7rem 6rem;
   }
 }
 @media (max-width: 576px) {
@@ -18352,8 +18352,9 @@ section.perks .container .row [class*=col] .single-solution-style-one:hover {
 }
 @media (max-width: 576px) {
   .rates-page-body [class*=table-wrapper] .table-preface [class*=col] h3 {
-    font-size: 33px;
+    font-size: 31px;
     margin-bottom: 1rem;
+    line-height: 1.2;
   }
 }
 .rates-page-body [class*=table-wrapper] table .th-wrap {
@@ -18896,7 +18897,7 @@ footer .rts-copyright-area-one .new-row p {
     padding: 3rem 2.25rem 4rem 2.25rem;
   }
   section.perks {
-    padding-top: 9rem;
+    padding-top: 2rem;
     padding-bottom: 9rem;
   }
   section.perks .container {
@@ -18910,7 +18911,7 @@ footer .rts-copyright-area-one .new-row p {
     margin-bottom: 1rem;
   }
   section.perks .container .row [class*=col] a {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -18920,6 +18921,13 @@ footer .rts-copyright-area-one .new-row p {
   .membership-page-body .container .row .col .tab-content {
     position: relative;
   }
+  .membership-page-body .container .row .col .tab-content .something-to-note .row {
+    gap: 1rem;
+  }
+  .membership-page-body .container .row .col .tab-content h3 {
+    font-size: 40px;
+    line-height: 1.1;
+  }
   .membership-page-body .container .row .col .tab-content .tab-pane {
     overflow-x: scroll;
   }
@@ -18927,11 +18935,97 @@ footer .rts-copyright-area-one .new-row p {
     width: 972px;
     position: relative;
   }
+  .membership-page-body .container .row .col .tab-content div .table-responsive table {
+    min-width: 900px;
+    font-size: 16px;
+  }
+  .pool-page-body .container .bento-wrapper .table-wrapper-pool [class*=col] .fees-table {
+    padding: 3rem 3.4rem;
+  }
+  .pool-page-body .container .bento-wrapper .table-wrapper-pool [class*=col] .fees-table .fees-title h3 {
+    font-size: 31px !important;
+    line-height: 1.2 !important;
+  }
+  .pool-page-body .container .bento-wrapper .table-wrapper-pool [class*=col] .fees-table .fees-side .fee-row {
+    font-size: 16px;
+  }
+  .pool-page-body .container .bento-wrapper .table-wrapper-pool [class*=col] .fees-table .fees-side .fee-row ._1st-col img {
+    margin-left: 2px;
+    top: -2px;
+  }
+  .pool-page-body .container .bento-wrapper .table-wrapper-pool [class*=col] .fees-table.initiation-fees {
+    padding: 0;
+  }
+  .pool-page-body .container .bento-wrapper .table-wrapper-pool [class*=col] .fees-table.initiation-fees [class*=bit] {
+    padding: 3rem 3.4rem;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .pool-page-body .container .bento-wrapper .table-wrapper-pool [class*=col] .fees-table.initiation-fees [class*=bit] .fees-title {
+    font-size: 18px;
+    padding-bottom: 12px;
+  }
   .pool-page-body .container .bento-wrapper .notices-wrapper {
     overflow: hidden;
   }
   .pool-page-body .container .bento-wrapper .notices-wrapper .notices .row [class*=col]:nth-of-type(2), .pool-page-body .container .bento-wrapper .notices-wrapper .notices .row [class*=col]:nth-of-type(3) {
     border-top: 1.5px solid rgba(0, 0, 0, 0.05);
+  }
+  .pool-page-body .container .bento-wrapper .notices-wrapper .notices.pool [class*=col] {
+    padding: 3rem 4rem;
+  }
+  .pool-page-body .container .bento-wrapper .notices-wrapper .notices.pool [class*=col]:last-of-type {
+    padding-bottom: 3.5rem;
+  }
+  .pool-page-body .container .bento-wrapper .notices-wrapper .notices.pool [class*=col] .notice-wrapper p {
+    line-height: 1.4;
+  }
+  .pool-rules .container .row .rules-introduction h2 {
+    font-size: 58px;
+    line-height: 1.2;
+    color: #d2d2d2;
+  }
+  .rental-section .container .row [class*=col] p {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .notices.greens-fees [class*=col] {
+    padding: 3rem 4rem;
+  }
+  .notices.greens-fees [class*=col]:last-of-type {
+    padding-bottom: 3.5rem;
+  }
+  .notices.greens-fees [class*=col] .notice-wrapper p {
+    line-height: 1.4;
+  }
+  .rates-page-body .container .row [class*=table-wrapper] .table-preface p {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .rates-page-body .container .row [class*=table-wrapper] table {
+    font-size: 16px;
+  }
+  table thead tr th {
+    line-height: 1.1;
+  }
+  table tbody tr th .th-wrap {
+    line-height: 1.1;
+  }
+  table tbody tr th .note {
+    margin-top: 0.35rem;
+    font-size: 12px;
+  }
+  .host-your-event-page-body {
+    padding-top: 2rem;
+    padding-bottom: 7rem;
+  }
+  .host-your-event-page-body .container .row [class*=col] h2 {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+  .host-your-event-page-body .container .row [class*=col] p {
+    font-size: 16px;
+    line-height: 1.4;
   }
 }
 @media screen and (max-width: 576px) {
@@ -18945,18 +19039,54 @@ footer .rts-copyright-area-one .new-row p {
     padding: 0 15px;
   }
   section.perks .container .row [class*=col] div h2 {
-    font-size: 40px;
-    margin-bottom: 1rem;
+    font-size: 38px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    line-height: 1.1;
   }
   section.perks .container .row [class*=col]:first-of-type {
     padding-left: 15px;
     padding-right: 15px;
   }
+  section.perks .container .row [class*=col] .single-check img {
+    width: 22px;
+    margin-right: 1.5rem;
+    margin-top: 1px;
+  }
+  section.perks .container .row [class*=col] .single-check p {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .membership-page-body .container .row .col h2 {
+    margin-bottom: 0;
+  }
+  .membership-page-body .container .row .col .sales-tax-note {
+    font-size: 16px;
+  }
+  .membership-page-body .container .row .col .tab-content .something-to-note {
+    font-size: 16px;
+    line-height: 1.4;
+    padding-bottom: 3rem;
+  }
+  .membership-page-body .container .row .col .tab-content .something-to-note .row .fees {
+    padding: 21px 21px;
+  }
+  .membership-page-body .container .row .col .tab-content .something-to-note .row .fees .fees-title,
+  .membership-page-body .container .row .col .tab-content .something-to-note .row .fees .fees-side {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .membership-page-body .container .row .col .tab-content .scrollable-table-container {
+    width: 900px;
+  }
+  .membership-page-body .container .row .col .tab-content .scrollable-table-container table {
+    overflow-x: scroll;
+  }
   .membership-page-body .container .row .col .membership-nav-wrapper ul.membership-nav .nav-item .nav-link {
     font-size: 16px;
   }
   .pool-page-body .container h2 {
-    font-size: 40px;
+    font-size: 58px;
     padding-bottom: 2rem;
   }
   .pool-rules {
