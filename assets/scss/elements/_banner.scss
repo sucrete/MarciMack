@@ -486,7 +486,7 @@ $starker-gradient: linear-gradient(
           .icon-col {
             flex-basis: 32px;
             .warning-icon-wrapper {
-              top: 26%;
+              top: 20px;
               left: 67%;
             }
           }
@@ -506,7 +506,7 @@ $starker-gradient: linear-gradient(
         /* text-align: justify; */
         letter-spacing: 0.4px;
         line-height: 1.5;
-        
+
         --w: 14px;
       }
     }

@@ -505,7 +505,7 @@ $outline-color: #e6e6e6;
   }
   section {
     &.calendar-section {
-      padding-top: 11rem;
+      padding-top: 13rem;
       padding-bottom: 7rem;
       .container {
         #calendar {
@@ -515,13 +515,22 @@ $outline-color: #e6e6e6;
             .fc-toolbar-chunk:nth-of-type(2) {
               position: absolute;
               width: 100%;
-              left: 0;
-              top: -4rem;
+              height: 100px;
+              top: -11rem;
               h2 {
                 @include center-it;
                 width: 100%;
                 text-align: center;
                 font-size: 32px;
+              }
+              button {
+                @include center-it;
+                top: 79%;
+                padding: 0;
+                margin: 0;
+                background: transparent;
+                border: none;
+                text-decoration: underline;
               }
             }
             .fc-toolbar-chunk {

@@ -304,7 +304,7 @@ section.hours-table {
         .warning-icon-wrapper {
           position: absolute;
           transform: translate(-50%, -50%);
-          top: 35%;
+          top: 21px;
           left: 60%;
           .warning-icon {
             width: 18px;
@@ -918,7 +918,7 @@ table {
       input,
       textarea {
         color: var(--color-primary);
-        box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.07);
+        // box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.07);
         &:hover,
         &:focus,
         &:active {
@@ -2289,7 +2289,7 @@ footer {
       }
     }
   }
-  .rental-section .container .row [class*=col] p {
+  .rental-section .container .row [class*="col"] p {
     font-size: 16px;
     line-height: 1.4;
   }
@@ -2500,16 +2500,21 @@ footer {
     padding-top: 9rem;
     padding-bottom: 6rem;
     .container {
-      .col {
-        h3 {
-          font-size: 45px;
-        }
-        .hr-group {
-          margin-bottom: 5rem;
-        }
-        p {
-          font-size: 17px;
-          margin-bottom: 8px;
+      .HIO-parent {
+        .HIO-year {
+          h3 {
+            font-size: 45px;
+          }
+          .hr-group {
+            margin-bottom: 5rem;
+          }
+          p {
+            font-size: 17px;
+            margin-bottom: 8px;
+          }
+          &:not(:first-of-type) {
+            padding-top: 10rem;
+          }
         }
       }
     }

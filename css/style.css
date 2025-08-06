@@ -13436,7 +13436,7 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
     text-align: center;
   }
   section.calendar-section {
-    padding-top: 11rem;
+    padding-top: 13rem;
     padding-bottom: 7rem;
   }
   section.calendar-section .container #calendar .fc-header-toolbar {
@@ -13446,8 +13446,8 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
   section.calendar-section .container #calendar .fc-header-toolbar .fc-toolbar-chunk:nth-of-type(2) {
     position: absolute;
     width: 100%;
-    left: 0;
-    top: -4rem;
+    height: 100px;
+    top: -11rem;
   }
   section.calendar-section .container #calendar .fc-header-toolbar .fc-toolbar-chunk:nth-of-type(2) h2 {
     position: absolute;
@@ -13457,6 +13457,18 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
     width: 100%;
     text-align: center;
     font-size: 32px;
+  }
+  section.calendar-section .container #calendar .fc-header-toolbar .fc-toolbar-chunk:nth-of-type(2) button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 79%;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    border: none;
+    text-decoration: underline;
   }
   section.calendar-section .container #calendar .fc-header-toolbar .fc-toolbar-chunk .fc-button-group .fc-prev-button .fc-icon,
   section.calendar-section .container #calendar .fc-header-toolbar .fc-toolbar-chunk .fc-button-group .fc-next-button .fc-icon {
@@ -13886,7 +13898,7 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
     flex-basis: 32px;
   }
   .banner-four-bg .cornered-container .frost-warning .warning-row .icon-col .warning-icon-wrapper {
-    top: 26%;
+    top: 20px;
     left: 67%;
   }
   .banner-four-bg .cornered-container .frost-warning .warning-row .text-col {
@@ -14969,16 +14981,19 @@ section.cta.blonde .rts-cts-area {
   justify-content: space-between;
   padding: 6rem 0 0 0;
 }
-.rts-copyright-area-one .copyright-wrapper .teequest-link {
+.rts-copyright-area-one .copyright-wrapper .teequest-link,
+.rts-copyright-area-one .copyright-wrapper .new-row p a {
   transition: all 0.25s ease;
 }
-.rts-copyright-area-one .copyright-wrapper .teequest-link .fa-gears {
+.rts-copyright-area-one .copyright-wrapper .teequest-link .fa-gears,
+.rts-copyright-area-one .copyright-wrapper .new-row p a .fa-gears {
   display: inline-block;
   margin-top: -15px;
   width: 20px;
   opacity: 0.65;
 }
-.rts-copyright-area-one .copyright-wrapper .teequest-link:hover {
+.rts-copyright-area-one .copyright-wrapper .teequest-link:hover,
+.rts-copyright-area-one .copyright-wrapper .new-row p a:hover {
   color: rgba(255, 255, 255, 0.65);
 }
 @media only screen and (max-width: 575px) {
@@ -17419,7 +17434,7 @@ section.hours-table .container .the-table-itself .addendum {
 .cornered-container .frost-warning .warning-row .icon-col .warning-icon-wrapper {
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 35%;
+  top: 21px;
   left: 60%;
 }
 .cornered-container .frost-warning .warning-row .icon-col .warning-icon-wrapper .warning-icon {
@@ -17897,7 +17912,6 @@ table.de-emphasize {
 .contact-section .contact-box form input,
 .contact-section .contact-box form textarea {
   color: var(--color-primary);
-  box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.07);
 }
 .contact-section .contact-box form input:hover, .contact-section .contact-box form input:focus, .contact-section .contact-box form input:active,
 .contact-section .contact-box form textarea:hover,
@@ -19107,15 +19121,18 @@ footer .rts-copyright-area-one .new-row p {
     padding-top: 9rem;
     padding-bottom: 6rem;
   }
-  .holes-in-one-page-body .container .col h3 {
+  .holes-in-one-page-body .container .HIO-parent .HIO-year h3 {
     font-size: 45px;
   }
-  .holes-in-one-page-body .container .col .hr-group {
+  .holes-in-one-page-body .container .HIO-parent .HIO-year .hr-group {
     margin-bottom: 5rem;
   }
-  .holes-in-one-page-body .container .col p {
+  .holes-in-one-page-body .container .HIO-parent .HIO-year p {
     font-size: 17px;
     margin-bottom: 8px;
+  }
+  .holes-in-one-page-body .container .HIO-parent .HIO-year:not(:first-of-type) {
+    padding-top: 10rem;
   }
   .booking-container {
     padding: 7rem 29px;

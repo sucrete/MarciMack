@@ -63,7 +63,6 @@
   padding-top: 14rem;
   // background-color: #f4f7f5;
   .container {
-    
     padding: 0 1rem 11rem 2rem;
   }
   & > .container {
@@ -102,9 +101,6 @@
 }
 
 .rts-copyright-area-one {
-  & * {
-    // color: rgba(46, 46, 46, 0.787)
-  }
   .row {
     border-top: 1px solid #ffffff22;
     border-top: 1px solid var(--color-offset);
@@ -114,8 +110,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 6rem 0 0 0; 
-    .teequest-link {
+    padding: 6rem 0 0 0;
+    .teequest-link,
+    .new-row p a {
       .fa-gears {
         display: inline-block;
         margin-top: -15px;
