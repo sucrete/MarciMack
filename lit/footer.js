@@ -58,7 +58,7 @@ export class Footer extends LitElement {
                         />(816) 628-4800
                       </a>
                       <a
-                        href="https://maps.app.goo.gl/Bzrg9oSfx67wBW1E7"
+                        href="https://maps.app.goo.gl/Nj4g5rP4zVsaURra8"
                         target="_blank"
                         class="link map-link d-flex flex-row align-items-start no-underline"
                       >
