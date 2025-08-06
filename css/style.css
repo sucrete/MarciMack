@@ -17500,7 +17500,7 @@ section.hours-table .container .the-table-itself .addendum {
   text-shadow: 0 0 15px black;
   --b: 1px; /* thickness of the border */
   --c: rgb(255, 255, 255); /* color of the border */
-  --w: 20px; /* width of border */
+  --w: 14px; /* width of border */
   border: var(--b) solid rgba(0, 0, 0, 0); /* space for the border */
   --_g: #0000 90deg, var(--c) 0;
   --_p: var(--w) var(--w) border-box no-repeat;
