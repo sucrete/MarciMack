@@ -242,7 +242,10 @@ export class Header extends LitElement {
                 <nav>
                   <ul>
                     <li>
-                      <a class="nav-link" href="online-store.html"
+                      <a
+                        class="nav-link"
+                        href="https://onlinestore.clubatmarimack.com/"
+                        target="_blank"
                         >Online Store</a
                       >
                     </li>
