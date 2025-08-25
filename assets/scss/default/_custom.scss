@@ -2086,12 +2086,13 @@ footer {
             padding-right: 15px;
             .why-choose-process-left {
               .title {
-                font-size: 37px;
+                font-size: 32px;
                 line-height: 110%;
                 margin-bottom: 15px;
               }
               p {
-                font-size: 16px;
+                font-size: 15px;
+                line-height: 1.4;
               }
             }
           }
@@ -2121,6 +2122,7 @@ footer {
     }
   }
   section.hours-table {
+    padding-bottom: 5rem;
     .container {
       .the-table-itself {
         overflow: hidden;
@@ -2136,18 +2138,30 @@ footer {
         }
         .some-tables {
           [class*="col"] {
+            
             &:first-of-type {
-              padding: 2.25rem;
+              padding: 2.5rem 2.65rem 2.5rem 2.5rem;
             }
-            padding: 2.25rem;
+            padding: 2.5rem 2.65rem 2.5rem 2.5rem;
             &:nth-of-type(2),
             &:nth-of-type(3) {
               border-top: 1.5px solid rgba(0, 0, 0, 0.05);
             }
+            &:last-of-type {
+              padding-right: 2.65rem;
+            }
+            .hours-title {
+              font-size: 22px;
+            }
+            .hours-row {
+              font-size: 15px;
+            }
           }
         }
         .addendum {
-          padding: 3rem 2.25rem 4rem 2.25rem;
+          padding: 2.5rem 2rem 3rem 2rem;
+          font-size: 15px;
+          line-height: 1.4;
         }
       }
     }

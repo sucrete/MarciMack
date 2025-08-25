@@ -120,6 +120,10 @@ header .rts-btn {
         li {
           & > a.nav-link {
             color: #fff;
+            transition: opacity .25s ease;
+            &:hover {
+              opacity: .7;
+            }
           }
         }
       }

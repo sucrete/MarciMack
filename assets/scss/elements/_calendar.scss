@@ -357,6 +357,7 @@ $outline-color: #e6e6e6;
         padding: 0;
         color: #767364;
         letter-spacing: 0.2px;
+        white-space: pre-line;
       }
       .event-list-footer {
         padding: 2rem 0 0 0;
@@ -552,22 +553,80 @@ $outline-color: #e6e6e6;
                 justify-content: center;
               }
             }
+            .fc-daygrid {
+              table {
+                thead {
+                  .fc-col-header-cell-cushion {
+                    font-size: 12px;
+                    padding-bottom: 5px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .modal {
+          .modal-dialog {
+            .modal-content {
+              .modal-header {
+                padding: 2.5rem 2rem 0.25rem 2rem;
+                .modal-title {
+                  line-height: 1.1;
+                  font-size: 22px;
+                }
+                .close-button-wrapper {
+                  top: 1.5rem;
+                  right: 1.5rem;
+                }
+              }
+              .modal-body-wrapper {
+                padding: 0 2rem 2rem 2rem;
+                .date-wrapper {
+                  [class*="modal-date"] {
+                    font-size: 14px;
+                  }
+                }
+                hr {
+                  margin: 1.45rem 0 1.35rem 0;
+                }
+                .modal-body {
+                  font-size: 14px;
+                  line-height: 1.3;
+                }
+              }
+              .modal-footer {
+                padding: 1rem 2.5rem 3rem 2rem;
+                margin: 0;
+                gap: 0;
+              }
+            }
           }
         }
       }
     }
   }
-  .events-list-wrapper {
-    .event-list-item {
-      .event-list-title {
-        line-height: 130%;
-      }
-      .event-list-date-wrapper {
-        font-size: 15px;
-      }
-      .event-list-description {
-        font-size: 15px;
-        line-height: 150%;
+  .fc-monthList-view {
+    .events-list-wrapper {
+      .event-list-item {
+        .event-list-title {
+          font-size: 22px;
+          line-height: 1.1;
+        }
+        .event-list-date-wrapper {
+          font-size: 14px;
+          .date-icon {
+            width: 13px;
+            margin-right: 4px;
+            top: -2px;
+          }
+        }
+        hr {
+          margin-top: 1.1rem;
+        }
+        .event-list-description {
+          font-size: 14px;
+          line-height: 1.3;
+        }
       }
     }
   }

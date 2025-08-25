@@ -108,15 +108,13 @@ document.addEventListener("DOMContentLoaded", function () {
                       </div>
                     </div>
                     <hr/>
-                    <div class="event-list-description">
-                      ${seg.def.extendedProps.eventDescription}
-                    </div>
-                     <div class="event-list-footer d-flex flex-column flex-md-row ${
-                       seg.def.extendedProps.linkQuestion ||
-                       seg.def.extendedProps.flyerQuestion
-                         ? ""
-                         : "no-buttons"
-                     }">
+                    <div class="event-list-description">${seg.def.extendedProps.eventDescription}</div>
+                    <div class="event-list-footer d-flex flex-column flex-md-row ${
+                      seg.def.extendedProps.linkQuestion ||
+                      seg.def.extendedProps.flyerQuestion
+                        ? ""
+                        : "no-buttons"
+                    }">
                  ${
                    seg.def.extendedProps?.flyer
                      ? `<a href="${
@@ -265,7 +263,7 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         } else {
           modalFooter.style = "display: none !important";
-          modalBodyWrapper.style = "padding-bottom: 4rem";
+          modalBodyWrapper.style = "padding-bottom: 3rem";
         }
 
         $("#calModal").modal("show");

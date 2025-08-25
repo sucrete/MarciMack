@@ -18,7 +18,7 @@ var weatherData;
 
 //~ First call Pirate Weather API
 async function getWeather() {
-  await fetch(apiUrl, { cache: "no-store" })
+  await fetch(apiUrl, { method: "GET", cache: "no-store" })
     .then((response) => {
       if (!response.ok) {
         throw new Error("Network response was not ok");

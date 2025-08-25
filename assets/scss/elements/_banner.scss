@@ -503,11 +503,10 @@ $starker-gradient: linear-gradient(
       .cornered-box {
         padding: 2rem;
         font-size: 15px;
-        /* text-align: justify; */
+        text-align: center;
         letter-spacing: 0.4px;
-        line-height: 1.5;
-
-        --w: 14px;
+        line-height: 1.4;
+        --w: 10px;
       }
     }
 

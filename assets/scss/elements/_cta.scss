@@ -81,7 +81,6 @@ section.cta {
           width: 100%;
           z-index: 7;
 
-          
           background-image: linear-gradient(
             to right,
             hsl(229.23, 100%, 77.06%) 0%,
@@ -110,7 +109,8 @@ section.cta {
           top: -187%;
           left: -50%;
           z-index: 1;
-          background: url("../assets/images/svgs/grand-tartan-white.svg") 0 0 repeat;
+          background: url("../assets/images/svgs/grand-tartan-white.svg") 0 0
+            repeat;
           background-size: 100%;
           transform: rotate(30deg) translate(50%, 50%);
           transform-origin: center center;
@@ -121,8 +121,8 @@ section.cta {
       }
     }
     @media (max-width: 992px) {
-      padding-top: 7rem;
-      padding-bottom: 7rem;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
       .cta-one-wrapper {
         .left-area {
           .title {
@@ -133,7 +133,8 @@ section.cta {
           width: 100%;
           max-width: 100%;
           padding: 190px 110px;
-          .title, p {
+          .title,
+          p {
             text-align: center;
           }
           a {
@@ -148,7 +149,7 @@ section.cta {
     @media (max-width: 814px) {
       .cta-one-wrapper {
         .left-area {
-          padding: 7rem 6rem;
+          padding: 5rem 6rem;
         }
       }
     }
@@ -156,19 +157,21 @@ section.cta {
       .cta-one-wrapper {
         padding: 0rem;
         .left-area {
-          
           .title {
-            font-size: 35px;
-            line-height: 120%;
+            font-size: 38px;
+            line-height: 1.1;
+            letter-spacing: -2px;
           }
           p {
             margin-bottom: 2rem;
+            font-size: 15px;
+            line-height: 1.4;
           }
         }
       }
     }
     // @media screen and (max-width) {
-      
+
     // }
   }
   &.blonde {
