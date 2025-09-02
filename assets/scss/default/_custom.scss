@@ -13,6 +13,17 @@
   cursor: pointer;
 }
 
+table {
+  th {
+    &[scope='col'] {
+      .explainer-icon {
+        margin-top: -3px;
+        margin-left: 2px;
+      }
+    }
+  }
+
+}
 .my-btn {
   color: white !important;
   font-family: "Aeonik", sans-serif !important;
