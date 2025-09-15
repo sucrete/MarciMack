@@ -39,7 +39,7 @@ export class Header extends LitElement {
                     </li>
 
                     <li>
-                      <a class="nav-link" href="membership.html">Membership</a>
+                      <a class="nav-link" href="membership.html">Passes</a>
                     </li>
 
                     <li class="has-dropdown">
@@ -51,7 +51,7 @@ export class Header extends LitElement {
                         <li>
                           <a href="pool.html"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
-                            >Membership</a
+                            >Pool Passes</a
                           >
                         </li>
                         <li>
