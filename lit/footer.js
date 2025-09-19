@@ -53,7 +53,7 @@ export class Footer extends LitElement {
                       >
                         <img
                           class="icon phone-icon"
-                          src="./assets/images/icons/phone.svg"
+                          src="./assets/images/icons/phone-call.svg"
                           alt=""
                         />(816) 628-4800
                       </a>
@@ -64,7 +64,7 @@ export class Footer extends LitElement {
                       >
                         <img
                           class="icon map-icon"
-                          src="./assets/images/icons/map-icon.svg"
+                          src="./assets/images/icons/route.svg"
                           alt=""
                         />
                         <div>

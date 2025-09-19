@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="a" data-name="Layer_1" xmlns="http://www.w3.org/2000/svg" width="511.87" height="259.05" viewBox="0 0 511.87 259.05">
+<svg id="a" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 511.9 259">
+  <!-- Generator: Adobe Illustrator 29.8.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 2)  -->
   <defs>
     <style>
-      .b {
-        fill: #00a95a;
+      .st0 {
+        fill: #c29742;
       }
     </style>
   </defs>
-  <path class="b" d="M481.71,259.05L270.95,48.29c-8.43-8.09-21.74-8.09-30.17,0L30.17,258.92,0,228.75,210.62,18.13c25.33-24.17,65.19-24.17,90.52,0l210.73,210.75-30.17,30.17Z"/>
+  <path class="st0" d="M481.7,259L271,48.3c-8.4-8.1-21.7-8.1-30.2,0L30.2,258.9,0,228.8,210.6,18.1c25.3-24.2,65.2-24.2,90.5,0l210.7,210.8-30.2,30.2h0Z"/>
 </svg>

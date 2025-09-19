@@ -279,6 +279,12 @@ export class Header extends LitElement {
                             >Holes-in-One!</a
                           >
                         </li>
+                        <li>
+                          <a href="about.html#mc_embed_shell"
+                            ><i class="fa-sharp fa-regular fa-chevron-right"></i
+                            >Newsletter Sign-Up</a
+                          >
+                        </li>
                       </ul>
                     </li>
                     <li>
