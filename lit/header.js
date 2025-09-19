@@ -289,7 +289,7 @@ export class Header extends LitElement {
                     </li>
                     <li>
                       <a
-                        href="book-tee-time.html"
+                        href="https://teetimes.teequest.com/59"
                         class="rts-btn btn-primary my-btn"
                       >
                         Book tee time
