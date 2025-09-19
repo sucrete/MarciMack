@@ -20,7 +20,7 @@ export class CTA extends LitElement {
                     Click here to book online and save.
                   </p>
                   <a
-                    href="book-tee-time.html"
+                    href="https://teetimes.teequest.com/59"
                     class="rts-btn btn-primary cta-button no-underline"
                     
                   >
