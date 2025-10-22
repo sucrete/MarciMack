@@ -13930,17 +13930,21 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
   .banner-four-bg .cornered-container {
     margin-bottom: 2rem;
   }
-  .banner-four-bg .cornered-container .frost-warning .warning-row .icon-col {
+  .banner-four-bg .cornered-container .frost-warning .warning-row .icon-col,
+  .banner-four-bg .cornered-container .notice-bar .warning-row .icon-col {
     flex-basis: 32px;
   }
-  .banner-four-bg .cornered-container .frost-warning .warning-row .icon-col .warning-icon-wrapper {
+  .banner-four-bg .cornered-container .frost-warning .warning-row .icon-col .warning-icon-wrapper,
+  .banner-four-bg .cornered-container .notice-bar .warning-row .icon-col .warning-icon-wrapper {
     top: 20px;
     left: 67%;
   }
-  .banner-four-bg .cornered-container .frost-warning .warning-row .text-col {
+  .banner-four-bg .cornered-container .frost-warning .warning-row .text-col,
+  .banner-four-bg .cornered-container .notice-bar .warning-row .text-col {
     padding-left: 0.5rem;
   }
-  .banner-four-bg .cornered-container .frost-warning .warning-row .text-col .text-wrapper .frost-warning-title {
+  .banner-four-bg .cornered-container .frost-warning .warning-row .text-col .text-wrapper .frost-warning-title,
+  .banner-four-bg .cornered-container .notice-bar .warning-row .text-col .text-wrapper .frost-warning-title {
     margin-bottom: 3px;
   }
   .banner-four-bg .cornered-container .cornered-box {
@@ -17429,7 +17433,7 @@ section.hours-table .container .the-table-itself .some-tables [class*=col].pool 
   top: 55%;
   left: 50%;
   transform: rotate(-3deg) translate(-50%, -50%);
-  filter: drop-shadow(0px 9px 17px rgba(50, 50, 93, 0.15)) drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(-1px 4px 6px rgba(50, 50, 93, 0.3)) drop-shadow(-1px 2px 2px rgba(0, 0, 0, 0.3));
 }
 section.hours-table .container .the-table-itself .some-tables [class*=col].pool.closed .hours-title,
 section.hours-table .container .the-table-itself .some-tables [class*=col].pool.closed .hours-row {
@@ -17454,7 +17458,8 @@ section.hours-table .container .the-table-itself .addendum {
 .cornered-container {
   margin-bottom: 0rem;
 }
-.cornered-container .frost-warning {
+.cornered-container .frost-warning,
+.cornered-container .notice-bar {
   display: none;
   background: rgba(255, 249, 185, 0.9098039216);
   border-radius: 1px;
@@ -17465,73 +17470,86 @@ section.hours-table .container .the-table-itself .addendum {
   backdrop-filter: blur(5px);
   max-width: 600px;
 }
-.cornered-container .frost-warning .warning-row {
+.cornered-container .frost-warning .warning-row,
+.cornered-container .notice-bar .warning-row {
   display: flex;
   flex-direction: row;
   margin: 0.4rem;
   border-radius: 7px;
 }
-.cornered-container .frost-warning .warning-row .icon-col {
+.cornered-container .frost-warning .warning-row .icon-col,
+.cornered-container .notice-bar .warning-row .icon-col {
   position: relative;
   flex-basis: 40px;
 }
-.cornered-container .frost-warning .warning-row .icon-col .warning-icon-wrapper {
+.cornered-container .frost-warning .warning-row .icon-col .warning-icon-wrapper,
+.cornered-container .notice-bar .warning-row .icon-col .warning-icon-wrapper {
   position: absolute;
   transform: translate(-50%, -50%);
   top: 21px;
   left: 60%;
 }
-.cornered-container .frost-warning .warning-row .icon-col .warning-icon-wrapper .warning-icon {
+.cornered-container .frost-warning .warning-row .icon-col .warning-icon-wrapper .warning-icon,
+.cornered-container .notice-bar .warning-row .icon-col .warning-icon-wrapper .warning-icon {
   width: 18px;
   height: auto;
   position: relative;
   z-index: 7;
 }
-.cornered-container .frost-warning .warning-row .icon-col .warning-icon-wrapper .warning-icon path {
+.cornered-container .frost-warning .warning-row .icon-col .warning-icon-wrapper .warning-icon path,
+.cornered-container .notice-bar .warning-row .icon-col .warning-icon-wrapper .warning-icon path {
   fill: #ecc903;
 }
-.cornered-container .frost-warning .warning-row .icon-col .warning-icon-wrapper .radiate-stack {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  top: 57%;
-}
-.cornered-container .frost-warning .warning-row .icon-col .warning-icon-wrapper .radiate-stack .circle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgb(255, 246, 194);
-  border-radius: 200px;
-  width: 40px;
-  height: 40px;
-  opacity: 1;
-}
-.cornered-container .frost-warning .warning-row .text-col {
+.cornered-container .frost-warning .warning-row .text-col,
+.cornered-container .notice-bar .warning-row .text-col {
   position: relative;
   z-index: 9;
   padding: 0.5rem;
   width: 87%;
   flex-basis: auto;
 }
-.cornered-container .frost-warning .warning-row .text-col .text-wrapper {
+.cornered-container .frost-warning .warning-row .text-col .text-wrapper,
+.cornered-container .notice-bar .warning-row .text-col .text-wrapper {
   z-index: 88;
   padding: 0.5rem 2.5rem 0.75rem 1.5rem;
 }
-.cornered-container .frost-warning .warning-row .text-col .text-wrapper .frost-warning-title {
+.cornered-container .frost-warning .warning-row .text-col .text-wrapper .frost-warning-title,
+.cornered-container .frost-warning .warning-row .text-col .text-wrapper .notice-bar-title,
+.cornered-container .notice-bar .warning-row .text-col .text-wrapper .frost-warning-title,
+.cornered-container .notice-bar .warning-row .text-col .text-wrapper .notice-bar-title {
   font-family: "Aeonik Medium";
   font-size: 17px;
   color: oklch(55.4% 0.135 66.442deg);
   margin-bottom: 1px;
   letter-spacing: 0.2px;
 }
-.cornered-container .frost-warning .warning-row .text-col .text-wrapper .frost-warning-text {
+.cornered-container .frost-warning .warning-row .text-col .text-wrapper .frost-warning-text,
+.cornered-container .frost-warning .warning-row .text-col .text-wrapper .notice-bar-text,
+.cornered-container .notice-bar .warning-row .text-col .text-wrapper .frost-warning-text,
+.cornered-container .notice-bar .warning-row .text-col .text-wrapper .notice-bar-text {
   font-size: 15px;
   text-shadow: none;
   color: oklch(55.299% 0.12746 61.788deg / 0.774);
   letter-spacing: 0.2px;
   line-height: 117%;
+}
+.cornered-container .notice-bar {
+  background: rgba(238, 242, 255, 0.906);
+  border-color: rgb(99, 168, 255);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.cornered-container .notice-bar .warning-row .icon-col .warning-icon-wrapper .warning-icon path {
+  fill: rgb(70, 144, 234);
+}
+.cornered-container .notice-bar .warning-row .text-col .text-wrapper .notice-bar-title {
+  color: rgb(25, 46, 139);
+}
+.cornered-container .notice-bar .warning-row .text-col .text-wrapper .notice-bar-text {
+  color: rgba(24, 43, 130, 0.732);
+}
+.cornered-container .notice-bar .warning-row .text-col .text-wrapper .notice-bar-text a:hover {
+  color: rgb(24, 43, 130);
 }
 .cornered-container .cornered-box {
   color: white;

@@ -1,3 +1,4 @@
+//* FOR HOLES-IN-ONE PAGE
 const HIOQuery =
   "https://fhm6z54x.api.sanity.io/v2025-08-01/data/query/production?query=*%5B_type+%3D%3D+%27holesInOne%27%5D&perspective=published";
 

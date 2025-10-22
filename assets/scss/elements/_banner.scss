@@ -481,7 +481,8 @@ $starker-gradient: linear-gradient(
     height: 600px !important;
     .cornered-container {
       margin-bottom: 2rem;
-      .frost-warning {
+      .frost-warning,
+      .notice-bar {
         .warning-row {
           .icon-col {
             flex-basis: 32px;
