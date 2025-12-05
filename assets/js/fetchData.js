@@ -21,3 +21,14 @@ async function fetchData(query) {
     console.error("Error fetching data:", error);
   }
 }
+
+function dataInjector(data, dataName) {
+  Object.entries(data).forEach(([key, value]) => {
+    // querySelector uses CSS syntax. [data-sanity="jrG"]
+    const element = document.querySelector(`[data-${dataName}="${key}"]`);
+
+    if (element && value) {
+      element.textContent = value;
+    }
+  });
+}

@@ -45,6 +45,11 @@
 
     <!-- footer Lit component -->
     <script type="module" src="./lit/footer.js"></script>
+
+    <!-- injecting data -->
+    <script src="assets/js/greensFeesPageMutate.js"></script>
+    <!-- Sanity data fetch -->
+    <script src="assets/js/fetchData.js"></script>
   </head>
 
   <body>
@@ -92,8 +97,8 @@
                     <img src="assets/images/icons/home.svg" alt="" />
                   </div>
                   <p>
-                    Seniors, veterans, and public responders always
-                    receive a $2 discount on greens fees 7 days a week.
+                    Seniors, veterans, and public responders always receive a $2
+                    discount on greens fees 7 days a week.
                     <img
                       data-bs-toggle="tooltip"
                       data-bs-title="Discount cannot be
@@ -112,8 +117,8 @@
                     <img src="assets/images/icons/kid.svg" alt="" />
                   </div>
                   <p>
-                    Juniors under 10 play free with paid adult greens fee, 7 days
-                    a week!
+                    Juniors under 10 play free with paid adult greens fee, 7
+                    days a week!
                   </p>
                 </div>
               </div>
@@ -184,23 +189,23 @@
                   <th scope="row">
                     <div class="th-wrap">Walk</div>
                   </th>
-                  <td>$12.38</td>
-                  <td>$18.57</td>
+                  <td data-sanity-weekdays="walk9">$12.38</td>
+                  <td data-sanity-weekdays="walk18">$18.57</td>
                 </tr>
                 <tr>
                   <th scope="row">
                     <div class="th-wrap">Ride</div>
                   </th>
-                  <td>$24.77</td>
-                  <td>$34.65</td>
+                  <td data-sanity-weekdays="ride9">$24.77</td>
+                  <td data-sanity-weekdays="ride18">$34.65</td>
                 </tr>
                 <tr>
                   <th scope="row">
                     <div class="th-wrap">Cart Fee</div>
                     <div class="note">per passenger</div>
                   </th>
-                  <td>$12.38</td>
-                  <td>$16.08</td>
+                  <td data-sanity-weekdays="cart9">$12.38</td>
+                  <td data-sanity-weekdays="cart18">$16.08</td>
                 </tr>
 
                 <tr>
@@ -219,7 +224,7 @@
                     </div>
                   </th>
                   <td>--</td>
-                  <td>$23.10</td>
+                  <td data-sanity-weekdays="lawson18">$23.10</td>
                 </tr>
               </tbody>
             </table>
@@ -258,23 +263,23 @@
                   <th scope="row">
                     <div class="th-wrap">Walk</div>
                   </th>
-                  <td>$14.85</td>
-                  <td>$21.04</td>
+                  <td data-sanity-weekends="walk9">$14.85</td>
+                  <td data-sanity-weekends="walk18">$21.04</td>
                 </tr>
                 <tr>
                   <th scope="row">
                     <div class="th-wrap">Ride</div>
                   </th>
-                  <td>$27.23</td>
-                  <td>$37.12</td>
+                  <td data-sanity-weekends="ride9">$27.23</td>
+                  <td data-sanity-weekends="ride18">$37.12</td>
                 </tr>
                 <tr>
                   <th scope="row">
                     <div class="th-wrap">Cart Fee</div>
                     <div class="note">per passenger</div>
                   </th>
-                  <td>$12.35</td>
-                  <td>$16.08</td>
+                  <td data-sanity-weekends="cart9">$12.35</td>
+                  <td data-sanity-weekends="cart18">$16.08</td>
                 </tr>
 
                 <tr>
@@ -293,7 +298,7 @@
                     </div>
                   </th>
                   <td>--</td>
-                  <td>$25.47</td>
+                  <td data-sanity-weekends="lawson18">$25.47</td>
                 </tr>
               </tbody>
             </table>
@@ -327,15 +332,15 @@
                   <th scope="row">
                     <div class="th-wrap">9 Holes</div>
                   </th>
-                  <td>$4.79</td>
-                  <td>$7.79</td>
+                  <td data-sanity="nineHolePass">$4.79</td>
+                  <td data-sanity="nineHoleNonPass">$99999.79</td>
                 </tr>
                 <tr>
                   <th scope="row">
                     <div class="th-wrap">18 Holes</div>
                   </th>
-                  <td>$7.59</td>
-                  <td>$9.79</td>
+                  <td data-sanity="eighteenHolePass">$7.59</td>
+                  <td data-sanity="eighteenHoleNonePass">$9.79</td>
                 </tr>
               </tbody>
             </table>
@@ -368,30 +373,30 @@
                     <div class="th-wrap">Small Bucket - 1 Token</div>
                     <div class="note">Appx. 45 Balls</div>
                   </th>
-                  <td>$6.85</td>
-                  <td>$7.61</td>
+                  <td data-sanity="smallBucketPass">$6.85</td>
+                  <td data-sanity="smallBucketNonPass">$7.61</td>
                 </tr>
                 <tr>
                   <th scope="row">
                     <div class="th-wrap">Large Bucket - 2 Tokens</div>
                     <div class="note">appx. 90 balls</div>
                   </th>
-                  <td>$11.74</td>
-                  <td>$13.05</td>
+                  <td data-sanity="largeBucketPass">$11.74</td>
+                  <td data-sanity="largeBucketNonPass">$13.05</td>
                 </tr>
                 <tr>
                   <th scope="row">
                     <div class="th-wrap">5 Tokens</div>
                   </th>
-                  <td>$27.75</td>
-                  <td>$30.84</td>
+                  <td data-sanity="tokens5Pass">$27.75</td>
+                  <td data-sanity="tokens5NonPass">$30.84</td>
                 </tr>
                 <tr>
                   <th scope="row">
                     <div class="th-wrap">10 Tokens</div>
                   </th>
-                  <td>$53.09</td>
-                  <td>$58.99</td>
+                  <td data-sanity="tokens10NonPass">$53.09</td>
+                  <td data-sanity="tokens10Pass">$58.99</td>
                 </tr>
               </tbody>
             </table>
@@ -425,14 +430,14 @@
                     <div class="th-wrap">10 x 9-Hole Rounds</div>
                   </th>
                   <td>--</td>
-                  <td>$83.51</td>
+                  <td data-sanity="tenNineHoleNonPass">$83.51</td>
                 </tr>
                 <tr>
                   <th scope="row">
                     <div class="th-wrap">10 x 9-Hole Cart Uses</div>
                   </th>
-                  <td>79.35</td>
-                  <td>$83.51</td>
+                  <td data-sanity="tenNineHoleCartPass">79.35</td>
+                  <td data-sanity="tenNineHoleCartNonPass">$83.51</td>
                 </tr>
                 <tr>
                   <th scope="row">
@@ -448,7 +453,7 @@
                       />
                     </div>
                   </th>
-                  <td>$36.87</td>
+                  <td data-sanity="tenPoolPass">$36.87</td>
                   <td>--</td>
                 </tr>
               </tbody>

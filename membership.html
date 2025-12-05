@@ -45,6 +45,11 @@
 
     <!-- footer Lit component -->
     <script type="module" src="./lit/footer.js"></script>
+
+     <!-- injecting data -->
+    <script src="assets/js/membershipPageMutate.js"></script>
+    <!-- Sanity data fetch -->
+    <script src="assets/js/fetchData.js"></script>
   </head>
 
   <body>
@@ -119,8 +124,8 @@
                     <span class="bold">Exclusive invites</span>
                     and first-to-knows about upcoming Tournaments, Events &
                     Specials like the Annual Ryder Cup, The MariMack Open, the
-                    always sold-out Night Golf and the Annual Black Friday
-                    Pass Holder Event!
+                    always sold-out Night Golf and the Annual Black Friday Pass
+                    Holder Event!
                   </p>
                 </div>
               </div>
@@ -182,15 +187,21 @@
               class="wow fadeInUp"
               data-wow-offset="120"
               data-wow-delay=".1s"
+              style="
+                visibility: visible;
+                animation-delay: 0.1s;
+                animation-name: fadeInUp;
+              "
             >
-              <h2>Rates</h2>
+              <h2>Passes</h2>
               <div class="sales-tax-note">
                 <div class="lil-line"></div>
-                <span class="highlighted">All rates subject to sales tax.</span>
+                <span class="highlighted">All fees subject to sales tax.</span>
                 <div class="lil-line"></div>
               </div>
             </div>
 
+            <!--* Annual Rates Table Start -->
             <div
               class="tab-content wow fadeInUp"
               data-wow-offset="120"
@@ -204,7 +215,7 @@
                 />
               </div>
               <hr />
-              <h3>Annual Rates</h3>
+              <h3>Annual Passes</h3>
               <div>
                 <div class="something-to-note">
                   <div class="row">
@@ -231,9 +242,9 @@
                         />
                       </svg>
                       <span class="indention"></span>
-                      The Unlimited and Pool Only Passes will require a
-                      one-time intiation fee, including those upgrading from a
-                      non-pool pass.
+                      The Unlimited and Pool Only Passes will require a one-time
+                      intiation fee, including those upgrading from a non-pool
+                      pass.
                       <span class="highlighted">
                         These fees are waived for Veterans and Porter
                         Communities residents.</span
@@ -247,12 +258,12 @@
                         <div class="fee-row">
                           <div>General</div>
                           <div class="spanner"></div>
-                          <div>$276.56</div>
+                          <div data-sanity-annual="generalIF">$276.56</div>
                         </div>
                         <div class="fee-row">
                           <div>Seniors</div>
                           <div class="spanner"></div>
-                          <div>$184.37</div>
+                          <div data-sanity-annual="seniorIF">$184.37</div>
                         </div>
                         <!-- <div class="fee-row">
                           <div>Each Additional Junior</div>
@@ -263,7 +274,7 @@
                     </div>
                   </div>
                 </div>
-                <!--* Annual Rates Table Start -->
+
                 <div class="table-responsive">
                   <table class="table-one">
                     <thead>
@@ -301,9 +312,9 @@
                             />
                           </div>
                         </th>
-                        <td>$155.76</td>
-                        <td>$322.21</td>
-                        <td>$402.73</td>
+                        <td data-sanity-annual="jrG">$155.76</td>
+                        <td data-sanity-annual="jrGC">$322.21</td>
+                        <td data-sanity-annual="jrGCR">$402.73</td>
                         <td>--</td>
                         <td>--</td>
                       </tr>
@@ -322,11 +333,13 @@
                             />
                           </div>
                         </th>
-                        <td>$311.52</td>
-                        <td>$504.74</td>
-                        <td>$622.94</td>
-                        <td>$762.52</td>
-                        <td>$261.16</td>
+                        <td data-sanity-annual="individualG">$311.52</td>
+                        <td data-sanity-annual="individualGC">$504.74</td>
+                        <td data-sanity-annual="individualGCR">$622.94</td>
+                        <td data-sanity-annual="individualUnlimited">
+                          $762.52
+                        </td>
+                        <td data-sanity-annual="individualPool">$261.16</td>
                       </tr>
                       <tr>
                         <th scope="row">
@@ -342,11 +355,11 @@
                             />
                           </div>
                         </th>
-                        <td>$375.97</td>
-                        <td>$633.63</td>
-                        <td>$762.52</td>
-                        <td>$1041.77</td>
-                        <td>$331.47</td>
+                        <td data-sanity-annual="couplesG">$375.97</td>
+                        <td data-sanity-annual="couplesGC">$633.63</td>
+                        <td data-sanity-annual="couplesGCR">$762.52</td>
+                        <td data-sanity-annual="couplesUnlimited">$1041.77</td>
+                        <td data-sanity-annual="couplesPool">$331.47</td>
                       </tr>
                       <tr>
                         <th scope="row">
@@ -362,11 +375,11 @@
                             />
                           </div>
                         </th>
-                        <td>$311.52</td>
-                        <td>$504.74</td>
-                        <td>$622.94</td>
-                        <td>$762.52</td>
-                        <td>$291.29</td>
+                        <td data-sanity-annual="couples2G">$311.52</td>
+                        <td data-sanity-annual="couples2GC">$504.74</td>
+                        <td data-sanity-annual="couples2GCR">$622.94</td>
+                        <td data-sanity-annual="couples2Unlimited">$762.52</td>
+                        <td data-sanity-annual="couples2Pool">$291.29</td>
                       </tr>
                       <tr>
                         <th scope="row">
@@ -382,11 +395,11 @@
                             />
                           </div>
                         </th>
-                        <td>$214.80</td>
-                        <td>$418.93</td>
-                        <td>$537.02</td>
-                        <td>$665.91</td>
-                        <td>$226</td>
+                        <td data-sanity-annual="srG">$214.80</td>
+                        <td data-sanity-annual="srGC">$418.93</td>
+                        <td data-sanity-annual="srGCR">$537.02</td>
+                        <td data-sanity-annual="srUnlimited">$665.91</td>
+                        <td data-sanity-annual="srPool">$226</td>
                       </tr>
                       <tr>
                         <th scope="row">
@@ -402,11 +415,11 @@
                             />
                           </div>
                         </th>
-                        <td>$290.04</td>
-                        <td>$579.98</td>
-                        <td>$741.03</td>
-                        <td>$837.75</td>
-                        <td>$251.11</td>
+                        <td data-sanity-annual="sr2G">$290.04</td>
+                        <td data-sanity-annual="sr2GC">$579.98</td>
+                        <td data-sanity-annual="sr2GCR">$741.03</td>
+                        <td data-sanity-annual="sr2Unlimited">$837.75</td>
+                        <td data-sanity-annual="sr2Pool">$251.11</td>
                       </tr>
                       <tr>
                         <th scope="row">
@@ -422,11 +435,11 @@
                             />
                           </div>
                         </th>
-                        <td>$558.50</td>
-                        <td>$955,84</td>
-                        <td>$1063.25</td>
-                        <td>$1181.34</td>
-                        <td>$552.45</td>
+                        <td data-sanity-annual="familyG">$558.50</td>
+                        <td data-sanity-annual="familyGC">$955,84</td>
+                        <td data-sanity-annual="familyGCR">$1063.25</td>
+                        <td data-sanity-annual="familyUnlimited">$1181.34</td>
+                        <td data-sanity-annual="familyPool">$552.45</td>
                       </tr>
                       <tr>
                         <th scope="row">
@@ -442,19 +455,22 @@
                             />
                           </div>
                         </th>
-                        <td>$45.88</td>
-                        <td>$45.88</td>
-                        <td>$45.88</td>
-                        <td>$45.88</td>
-                        <td>$45.88</td>
+                        <td data-sanity-annual="additionalJrG">$45.88</td>
+                        <td data-sanity-annual="additionalJrGC">$45.88</td>
+                        <td data-sanity-annual="additionalJrGCR">$45.88</td>
+                        <td data-sanity-annual="additionalJrUnlimited">
+                          $45.88
+                        </td>
+                        <td data-sanity-annual="additionalJrPool">$45.88</td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
-
-                <!--* Annual Rates Table End -->
               </div>
             </div>
+            <!--* Annual Rates Table End -->
+
+            <!--* Veterans and Residents Start -->
             <div
               class="tab-content veterans wow fadeInUp"
               data-wow-offset="120"
@@ -494,9 +510,8 @@
                     />
                   </svg>
                   <span class="indention"></span>
-                  Veterans & Porter Communities Resident Passes are only
-                  offered to Veterans and residents who have purchased their
-                  home in a
+                  Veterans & Porter Communities Resident Passes are only offered
+                  to Veterans and residents who have purchased their home in a
                   <a href="http://www.portercommunities.com/" target="_blank"
                     >Porter Communities</a
                   >
@@ -510,7 +525,6 @@
                   may be required.
                 </div>
 
-                <!--* Veterans and Residents Start -->
                 <div class="table-responsive">
                   <table class="">
                     <thead>
@@ -548,9 +562,9 @@
                             />
                           </div>
                         </th>
-                        <td>$140.18</td>
-                        <td>$289.99</td>
-                        <td>$362.46</td>
+                        <td data-sanity-porter="jrG">$140.18</td>
+                        <td data-sanity-porter="jrGC">$289.99</td>
+                        <td data-sanity-porter="jrGCR">$362.46</td>
                         <td>--</td>
                         <td>--</td>
                       </tr>
@@ -569,11 +583,11 @@
                             />
                           </div>
                         </th>
-                        <td>$280.37</td>
-                        <td>$454.26</td>
-                        <td>$560.65</td>
-                        <td>$686.26</td>
-                        <td>$235.04</td>
+                        <td data-sanity-porter="individualG">$280.37</td>
+                        <td data-sanity-porter="individualGC">$454.26</td>
+                        <td data-sanity-porter="individualGCR">$560.65</td>
+                        <td data-sanity-porter="individualUnlimited">$686.26</td>
+                        <td data-sanity-porter="individualPool">$235.04</td>
                       </tr>
                       <tr>
                         <th scope="row">
@@ -589,11 +603,11 @@
                             />
                           </div>
                         </th>
-                        <td>$338.37</td>
-                        <td>$570.26</td>
-                        <td>$686.26</td>
-                        <td>$937.59</td>
-                        <td>$298.32</td>
+                        <td data-sanity-porter="couplesG">$338.37</td>
+                        <td data-sanity-porter="couplesGC">$570.26</td>
+                        <td data-sanity-porter="couplesGCR">$686.26</td>
+                        <td data-sanity-porter="couplesUnlimited">$937.59</td>
+                        <td data-sanity-porter="couplesPool">$298.32</td>
                       </tr>
                       <tr>
                         <th scope="row">
@@ -609,11 +623,11 @@
                             />
                           </div>
                         </th>
-                        <td>$280.37</td>
-                        <td>$454.26</td>
-                        <td>$560.65</td>
-                        <td>$686.26</td>
-                        <td>$262.16</td>
+                        <td data-sanity-porter="couples2G">$280.37</td>
+                        <td data-sanity-porter="couples2GC">$454.26</td>
+                        <td data-sanity-porter="couples2GCR">$560.65</td>
+                        <td data-sanity-porter="couples2Unlimited">$686.26</td>
+                        <td data-sanity-porter="couples2Pool">$262.16</td>
                       </tr>
                       <tr>
                         <th scope="row">
@@ -629,11 +643,11 @@
                             />
                           </div>
                         </th>
-                        <td>$193.32</td>
-                        <td>$377.03</td>
-                        <td>$483.32</td>
-                        <td>$599.32</td>
-                        <td>$203.40</td>
+                        <td data-sanity-porter="srG">$193.32</td>
+                        <td data-sanity-porter="srGC">$377.03</td>
+                        <td data-sanity-porter="srGCR">$483.32</td>
+                        <td data-sanity-porter="srUnlimited">$599.32</td>
+                        <td data-sanity-porter="srPool">$203.40</td>
                       </tr>
                       <tr>
                         <th scope="row">
@@ -649,11 +663,11 @@
                             />
                           </div>
                         </th>
-                        <td>$261.03</td>
-                        <td>$521.99</td>
-                        <td>$666.93</td>
-                        <td>$753.98</td>
-                        <td>$226</td>
+                        <td data-sanity-porter="sr2G">$261.03</td>
+                        <td data-sanity-porter="sr2GC">$521.99</td>
+                        <td data-sanity-porter="sr2GCR">$666.93</td>
+                        <td data-sanity-porter="sr2Unlimited">$753.98</td>
+                        <td data-sanity-porter="sr2Pool">$226</td>
                       </tr>
                       <tr>
                         <th scope="row">
@@ -669,11 +683,11 @@
                             />
                           </div>
                         </th>
-                        <td>$502.65</td>
-                        <td>$860.26</td>
-                        <td>$956.93</td>
-                        <td>$1063.21</td>
-                        <td>$497.20</td>
+                        <td data-sanity-porter="familyG">$502.65</td>
+                        <td data-sanity-porter="familyGC">$860.26</td>
+                        <td data-sanity-porter="familyGCR">$956.93</td>
+                        <td data-sanity-porter="familyUnlimited">$1063.21</td>
+                        <td data-sanity-porter="familyPool">$497.20</td>
                       </tr>
                       <tr>
                         <th scope="row">
@@ -689,11 +703,11 @@
                             />
                           </div>
                         </th>
-                        <td>$45.88</td>
-                        <td>$45.88</td>
-                        <td>$45.88</td>
-                        <td>$45.88</td>
-                        <td>$45.88</td>
+                        <td data-sanity-porter="additionalJrG">$45.88</td>
+                        <td data-sanity-porter="additionalJrGC">$45.88</td>
+                        <td data-sanity-porter="additionalJrGCR">$45.88</td>
+                        <td data-sanity-porter="additionalJrUnlimited">$45.88</td>
+                        <td data-sanity-porter="additionalJrPool">$45.88</td>
                       </tr>
                     </tbody>
                   </table>
@@ -870,7 +884,7 @@
     </script>
     <!-- scripts for tooltips end -->
 
-    <script defer src="assets/js/animated-tabs.js"></script>
+    <!-- <script defer src="assets/js/animated-tabs.js"></script> -->
     <script defer src="assets/js/main.js"></script>
     <script src="./assets/js/weather.js "></script>
     <script src="assets/js/swiper-helper.js"></script>
