@@ -27,8 +27,9 @@ function dataInjector(data, dataName) {
     // querySelector uses CSS syntax. [data-sanity="jrG"]
     const element = document.querySelector(`[data-${dataName}="${key}"]`);
 
+    // checks if dom element exists first, then value (checking for existence of element should always occur)
     if (element && value) {
-      element.textContent = value;
+      element.textContent = value; 
     }
   });
 }

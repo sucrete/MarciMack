@@ -1593,7 +1593,7 @@ section.perks {
     }
     .table-preface {
       padding-bottom: 0rem;
-      margin-bottom: -1rem;
+      // margin-bottom: -1rem;
       [class*="col"] {
         h3 {
           font-size: 40px;
@@ -1654,15 +1654,10 @@ section.perks {
           }
         }
       }
-      &.range {
-        margin-bottom: -2.5rem;
-        h3 {
-          margin-bottom: 1.5rem;
-        }
-      }
-      &.busy {
-        margin-bottom: -1rem;
-      }
+   
+      // &.busy {
+      //   margin-bottom: -1rem;
+      // }
       @media (max-width: 768px) {
         padding-bottom: 3rem;
       }
@@ -1695,11 +1690,11 @@ section.perks {
       }
     }
   }
-  .table-wrapper-busy {
-    .table-preface {
-      margin-bottom: -1.75rem;
-    }
-  }
+  // .table-wrapper-busy {
+  //   .table-preface {
+  //     margin-bottom: -1.75rem;
+  //   }
+  // }
   @media (max-width: 992px) {
     padding-bottom: 2rem;
   }

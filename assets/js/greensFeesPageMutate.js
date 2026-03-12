@@ -7,20 +7,20 @@ document.addEventListener("DOMContentLoaded", function () {
     const details = data;
     console.log(JSON.stringify(details, null, 2));
 
-    // unite punch card, solo rider, and driving range rates into one object
+    //* 1. unite punch card, solo rider, and driving range rates into one object
     const rates = {
       ...details?.rates[0],
       ...details?.rates[1],
       ...details?.rates[2],
     };
 
-    // grab your weekend rates
+    //* 2. grab your weekend rates
     const weekend = details?.weekendRates[0];
-    console.log(JSON.stringify(weekend, null, 2));
-    // grab your weekend rates
+    
+    //* 3. grab your weekday rates
     const weekday = details?.weekdayRates[0];
 
-    // populate DOM using dataInjector() in fetchData.js
+    //* 4. populate DOM using dataInjector() in fetchData.js
     dataInjector(rates, "sanity");
     dataInjector(weekend, "sanity-weekends");
     dataInjector(weekday, "sanity-weekdays");
