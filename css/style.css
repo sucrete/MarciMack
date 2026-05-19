@@ -17217,6 +17217,18 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   opacity: 1;
 }
 
+.rates-notice {
+  border-radius: 10px;
+  border: 1.5px solid #efefef;
+  background-color: white;
+}
+.rates-notice span img {
+  width: 18px;
+  height: auto;
+  margin-top: -2.5px;
+  margin-right: 15px;
+}
+
 .explainer-icon {
   width: 14px;
   height: auto;

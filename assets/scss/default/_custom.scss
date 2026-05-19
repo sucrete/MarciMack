@@ -5,6 +5,20 @@
   opacity: 1;
 }
 
+.rates-notice {
+  border-radius: 10px;
+  border: 1.5px solid #efefef;
+  background-color: white;
+  span {
+    img {
+      width: 18px;
+      height: auto;
+      margin-top: -2.5px;
+      margin-right: 15px;
+    }
+  }
+}
+
 .explainer-icon {
   width: 14px;
   height: auto;
@@ -62,7 +76,8 @@ table {
   position: relative;
   z-index: 69;
   overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+  box-shadow:
+    rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   .row {
     height: 100%;
@@ -157,7 +172,8 @@ section.hours-table {
   .container {
     .the-table-itself {
       background: white;
-      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+      box-shadow:
+        rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
         rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
       border-radius: 10px;
       .hours-table-brow {
@@ -304,7 +320,8 @@ section.hours-table {
     display: none;
     background: #fff9b9e8;
     border-radius: 1px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    box-shadow:
+      rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
       rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     border: 1px solid #ecc903;
     border-left-width: 7px;
@@ -416,11 +433,9 @@ section.hours-table {
     --_g: #0000 90deg, var(--c) 0;
     --_p: var(--w) var(--w) border-box no-repeat;
 
-    background: conic-gradient(
-          from 90deg at top var(--b) left var(--b),
-          var(--_g)
-        )
-        0 0 / var(--_p),
+    background:
+      conic-gradient(from 90deg at top var(--b) left var(--b), var(--_g)) 0 0 /
+        var(--_p),
       conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) 100%
         0 / var(--_p),
       conic-gradient(from 0deg at bottom var(--b) left var(--b), var(--_g)) 0
@@ -437,10 +452,15 @@ a {
     // border-top: 3px solid rgb(227, 227, 227);
     // border: 1px solid rgba(0, 0, 0, 0.109);
     box-shadow: 0 3px 3px -1px rgba(0, 0, 0, 0.072);
-    box-shadow: transparent 0px 64px 64px -32px, transparent 0px 32px 32px -16px,
-      transparent 0px 16px 16px -8px, #003d3d0a 0px 12px 12px -6px,
-      #003d3d0a 0px 6px 6px -3px, #003d3d0a 0px 3px 3px -1.5px,
-      #001f1f14 0px 1px 1px -0.5px, #003d3d0a 0px 0px 0px 1px;
+    box-shadow:
+      transparent 0px 64px 64px -32px,
+      transparent 0px 32px 32px -16px,
+      transparent 0px 16px 16px -8px,
+      #003d3d0a 0px 12px 12px -6px,
+      #003d3d0a 0px 6px 6px -3px,
+      #003d3d0a 0px 3px 3px -1.5px,
+      #001f1f14 0px 1px 1px -0.5px,
+      #003d3d0a 0px 0px 0px 1px;
     background: white;
     padding: 0;
     overflow: hidden;
@@ -507,10 +527,15 @@ a {
       background: var(--color-offset);
       transform: translateY(-5px);
       box-shadow: 0px 9px 22px -5px rgba(24, 16, 16, 0.3019607843);
-      box-shadow: #003d3d0a 0px 64px 64px -32px, #003d3d0a 0px 32px 32px -16px,
-        #003d3d0a 0px 16px 16px -8px, #003d3d0a 0px 12px 12px -6px,
-        #003d3d0a 0px 6px 6px -3px, #003d3d0a 0px 3px 3px -1.5px,
-        #001f1f14 0px 1px 1px -0.5px, #003d3d0a 0px 0px 0px 1px;
+      box-shadow:
+        #003d3d0a 0px 64px 64px -32px,
+        #003d3d0a 0px 32px 32px -16px,
+        #003d3d0a 0px 16px 16px -8px,
+        #003d3d0a 0px 12px 12px -6px,
+        #003d3d0a 0px 6px 6px -3px,
+        #003d3d0a 0px 3px 3px -1.5px,
+        #001f1f14 0px 1px 1px -0.5px,
+        #003d3d0a 0px 0px 0px 1px;
       .bottom {
         h4 {
           color: white;
@@ -994,7 +1019,10 @@ table {
                 transform: translate(-10px, -70px) scale(0.1);
                 opacity: 0;
                 z-index: -1;
-                transition: transform 0.5s, opacity 0.5s, background-color 0.5s;
+                transition:
+                  transform 0.5s,
+                  opacity 0.5s,
+                  background-color 0.5s;
               }
 
               &:hover,
@@ -1427,7 +1455,8 @@ section.perks {
               min-height: 20px;
               width: 70px;
               transition: all 0.3s ease;
-              box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+              box-shadow:
+                rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
                 rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
             }
             .nav-item {
@@ -1654,7 +1683,7 @@ section.perks {
           }
         }
       }
-   
+
       // &.busy {
       //   margin-bottom: -1rem;
       // }
