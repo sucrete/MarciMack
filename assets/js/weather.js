@@ -65,7 +65,7 @@ async function populateDOM() {
   const daily = weatherData.daily;
 
   const setDay = (dayEl, iconEl, hiEl, loEl, idx) => {
-    dayEl.innerHTML = days[new Date(daily.time[idx]).getDay()];
+    dayEl.innerHTML = days[new Date(daily.time[idx] + "T00:00:00").getDay()];
     iconEl.src = `./assets/images/icons/${assignIcon(daily.weathercode[idx])}.svg`;
     hiEl.innerHTML = Math.ceil(daily.temperature_2m_max[idx]);
     loEl.innerHTML = Math.ceil(daily.temperature_2m_min[idx]);

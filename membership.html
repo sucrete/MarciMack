@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -25,7 +25,7 @@
       href="assets/css/plugins/fontawesome.css"
       as="style"
       media="print"
-      onload="this.media='all'"
+      onload="this.media = 'all'"
     />
 
     <link
@@ -33,7 +33,7 @@
       href="assets/css/plugins/metismenu.css"
       as="style"
       media="print"
-      onload="this.media='all'"
+      onload="this.media = 'all'"
     />
     <link rel="stylesheet preload" href="css/style.css" as="style" />
 
@@ -46,7 +46,7 @@
     <!-- footer Lit component -->
     <script type="module" src="./lit/footer.js"></script>
 
-     <!-- injecting data -->
+    <!-- injecting data -->
     <script src="assets/js/membershipPageMutate.js"></script>
     <!-- Sanity data fetch -->
     <script src="assets/js/fetchData.js"></script>
@@ -194,10 +194,20 @@
               "
             >
               <h2>Passes</h2>
-              <div class="sales-tax-note">
-                <div class="lil-line"></div>
-                <span class="highlighted">All fees subject to sales tax.</span>
-                <div class="lil-line"></div>
+
+              <div
+                class="rates-notice rates-notice-on-membership-page p-5 wow fadeInUp"
+                data-wow-offset="120"
+                data-wow-delay=".1s"
+              >
+                <span
+                  ><img
+                    class=""
+                    src="assets/images/icons/exclamation.svg"
+                    alt="" /></span
+                >MariMack prices are always subject to change. The rates sheet
+                posted at the clubhouse sales counter always supersedes prices
+                posted on the website.
               </div>
             </div>
 
@@ -214,7 +224,6 @@
                   class="icon"
                 />
               </div>
-              <hr />
               <h3>Annual Passes</h3>
               <div>
                 <div class="something-to-note">
@@ -247,7 +256,8 @@
                       pass.
                       <span class="highlighted">
                         These fees are waived for Veterans and Porter
-                        Communities residents.</span
+                        Communities residents. All fees subject to sales
+                        tax.</span
                       >
                     </div>
                     <div class="col-12 col-md-6 fees">
@@ -586,7 +596,9 @@
                         <td data-sanity-porter="individualG">$280.37</td>
                         <td data-sanity-porter="individualGC">$454.26</td>
                         <td data-sanity-porter="individualGCR">$560.65</td>
-                        <td data-sanity-porter="individualUnlimited">$686.26</td>
+                        <td data-sanity-porter="individualUnlimited">
+                          $686.26
+                        </td>
                         <td data-sanity-porter="individualPool">$235.04</td>
                       </tr>
                       <tr>
@@ -706,7 +718,9 @@
                         <td data-sanity-porter="additionalJrG">$45.88</td>
                         <td data-sanity-porter="additionalJrGC">$45.88</td>
                         <td data-sanity-porter="additionalJrGCR">$45.88</td>
-                        <td data-sanity-porter="additionalJrUnlimited">$45.88</td>
+                        <td data-sanity-porter="additionalJrUnlimited">
+                          $45.88
+                        </td>
                         <td data-sanity-porter="additionalJrPool">$45.88</td>
                       </tr>
                     </tbody>
@@ -876,10 +890,10 @@
     ></script>
     <script>
       const tooltipTriggerList = document.querySelectorAll(
-        '[data-bs-toggle="tooltip"]'
+        '[data-bs-toggle="tooltip"]',
       );
       const tooltipList = [...tooltipTriggerList].map(
-        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl),
       );
     </script>
     <!-- scripts for tooltips end -->
