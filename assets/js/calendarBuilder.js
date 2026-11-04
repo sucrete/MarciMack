@@ -166,7 +166,7 @@ document.addEventListener("DOMContentLoaded", function () {
         navToHostYourOwnEventButton: {
           text: "host your own event",
           click: function () {
-            window.location.href = '/host-your-event.html';
+            window.location.href = '/host-your-event';
           },
         },
       },

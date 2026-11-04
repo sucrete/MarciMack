@@ -148,11 +148,23 @@ table {
           height: auto;
           margin: 0 70px 0 80px;
         }
+        // Slide 1 is an <h1> (for SEO), the rest are <h2>. Pin every metric
+        // that differs between global h1/h2 styles so all slides are the same
+        // size; the marquee animation depends on identical slide widths/heights.
+        h1,
         h2 {
           font-size: 70px;
           letter-spacing: -4px;
           color: white;
           margin-bottom: 0px;
+          font-weight: var(--s-bold);
+          line-height: 1.1;
+          @media only screen and (max-width: 991px) {
+            line-height: 1.4;
+          }
+          @media only screen and (max-width: 479px) {
+            line-height: 1.2;
+          }
           .italicized {
             font-family: "IKOB Italic";
           }
@@ -2896,4 +2908,101 @@ footer {
       }
     }
   }
+}
+
+// promotional pop-up (home page)
+.promo-popup {
+  position: fixed;
+  inset: 0;
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.6); // scrim
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  &[hidden] {
+    display: none;
+  }
+  &__frame {
+    position: relative;
+    line-height: 0; // no gap under the image, so the X sits on the true corner
+    opacity: 0;
+    transform: scale(0.8);
+    transition:
+      opacity 0.45s ease,
+      transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  // added by JS one frame after un-hiding, so the transitions run
+  &.is-visible {
+    opacity: 1;
+    .promo-popup__frame {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    &__frame {
+      transform: none;
+    }
+  }
+  &__image {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: min(500px, calc(100vw - 4rem));
+    max-height: calc(100vh - 4rem);
+    max-height: calc(100dvh - 4rem);
+    border-radius: 6px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  }
+  &__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%); // centers the X on the image's top-right corner
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // fixed, equal width/height = a perfect circle (18px icon + 10px padding each side).
+    // Overrides the theme's global button styles (width: 100%, max-width, line-height).
+    box-sizing: border-box;
+    width: 38px;
+    height: 38px;
+    min-width: 0;
+    min-height: 0;
+    max-width: none;
+    flex: none;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.25);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    svg {
+      display: block;
+      flex: none;
+      width: 18px;
+      height: 18px;
+      stroke: black;
+      stroke-width: 2.5;
+      stroke-linecap: round;
+      fill: none;
+    }
+    &:hover {
+      background: rgba(255, 255, 255, 0.4);
+    }
+    &:focus-visible {
+      outline: 2px solid black;
+      outline-offset: 2px;
+    }
+  }
+}
+body.promo-popup-open {
+  overflow: hidden;
 }

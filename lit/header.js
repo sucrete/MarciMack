@@ -15,7 +15,7 @@ export class Header extends LitElement {
                 <nav>
                   <ul>
                     <li>
-                      <a class="nav-link" href="rates.html"> Greens Fees </a>
+                      <a class="nav-link" href="/rates"> Greens Fees </a>
                     </li>
                     <li class="has-dropdown">
                       <a class="nav-link with-chevron" href="#"
@@ -24,13 +24,13 @@ export class Header extends LitElement {
                       </a>
                       <ul class="submenu parent-nav with-border">
                         <li>
-                          <a href="events.html"
+                          <a href="/events"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Calendar</a
                           >
                         </li>
                         <li>
-                          <a href="host-your-event.html"
+                          <a href="/host-your-event"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Host Your Event</a
                           >
@@ -39,7 +39,7 @@ export class Header extends LitElement {
                     </li>
 
                     <li>
-                      <a class="nav-link" href="membership.html">Passes</a>
+                      <a class="nav-link" href="/membership">Passes</a>
                     </li>
 
                     <li class="has-dropdown">
@@ -49,13 +49,13 @@ export class Header extends LitElement {
                       </a>
                       <ul class="submenu parent-nav with-border">
                         <li>
-                          <a href="pool.html"
+                          <a href="/pool"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Pool Passes</a
                           >
                         </li>
                         <li>
-                          <a href="pool.html#rules"
+                          <a href="/pool#rules"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Pool Rules</a
                           >
@@ -80,7 +80,7 @@ export class Header extends LitElement {
                   </svg>
                 </div>
               </div>
-              <a href="index.html" class="logo">
+              <a href="/" class="logo">
                 <?xml version="1.0" encoding="UTF-8"?>
                 <svg
                   id="a"
@@ -256,31 +256,31 @@ export class Header extends LitElement {
                       </a>
                       <ul class="submenu parent-nav with-border">
                         <li>
-                          <a href="about.html"
+                          <a href="/about"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Contact</a
                           >
                         </li>
                         <li>
-                          <a href="about.html#clubhouse-rental"
+                          <a href="/about#clubhouse-rental"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Clubhouse Rental</a
                           >
                         </li>
                         <li>
-                          <a href="scorecard.html"
+                          <a href="/scorecard"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Scorecard</a
                           >
                         </li>
                         <li>
-                          <a href="holes-in-one.html"
+                          <a href="/holes-in-one"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Holes-in-One!</a
                           >
                         </li>
                         <li>
-                          <a href="about.html#mc_embed_shell"
+                          <a href="/about#mc_embed_shell"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Newsletter Sign-Up</a
                           >

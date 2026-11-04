@@ -460,7 +460,7 @@ $starker-gradient: linear-gradient(
 }
 
 .banner-four-bg {
-  background-image: url(../images/marimack-aerial-2.jpg);
+  background-image: url(../images/marimack-aerial-2.webp);
   height: 853px !important;
   background-repeat: no-repeat;
   background-position: center;
@@ -523,6 +523,7 @@ $starker-gradient: linear-gradient(
               width: 35px;
               margin: 0 20px 0 30px;
             }
+            h1,
             h2 {
               font-size: 42px;
               letter-spacing: -1px;
@@ -641,32 +642,32 @@ $subpage-height: 550px;
   }
 
   &.book-tee-time-banner {
-    background-image: url(../images/player-in-view.jpg);
+    background-image: url(../images/player-in-view.webp);
     .overlay {
       background-image: $to-transparent-bg-gradient;
     }
   }
   &.about-banner {
-    background-image: url(../images/marimack-tournament-start.jpg);
+    background-image: url(../images/marimack-tournament-start.webp);
     .overlay {
       background-image: $dark-background-gradient;
       background-image: $to-transparent-bg-gradient;
     }
   }
   &.events-banner {
-    background-image: url(../images/marimack-bunch-of-carts.jpg);
+    background-image: url(../images/marimack-bunch-of-carts.webp);
     .overlay {
       background-image: $to-transparent-bg-gradient;
     }
   }
   &.online-store-banner {
-    background-image: url(../images/marimack-bunch-of-carts-2.jpg);
+    background-image: url(../images/marimack-bunch-of-carts-2.webp);
     .overlay {
       background-image: $starker-gradient;
     }
   }
   &.host-your-event-banner {
-    background-image: url(../images/marimack-tournament-start.jpg);
+    background-image: url(../images/marimack-tournament-start.webp);
     .overlay {
       background-image: $darker-background-gradient;
     }
@@ -675,7 +676,7 @@ $subpage-height: 550px;
     }
   }
   &.membership-banner {
-    background-image: url(../images/marimack-aerial-2.jpg);
+    background-image: url(../images/marimack-aerial-2.webp);
     .overlay {
       background-image: $to-transparent-bg-gradient;
     }
@@ -684,7 +685,7 @@ $subpage-height: 550px;
     }
   }
   &.rates-banner {
-    background-image: url(../images/golf-bag-in-foreground.jpg);
+    background-image: url(../images/golf-bag-in-foreground.webp);
     .overlay {
       background-image: $darker-background-gradient;
     }
@@ -693,7 +694,7 @@ $subpage-height: 550px;
     }
   }
   &.pool-banner {
-    background-image: url(../images/water-surface.jpg);
+    background-image: url(../images/water-surface.webp);
     .overlay {
       background-image: $darker-background-gradient;
     }

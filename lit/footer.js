@@ -16,7 +16,7 @@ export class Footer extends LitElement {
                 <div>
                   <div class="logo-brick row">
                     <div class="logo-col">
-                      <a href="index.html" class="logo">
+                      <a href="/" class="logo">
                         <img
                           class="footer-logo"
                           src="assets/images/logo/MM-logo-light-light.svg"
