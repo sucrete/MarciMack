@@ -460,7 +460,7 @@ $starker-gradient: linear-gradient(
 }
 
 .banner-four-bg {
-  background-image: url(../images/marimack-aerial-2.webp);
+  background-image: url(../images/marimack-hero.webp);
   height: 853px !important;
   background-repeat: no-repeat;
   background-position: center;
@@ -676,7 +676,7 @@ $subpage-height: 550px;
     }
   }
   &.membership-banner {
-    background-image: url(../images/marimack-aerial-2.webp);
+    background-image: url(../images/marimack-hero.webp);
     .overlay {
       background-image: $to-transparent-bg-gradient;
     }

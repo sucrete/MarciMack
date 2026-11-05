@@ -13907,7 +13907,7 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
 }
 
 .banner-four-bg {
-  background-image: url(../images/marimack-aerial-2.webp);
+  background-image: url(../images/marimack-hero.webp);
   height: 853px !important;
   background-repeat: no-repeat;
   background-position: center;
@@ -14076,7 +14076,7 @@ section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
 }
 .banner-subpage.membership-banner {
-  background-image: url(../images/marimack-aerial-2.webp);
+  background-image: url(../images/marimack-hero.webp);
 }
 .banner-subpage.membership-banner .overlay {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.72) 0%, hsla(0, 0%, 0%, 0.585) 4.2%, hsla(0, 0%, 0%, 0.469) 7.4%, hsla(0, 0%, 0%, 0.369) 10%, hsla(0, 0%, 0%, 0.284) 12.2%, hsla(0, 0%, 0%, 0.213) 14.4%, hsla(0, 0%, 0%, 0.156) 16.8%, hsla(0, 0%, 0%, 0.109) 19.7%, hsla(0, 0%, 0%, 0.073) 23.5%, hsla(0, 0%, 0%, 0.046) 28.5%, hsla(0, 0%, 0%, 0.027) 35%, hsla(0, 0%, 0%, 0.014) 43.2%, hsla(0, 0%, 0%, 0.006) 53.5%, hsla(0, 0%, 0%, 0.002) 66.2%, hsla(0, 0%, 0%, 0) 81.6%, hsla(0, 0%, 0%, 0) 100%);
@@ -19485,7 +19485,6 @@ footer .rts-copyright-area-one .new-row p {
     margin-left: 8px;
   }
 }
-
 .promo-popup {
   position: fixed;
   inset: 0;
@@ -19576,6 +19575,4 @@ footer .rts-copyright-area-one .new-row p {
 
 body.promo-popup-open {
   overflow: hidden;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
